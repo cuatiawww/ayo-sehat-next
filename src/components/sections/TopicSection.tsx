@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-// import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight, ChevronDown } from 'lucide-react'
 import CustomCalendar from '@/components/CustomCalendar'
@@ -149,7 +148,7 @@ export default function TopicSection() {
                           return (
                             <Link
                               key={index}
-                              href={`/topik/${slug}`}
+                              href={`/page/topik-kesehatan/${slug}`}
                               className="group text-left bg-white hover:bg-brand-primary border border-gray-200 hover:border-brand-primary rounded-lg px-3 sm:px-4 py-2 sm:py-3 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
                             >
                               <div className="flex items-center gap-2">
@@ -190,11 +189,11 @@ export default function TopicSection() {
                   informasi kesehatan yang Anda butuhkan
                 </p>
                 <Button
-  size="lg"
-  className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
->
-  Hubungi Kami
-</Button>
+                  size="lg"
+                  className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                >
+                  Hubungi Kami
+                </Button>
               </div>
 
               {/* Decorative circles */}

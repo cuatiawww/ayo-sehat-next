@@ -37,7 +37,7 @@ export default function MitraInfoSection() {
 
             <Link
               href="#daftar-mitra"
-              className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="inline-block bg-brand-accent text-gray-900 font-bold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Daftar Menjadi Mitra
             </Link>

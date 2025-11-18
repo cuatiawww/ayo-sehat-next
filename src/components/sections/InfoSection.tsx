@@ -223,7 +223,7 @@ export default function InfoSection() {
           <Link href="/page/perilaku-hidup-sehat">
             <Button
               size="lg"
-              className="btn-brand-accent px-8 sm:px-12 lg:px-16 h-[55px] sm:h-[70px] lg:h-[80px] text-[16px] sm:text-[20px] lg:text-[25px] rounded-full hover:scale-105 transition-transform duration-300"
+              className="btn-brand-accent bg-brand-accent hover:bg-brand-accent-hover text-black px-8 sm:px-12 lg:px-16 h-[55px] sm:h-[70px] lg:h-[80px] text-[16px] sm:text-[20px] lg:text-[25px] rounded-full hover:scale-105 transition-transform duration-300"
             >
               Simak Perilaku Hidup Sehat Lainnya
             </Button>

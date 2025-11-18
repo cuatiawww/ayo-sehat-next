@@ -72,5 +72,274 @@
     "K": [1],
     "M": [4],
     "P": [3]
+  },
+  "topicDetails": {
+    "anemia": {
+      "title": "Anemia",
+      "slug": "anemia",
+      "letter": "A",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+      "category": ["Cegah", "Deteksi", "Pengobatan"],
+      "tags": ["Anemia", "Kekurangan Darah", "Zat Besi", "Hemoglobin"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Apa Itu Anemia?",
+          "Penyebab",
+          "Gejala",
+          "Diagnosis",
+          "Pengobatan"
+        ]
+      },
+      "fullContent": {
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Apa Itu Anemia?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Anemia adalah kondisi ketika tubuh kekurangan sel darah merah atau hemoglobin (Hb), protein yang membawa oksigen ke seluruh tubuh. Orang tua perlu memahami dan menerapkan kebiasaan pola makan yang baik agar anemia bisa dihindari — bukan cuma memeriksakan anak kepada dokter setelah terbukti anemia."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pernah merasa cepat capek, pucet, atau jantung berdebar-debar ngga jelas? Bisa jadi itu tanda-tanda anemia — kondisi ketika tubuh kekurangan sel darah merah atau hemoglobin (Hb), yang penting banget buat ngangkut oksigen ke seluruh tubuh."
+          },
+          {
+            "type": "heading",
+            "content": "Kenapa Bisa Anemia?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Penyebab paling umum adalah kurangnya asupan zat besi, folat, dan vitamin B12. Lho, kenapa zat besi sepenting itu? Karena zat besi adalah komponen utama hemoglobin! Kalo asupannya kurang, tubuh nggak bisa bikin sel darah merah yang cukup, dan oksigen pun susah dianterin ke seluruh tubuh. Yaa, bayangin aja kayak ekspedisi paket yang kekurangan kurir."
+          },
+          {
+            "type": "paragraph",
+            "content": "Selain kekurangan asupan gizi, anemia juga bisa disebabkan oleh perdarahan hebat (misalnya mens berkepanjangan atau luka serius), penyakit kronis (seperti gagal ginjal atau kanker), atau gangguan genetik seperti thalassemia dan sickle cell anemia. Bahkan ibu hamil pun sangat rentan terhadap anemia karena kebutuhan zat besi mereka naik drastis untuk mendukung pertumbuhan bayi."
+          },
+          {
+            "type": "heading",
+            "content": "Kenali Gejalanya!"
+          },
+          {
+            "type": "paragraph",
+            "content": "Saat tubuh kekurangan oksigen akibat sel darah merah, besi, folat, atau vitamin B12 yang kurang, berbagai organ tubuh bakal 'ngeluh.' Gejalanya antara lain: kulit dan bibir pucat, gampang lelah atau lemas, sakit kepala dan pusing (bahkan pas lagi ngga di jalan raya!), nyeri dada, sesak napas, dan detak jantung cepat atau tidak teratur."
+          },
+          {
+            "type": "paragraph",
+            "content": "Anemia kronis juga bisa mempengaruhi konsentrasi dan produktivitas, terutama pada anak-anak dan remaja. Makanya, deteksi dini lewat pemeriksaan darah rutin itu penting banget!"
+          },
+          {
+            "type": "heading",
+            "content": "Bagaimana Diagnosisnya?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Untuk mengetahui apakah seseorang mengalami anemia, dokter biasanya akan melakukan tes darah lengkap (CBC) untuk mengukur kadar hemoglobin dan jumlah sel darah merah. Jika kadar hemoglobin di bawah normal, dokter akan melakukan pemeriksaan lebih lanjut untuk mencari tahu penyebabnya — apakah karena kekurangan zat besi, vitamin B12, folat, atau masalah lain."
+          },
+          {
+            "type": "heading",
+            "content": "Cegah Anemia, Mulai dari Piring!"
+          },
+          {
+            "type": "paragraph",
+            "content": "Kabar baiknya, sebagian besar kasus anemia bisa dicegah dengan pola makan yang sehat dan seimbang. Pastikan konsumsi makanan kaya zat besi seperti daging merah, hati, ayam, ikan, telur, kacang-kacangan, bayam, dan sayuran hijau gelap lainnya. Jangan lupa kombinasikan dengan makanan tinggi vitamin C (jeruk, tomat, paprika) karena vitamin C membantu penyerapan zat besi di usus."
+          },
+          {
+            "type": "paragraph",
+            "content": "Buat vegetarian dan vegan, fokus pada sumber zat besi nabati seperti tempe, tahu, kacang merah, dan bayam — tapi tetap ingat ya, zat besi dari nabati lebih susah diserap tubuh dibanding dari hewani, jadi butuh porsi lebih banyak dan kombinasi vitamin C."
+          },
+          {
+            "type": "paragraph",
+            "content": "Selain pola makan, konsumsi suplemen zat besi juga bisa dipertimbangkan, terutama untuk ibu hamil, remaja putri yang sedang menstruasi, atau orang dengan kondisi kesehatan tertentu. Tapi ingat, konsultasi ke dokter dulu sebelum minum suplemen biar dosisnya tepat."
+          }
+        ],
+        "topikKesehatanTerkait": ["Kekurangan Zat Besi", "Thalassemia", "Leukemia"],
+        "penyakitTerkait": ["Malnutrisi", "Gagal Ginjal", "Kanker Darah"],
+        "references": [
+          "WHO. Kemenkes RI. SM 2023. AloDokter. HelloSehat"
+        ]
+      }
+    },
+    "diabetes": {
+      "title": "Diabetes",
+      "slug": "diabetes",
+      "letter": "D",
+      "image": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=1200&q=80",
+      "category": ["Cegah", "Deteksi", "Pengobatan"],
+      "tags": ["Diabetes", "Gula Darah", "Insulin", "Diabetes Mellitus"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Apa Itu Diabetes?",
+          "Jenis Diabetes",
+          "Penyebab",
+          "Gejala",
+          "Pencegahan",
+          "Pengobatan"
+        ]
+      },
+      "fullContent": {
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Apa Itu Diabetes?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Diabetes mellitus adalah penyakit kronis yang terjadi ketika kadar gula darah (glukosa) dalam tubuh terlalu tinggi karena tubuh tidak dapat memproduksi atau menggunakan insulin dengan baik. Insulin adalah hormon yang diproduksi pankreas untuk membantu glukosa masuk ke dalam sel tubuh dan diubah menjadi energi."
+          },
+          {
+            "type": "paragraph",
+            "content": "Tanpa insulin yang cukup atau efektif, glukosa menumpuk di dalam darah dan dapat menyebabkan berbagai komplikasi kesehatan serius seperti penyakit jantung, kerusakan ginjal, gangguan penglihatan, hingga amputasi."
+          },
+          {
+            "type": "heading",
+            "content": "Jenis-Jenis Diabetes"
+          },
+          {
+            "type": "paragraph",
+            "content": "Diabetes Tipe 1 terjadi ketika sistem kekebalan tubuh menyerang dan menghancurkan sel-sel pankreas yang memproduksi insulin. Kondisi ini biasanya muncul sejak anak-anak atau remaja dan memerlukan suntikan insulin seumur hidup."
+          },
+          {
+            "type": "paragraph",
+            "content": "Diabetes Tipe 2 adalah jenis yang paling umum (sekitar 90% dari semua kasus diabetes). Pada diabetes tipe 2, tubuh masih memproduksi insulin tetapi sel-sel tidak meresponsnya dengan baik (resistensi insulin). Faktor risiko utamanya termasuk obesitas, kurang aktivitas fisik, pola makan tidak sehat, dan riwayat keluarga."
+          },
+          {
+            "type": "paragraph",
+            "content": "Diabetes Gestasional terjadi pada ibu hamil yang sebelumnya tidak pernah mengalami diabetes. Kondisi ini biasanya hilang setelah melahirkan, tetapi meningkatkan risiko ibu dan anak untuk mengembangkan diabetes tipe 2 di kemudian hari."
+          },
+          {
+            "type": "heading",
+            "content": "Gejala yang Harus Diwaspadai"
+          },
+          {
+            "type": "paragraph",
+            "content": "Gejala diabetes sering kali muncul secara bertahap dan dapat meliputi: sering merasa haus dan lapar berlebihan, sering buang air kecil terutama di malam hari, penurunan berat badan tanpa sebab jelas, kelelahan ekstrem, penglihatan kabur, luka yang lambat sembuh, dan sering mengalami infeksi."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pada diabetes tipe 2, gejala bisa sangat ringan atau bahkan tidak terasa sama sekali selama bertahun-tahun. Oleh karena itu, pemeriksaan gula darah rutin sangat penting, terutama bagi mereka yang memiliki faktor risiko tinggi."
+          },
+          {
+            "type": "heading",
+            "content": "Pencegahan Diabetes Tipe 2"
+          },
+          {
+            "type": "paragraph",
+            "content": "Kabar baiknya, diabetes tipe 2 sebagian besar dapat dicegah dengan perubahan gaya hidup sehat. Jaga berat badan ideal dengan mengonsumsi makanan bergizi seimbang, batasi konsumsi gula dan karbohidrat olahan, perbanyak serat dari buah, sayuran, dan biji-bijian utuh."
+          },
+          {
+            "type": "paragraph",
+            "content": "Lakukan aktivitas fisik minimal 150 menit per minggu, hindari merokok dan konsumsi alkohol berlebihan, serta kelola stres dengan baik. Pemeriksaan gula darah rutin juga penting untuk deteksi dini, terutama jika Anda berusia di atas 40 tahun atau memiliki riwayat keluarga diabetes."
+          },
+          {
+            "type": "heading",
+            "content": "Pengelolaan dan Pengobatan"
+          },
+          {
+            "type": "paragraph",
+            "content": "Pengelolaan diabetes memerlukan pendekatan komprehensif yang meliputi pemantauan gula darah rutin, pola makan sehat, aktivitas fisik teratur, dan obat-obatan sesuai anjuran dokter. Untuk diabetes tipe 1, suntikan insulin adalah keharusan. Sementara untuk tipe 2, pengobatan bisa dimulai dengan perubahan gaya hidup dan obat oral, kemudian insulin jika diperlukan."
+          },
+          {
+            "type": "paragraph",
+            "content": "Edukasi diabetes sangat penting untuk membantu penderita memahami kondisinya dan mengelola penyakit dengan baik. Konsultasi rutin dengan tim medis termasuk dokter, ahli gizi, dan edukator diabetes sangat direkomendasikan untuk mencegah komplikasi dan meningkatkan kualitas hidup."
+          }
+        ],
+        "topikKesehatanTerkait": ["Obesitas", "Hipertensi", "Kolesterol"],
+        "penyakitTerkait": ["Penyakit Jantung", "Gagal Ginjal", "Stroke"],
+        "references": [
+          "WHO. Kemenkes RI. Perkeni. American Diabetes Association"
+        ]
+      }
+    },
+    "hipertensi": {
+      "title": "Hipertensi",
+      "slug": "hipertensi",
+      "letter": "H",
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&q=80",
+      "category": ["Cegah", "Deteksi", "Pengobatan"],
+      "tags": ["Hipertensi", "Tekanan Darah Tinggi", "Darah Tinggi", "Kardiovaskular"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Apa Itu Hipertensi?",
+          "Penyebab",
+          "Gejala",
+          "Komplikasi",
+          "Pencegahan",
+          "Pengobatan"
+        ]
+      },
+      "fullContent": {
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Apa Itu Hipertensi?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Hipertensi atau tekanan darah tinggi adalah kondisi ketika tekanan darah terhadap dinding arteri terlalu tinggi. Tekanan darah diukur dalam dua angka: sistolik (tekanan saat jantung berdetak) dan diastolik (tekanan saat jantung istirahat). Seseorang dikatakan hipertensi jika tekanan darahnya 140/90 mmHg atau lebih."
+          },
+          {
+            "type": "paragraph",
+            "content": "Hipertensi sering disebut sebagai 'silent killer' karena jarang menimbulkan gejala yang jelas, namun dapat menyebabkan kerusakan serius pada jantung, pembuluh darah, ginjal, dan organ lainnya jika tidak ditangani."
+          },
+          {
+            "type": "heading",
+            "content": "Penyebab dan Faktor Risiko"
+          },
+          {
+            "type": "paragraph",
+            "content": "Pada sebagian besar kasus (sekitar 90-95%), penyebab pasti hipertensi tidak diketahui (hipertensi primer). Namun, beberapa faktor risiko yang meningkatkan kemungkinan seseorang mengalami hipertensi antara lain: usia (semakin tua, risiko semakin tinggi), riwayat keluarga, obesitas, kurang aktivitas fisik, konsumsi garam berlebih, merokok, stres kronis, dan konsumsi alkohol berlebihan."
+          },
+          {
+            "type": "paragraph",
+            "content": "Hipertensi sekunder (5-10% kasus) disebabkan oleh kondisi medis tertentu seperti penyakit ginjal, gangguan hormon, atau efek samping obat tertentu. Kondisi ini bisa diatasi dengan menangani penyakit penyebabnya."
+          },
+          {
+            "type": "heading",
+            "content": "Gejala dan Komplikasi"
+          },
+          {
+            "type": "paragraph",
+            "content": "Kebanyakan orang dengan hipertensi tidak merasakan gejala apapun, itulah mengapa pemeriksaan tekanan darah rutin sangat penting. Beberapa orang mungkin mengalami sakit kepala, pusing, pandangan kabur, atau mimisan, terutama jika tekanan darah sudah sangat tinggi."
+          },
+          {
+            "type": "paragraph",
+            "content": "Jika tidak terkontrol, hipertensi dapat menyebabkan komplikasi serius seperti: penyakit jantung koroner, gagal jantung, stroke, kerusakan ginjal, gangguan penglihatan, dan demensia. Risiko komplikasi meningkat seiring dengan tingginya tekanan darah dan lamanya kondisi tidak terkontrol."
+          },
+          {
+            "type": "heading",
+            "content": "Pencegahan Hipertensi"
+          },
+          {
+            "type": "paragraph",
+            "content": "Gaya hidup sehat adalah kunci utama pencegahan hipertensi. Batasi konsumsi garam (natrium) tidak lebih dari 5 gram per hari (sekitar 1 sendok teh), perbanyak konsumsi buah dan sayuran, jaga berat badan ideal, lakukan aktivitas fisik minimal 150 menit per minggu, hindari merokok dan batasi konsumsi alkohol."
+          },
+          {
+            "type": "paragraph",
+            "content": "Kelola stres dengan baik melalui teknik relaksasi seperti meditasi, yoga, atau hobi yang menyenangkan. Tidur cukup 7-8 jam per hari juga penting untuk menjaga tekanan darah tetap stabil. Pemeriksaan tekanan darah rutin minimal setahun sekali atau lebih sering jika Anda memiliki faktor risiko."
+          },
+          {
+            "type": "heading",
+            "content": "Pengelolaan dan Pengobatan"
+          },
+          {
+            "type": "paragraph",
+            "content": "Penanganan hipertensi dimulai dengan perubahan gaya hidup. Jika ini tidak cukup menurunkan tekanan darah, dokter akan meresepkan obat antihipertensi. Ada berbagai jenis obat yang tersedia, dan dokter akan memilih yang paling sesuai dengan kondisi Anda."
+          },
+          {
+            "type": "paragraph",
+            "content": "Penting untuk minum obat sesuai anjuran dokter secara teratur, bahkan ketika Anda merasa baik-baik saja. Jangan menghentikan atau mengubah dosis obat tanpa berkonsultasi dengan dokter. Pemantauan tekanan darah di rumah juga direkomendasikan untuk membantu mengevaluasi efektivitas pengobatan."
+          }
+        ],
+        "topikKesehatanTerkait": ["Penyakit Jantung", "Stroke", "Diabetes"],
+        "penyakitTerkait": ["Gagal Jantung", "Gagal Ginjal", "Aterosklerosis"],
+        "references": [
+          "WHO. Kemenkes RI. American Heart Association"
+        ]
+      }
+    }
   }
 }

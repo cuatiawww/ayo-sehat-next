@@ -56,7 +56,7 @@ export default function TopicCard({
                     transition={{ delay: idx * 0.03 }}
                   >
                     <Link
-                      href={`/topik/${slug}`}
+                      href={`/page/topik-kesehatan/${slug}`}
                       className="w-full text-left text-body-sm sm:text-body-md lg:text-body-lg text-gray-900 py-1.5 px-2 rounded-md hover:bg-brand-primary hover:text-white transition-all duration-200 group/item flex items-center justify-between gap-2"
                       aria-label={`Baca tentang ${topic}`}
                     >
