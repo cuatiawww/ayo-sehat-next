@@ -1,0 +1,84 @@
+{
+  "healthyBehaviors": [
+    {
+      "id": 1,
+      "title": "Konsumsi Makanan Bergizi Seimbang",
+      "description": "Konsumsi buah, sayur, protein tanpa lemak, dan karbohidrat kompleks.",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
+      "slug": "konsumsi-makanan-bergizi-seimbang",
+      "category": "Nutrisi"
+    },
+    {
+      "id": 2,
+      "title": "Minum Air Putih yang Cukup",
+      "description": "Minum 8 gelas atau 2 liter air per hari sesuai kebutuhan dengan aktivitas.",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80",
+      "slug": "minum-air-putih-cukup",
+      "category": "Hidrasi"
+    },
+    {
+      "id": 3,
+      "title": "Batasi Konsumsi Gula, Garam, dan Lemak",
+      "description": "Kudu maksimal 50 gram, garam 5 gram dan lemak tidak lebih 67 gram per hari.",
+      "image": "https://images.unsplash.com/photo-1587248720327-4a0d3c9d1d1e?w=600&q=80",
+      "slug": "batasi-gula-garam-lemak",
+      "category": "Nutrisi"
+    },
+    {
+      "id": 4,
+      "title": "Tidak merokok",
+      "description": "Bukan meningkatkan risiko kanker, penyakit jantung dan paru-paru.",
+      "image": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=600&q=80",
+      "slug": "tidak-merokok",
+      "category": "Pencegahan"
+    },
+    {
+      "id": 5,
+      "title": "Hindari Konsumsi Alkohol",
+      "description": "Alkohol dapat merusak organ tubuh dan memicu berbagai penyakit kronis.",
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80",
+      "slug": "hindari-konsumsi-alkohol",
+      "category": "Pencegahan"
+    },
+    {
+      "id": 6,
+      "title": "Rutin Berolahraga",
+      "description": "Minimal 150 menit aktivitas fisik sedang setiap minggu.",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+      "slug": "rutin-berolahraga",
+      "category": "Aktivitas Fisik"
+    },
+    {
+      "id": 7,
+      "title": "Jaga Berat Badan Ideal",
+      "description": "Indeks Massa Tubuh (IMT) normal berada di antara 18.5-24.9.",
+      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
+      "slug": "jaga-berat-badan-ideal",
+      "category": "Kesehatan"
+    },
+    {
+      "id": 8,
+      "title": "Istirahat cukup",
+      "description": "Tidur 7-8 jam per hari penting pemulihan tubuh, perbaikan tubuh dan kesehatan mental.",
+      "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&q=80",
+      "slug": "istirahat-cukup",
+      "category": "Kesehatan Mental"
+    },
+    {
+      "id": 9,
+      "title": "Cuci Tangan Pakai sabun dan Air Mengalir",
+      "description": "Mengurangi sebelum makan dan setelah ke toilet untuk mencegah infeksi.",
+      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80",
+      "slug": "cuci-tangan-pakai-sabun",
+      "category": "Kebersihan"
+    },
+    {
+      "id": 10,
+      "title": "Menjaga Kebersihan Diri dan Lingkungan",
+      "description": "Mandi teratur, padang kullu, bersihkan rumah untuk mencegah penyakit.",
+      "image": "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&q=80",
+      "slug": "menjaga-kebersihan",
+      "category": "Kebersihan"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "mediaItems": [
+    {
+      "id": 1,
+      "title": "Kaos Polo Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80",
+      "category": "Merchandise",
+      "date": "9 Jul 2025",
+      "downloads": 900,
+      "slug": "kaos-polo-hkn-61"
+    },
+    {
+      "id": 2,
+      "title": "Goody Bag Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1547949003-9792a18a2601?w=600&q=80",
+      "category": "Merchandise",
+      "date": "9 Jul 2025",
+      "downloads": 850,
+      "slug": "goody-bag-hkn-61"
+    },
+    {
+      "id": 3,
+      "title": "Payung Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1534601504352-a36c715846d0?w=600&q=80",
+      "category": "Merchandise",
+      "date": "9 Jul 2025",
+      "downloads": 920,
+      "slug": "payung-hkn-61"
+    },
+    {
+      "id": 4,
+      "title": "Handuk Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1602582426209-670e7c25af64?w=600&q=80",
+      "category": "Merchandise",
+      "date": "9 Jul 2025",
+      "downloads": 600,
+      "slug": "handuk-hkn-61"
+    },
+    {
+      "id": 5,
+      "title": "Kaos Oblong Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&q=80",
+      "category": "Merchandise",
+      "date": "9 Jul 2025",
+      "downloads": 1050,
+      "slug": "kaos-oblong-hkn-61"
+    },
+    {
+      "id": 6,
+      "title": "Umbul-Umbul Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
+      "category": "Banner",
+      "date": "9 Jul 2025",
+      "downloads": 800,
+      "slug": "umbul-umbul-hkn-61"
+    },
+    {
+      "id": 7,
+      "title": "Banner Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
+      "category": "Banner",
+      "date": "9 Jul 2025",
+      "downloads": 680,
+      "slug": "banner-hkn-61"
+    },
+    {
+      "id": 8,
+      "title": "Buku Panduan Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&q=80",
+      "category": "Publikasi",
+      "date": "9 Jul 2025",
+      "downloads": 1200,
+      "slug": "buku-panduan-hkn-61"
+    },
+    {
+      "id": 9,
+      "title": "Logo Hari Kesehatan Nasional (HKN) Ke-61",
+      "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=80",
+      "category": "Logo",
+      "date": "11 Jul 2025",
+      "downloads": 950,
+      "slug": "logo-hkn-61"
+    },
+    {
+      "id": 10,
+      "title": "Buku Pangan Aman Sehat di Masyarakat",
+      "image": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=600&q=80",
+      "category": "Publikasi",
+      "date": "9 Jul 2025",
+      "downloads": 900,
+      "slug": "buku-pangan-aman"
+    }
+  ],
+  "filterCategories": [
+    {
+      "id": "type",
+      "title": "Jenis Media",
+      "options": [
+        { "id": "publikasi", "label": "Publikasi" },
+        { "id": "buku", "label": "Buku" },
+        { "id": "flyer", "label": "Flyer" },
+        { "id": "brosur", "label": "Brosur" },
+        { "id": "laporan", "label": "Laporan" },
+        { "id": "poster", "label": "Poster" }
+      ]
+    },
+    {
+      "id": "format",
+      "title": "Format",
+      "options": [
+        { "id": "infografis", "label": "Infografis" },
+        { "id": "video", "label": "Video ILM" },
+        { "id": "audio", "label": "Audio" },
+        { "id": "spanduk", "label": "Spanduk" },
+        { "id": "umbul", "label": "Umbul-Umbul" },
+        { "id": "banner", "label": "Banner" }
+      ]
+    },
+    {
+      "id": "promo",
+      "title": "Promosi",
+      "options": [
+        { "id": "backdrop", "label": "Backdrop" },
+        { "id": "merchandise", "label": "Merchandise" },
+        { "id": "leaflet", "label": "Leaflet" },
+        { "id": "peraturan", "label": "Peraturan" },
+        { "id": "kalender", "label": "Kalender" },
+        { "id": "materi", "label": "Materi" }
+      ]
+    },
+    {
+      "id": "digital",
+      "title": "Media Digital",
+      "options": [
+        { "id": "publikasi-media", "label": "Media Publikasi" },
+        { "id": "konten-media", "label": "Konten Media" },
+        { "id": "cetak-media", "label": "Media Cetak" },
+        { "id": "audio-visual", "label": "Audio Visual" },
+        { "id": "film-pendek", "label": "Film Pendek" },
+        { "id": "media-sosial", "label": "Media Sosial" }
+      ]
+    }
+  ]
+}

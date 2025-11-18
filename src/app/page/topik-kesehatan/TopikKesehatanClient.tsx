@@ -70,7 +70,7 @@ export default function TopikKesehatanClient() {
   }
 
   // JSON-LD
-  const baseUrl = 'https://staging-ayo-sehat.vercel.app/topik-kesehatan'
+  const baseUrl = 'http://localhost:3000/topik-kesehatan'
   const itemList = Object.entries(healthTopicsData).flatMap(([, topics]) =>
     topics.map((topic, index) => {
       const slug = topic

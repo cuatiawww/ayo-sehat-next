@@ -76,6 +76,7 @@ export default function TopicSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] xl:grid-cols-[980px_auto] gap-6 lg:gap-12 xl:gap-12">
           {/* Left Column - Topik A-Z */}
           <div className="card-brand w-full lg:max-w-[980px]">
+            <div className="px-6 sm:px-8 lg:px-12 xl:px-16 py-8 lg:py-12 xl:py-16 space-y-12 lg:space-y-16">
             <h2 className="text-heading-lg sm:text-display-sm lg:text-display-md text-brand-primary mb-3 sm:mb-5 lg:mb-12">
               Topik A-Z
             </h2>
@@ -86,7 +87,7 @@ export default function TopicSection() {
             </p>
 
             {/* Alphabet Grid */}
-            <div className="grid grid-cols-7 gap-3 sm:gap-4 lg:gap-6 mb-5 sm:mb-6 lg:mb-8 max-w-full lg:max-w-[610px]">
+            <div className="grid grid-cols-7 gap-3 sm:gap-4 lg:gap-6 mb-5 sm:mb-6 lg:mb-8">
               {alphabet.map((letter) => {
                 const hasContent =
                   healthTopicsByLetter[letter]?.length > 0
@@ -114,7 +115,7 @@ export default function TopicSection() {
 
             {/* Topics Dropdown */}
             <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out mb-5 sm:mb-6 lg:mb-8 max-w-full lg:max-w-[806px] ${
+              className={`overflow-hidden transition-all duration-500 ease-in-out mb-5 sm:mb-6 lg:mb-8  ${
                 selectedLetter ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
@@ -172,10 +173,10 @@ export default function TopicSection() {
             </div>
 
             {/* Divider */}
-            <div className="h-px bg-gray-300 mb-5 sm:mb-6 lg:mb-12 max-w-full lg:max-w-[806px]" />
+            <div className="h-px bg-gray-300 mb-5 sm:mb-6 lg:mb-12 " />
 
-            {/* CTA Section - GANTI BANNER */}
-            <div className="relative bg-gradient-to-r from-brand-primary to-brand-primary-dark rounded-xl overflow-hidden max-w-full lg:max-w-[786px] p-8 sm:p-10 lg:p-12 text-center group">
+            {/* CTA Section  */}
+            <div className="relative bg-gradient-to-r from-brand-primary to-brand-primary-dark rounded-xl overflow-hidden  p-8 sm:p-10 lg:p-12 text-center group">
               {/* Decorative gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               
@@ -201,6 +202,7 @@ export default function TopicSection() {
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-white/5 rounded-full blur-2xl" />
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-white/5 rounded-full blur-2xl" />
             </div>
+          </div>
           </div>
 
           {/* Right Column - Calendar & Campaign */}

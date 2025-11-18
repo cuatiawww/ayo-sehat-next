@@ -1,0 +1,76 @@
+{
+  "ongoingEvents": [
+    {
+      "id": 1,
+      "title": "Hari Pangan Sedunia 2025",
+      "description": "Setiap 16 Oktober, dunia merayakan Hari Pangan Sedunia untuk mengingatkan pentingnya pangan bagi kehidupan manusia. Tahun 2025 mengusung tema...",
+      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=80",
+      "date": "2025-09-18",
+      "displayDate": "18 Sep 2025",
+      "slug": "hari-pangan-sedunia-2025",
+      "status": "ongoing"
+    },
+    {
+      "id": 2,
+      "title": "Hari Kesaktian Pancasila 2025",
+      "description": "Momentum untuk memperkuat nilai-nilai Pancasila dalam kehidupan berbangsa dan bernegara. Melalui semangat gotong royong, kita tingkatkan kepedulian dan...",
+      "image": "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=600&q=80",
+      "date": "2025-10-01",
+      "displayDate": "1 Okt 2025",
+      "slug": "hari-kesaktian-pancasila-2025",
+      "status": "ongoing"
+    }
+  ],
+  "upcomingEvents": [
+    {
+      "id": 2,
+      "title": "Hari Kesaktian Pancasila 2025",
+      "description": "Momentum untuk memperkuat nilai-nilai Pancasila dalam kehidupan berbangsa dan bernegara. Melalui semangat gotong royong, kita tingkatkan kepedulian dan...",
+      "image": "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=600&q=80",
+      "date": "2025-10-01",
+      "displayDate": "1 Okt 2025",
+      "slug": "hari-kesaktian-pancasila-2025",
+      "status": "upcoming"
+    },
+    {
+      "id": 3,
+      "title": "Hari Kesehatan Mental Sedunia 2025",
+      "description": "Peringatan ini mengajak seluruh masyarakat untuk peduli terhadap kesehatan mental. Tema tahun ini menekankan pentingnya dukungan sosial, akses layanan...",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+      "date": "2025-10-10",
+      "displayDate": "10 Okt 2025",
+      "slug": "hari-kesehatan-mental-2025",
+      "status": "upcoming"
+    },
+    {
+      "id": 4,
+      "title": "Hari Penglihatan Sedunia 2025",
+      "description": "Peringatan global untuk meningkatkan kesadaran tentang pentingnya menjaga kesehatan mata. Mari cegah kebutaan yang bisa dihindari dengan pemeriksaan mata...",
+      "image": "https://images.unsplash.com/photo-1583083527882-4bee9aba2eea?w=600&q=80",
+      "date": "2025-10-10",
+      "displayDate": "10 Okt 2025",
+      "slug": "hari-penglihatan-sedunia-2025",
+      "status": "upcoming"
+    },
+    {
+      "id": 5,
+      "title": "Hari Cuci Tangan Sedunia 2025",
+      "description": "Gerakan sederhana namun berdampak besar! Mencuci tangan dengan sabun dalam langkah efektif mencegah penyakit menular. Ayo jadikan kebiasaan...",
+      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80",
+      "date": "2025-10-15",
+      "displayDate": "15 Okt 2025",
+      "slug": "hari-cuci-tangan-sedunia-2025",
+      "status": "upcoming"
+    },
+    {
+      "id": 6,
+      "title": "Hari Pangan Sedunia 2025",
+      "description": "Peringatan ini mengingatkan pentingnya akses pangan bagi semua. Dengan pola makan sehat dan berkelanjutan, kita dapat mendukung...",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
+      "date": "2025-10-16",
+      "displayDate": "16 Okt 2025",
+      "slug": "hari-pangan-sedunia-2025-b",
+      "status": "upcoming"
+    }
+  ]
+}

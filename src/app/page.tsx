@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'https://staging-ayo-sehat.vercel.app',
+    url: 'http://localhost:3000',
     siteName: 'Ayo Sehat Kemenkes',
     title: 'Ayo Sehat - Portal Kesehatan Keluarga Indonesia',
     description:
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://staging-ayo-sehat.vercel.app',
+    canonical: 'http://localhost:3000',
   },
   verification: {
-    google: 'your-google-verification-code', // Tambahkan nanti
+    google: 'your-google-verification-code', 
   },
 }
 
@@ -81,7 +81,7 @@ const jsonLd = {
   name: 'Ayo Sehat - Portal Kesehatan Keluarga Indonesia',
   description:
     'Informasi kesehatan terlengkap dan terpercaya untuk semua usia: bayi, anak, remaja, dewasa, lansia. Cegah penyakit, deteksi dini, dan pengobatan tepat.',
-  url: 'https://staging-ayo-sehat.vercel.app/',
+  url: 'http://localhost:3000/',
   inLanguage: 'id-ID',
   breadcrumb: {
     '@type': 'BreadcrumbList',
@@ -90,7 +90,7 @@ const jsonLd = {
         '@type': 'ListItem',
         position: 1,
         name: 'Beranda',
-        item: 'https://staging-ayo-sehat.vercel.app/',
+        item: 'http://localhost:3000/',
       },
     ],
   },
@@ -100,7 +100,7 @@ const jsonLd = {
     url: 'https://kemkes.go.id',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://staging-ayo-sehat.vercel.app/logo.png',
+      url: 'http://localhost:3000/logo.png',
       width: 600,
       height: 60,
       caption: 'Logo Kementerian Kesehatan RI',
@@ -127,7 +127,7 @@ const jsonLd = {
     target: {
       '@type': 'EntryPoint',
       urlTemplate:
-        'https://staging-ayo-sehat.vercel.app/search?q={search_term_string}',
+        'http://localhost:3000/search?q={search_term_string}',
     },
     'query-input': 'required name=search_term_string',
   },
@@ -140,7 +140,7 @@ const organizationJsonLd = {
   name: 'Kementerian Kesehatan Republik Indonesia',
   alternateName: 'Kemenkes RI',
   url: 'https://kemkes.go.id',
-  logo: 'https://staging-ayo-sehat.vercel.app/logo.png',
+  logo: 'http://localhost:3000/logo.png',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+62-21-5201590',
@@ -185,18 +185,17 @@ export default function HomePage() {
         </Suspense>
 
         <Suspense fallback={<div className="h-96 bg-gray-50 animate-pulse" />}>
-          <SearchSection />
-        </Suspense>
+        <SearchSection />
+      </Suspense>
 
-        <Suspense fallback={<div className="h-96 bg-white animate-pulse" />}>
-          <CategorySection />
-        </Suspense>
+      <Suspense fallback={<div className="h-96 bg-white animate-pulse" />}>
+        <CategorySection />
+      </Suspense>
 
         <Suspense fallback={<div className="h-96 bg-white animate-pulse" />}>
           <InfoSection />
         </Suspense>
-
-        {/* TAMBAH TOPIC SECTION */}
+        
         <Suspense fallback={<div className="h-96 bg-gray-50 animate-pulse" />}>
           <TopicSection />
         </Suspense>

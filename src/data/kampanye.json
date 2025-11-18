@@ -1,0 +1,118 @@
+{
+  "priorityCampaigns": [
+    {
+      "id": 1,
+      "title": "Gerakan Anak Bergizi",
+      "description": "Upaya bangsa memperbaiki nutrisi perumbuhan dan perkembangan anak Indonesia",
+      "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80",
+      "slug": "gerakan-anak-bergizi",
+      "category": "prioritas"
+    },
+    {
+      "id": 2,
+      "title": "Mudik Sehat",
+      "description": "Mudik Sehat dengan mengurangi tembak-muduk untuk tetap aman, nyaman, terhindar dari penyakit, bawa obat, tetap makan...",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80",
+      "slug": "mudik-sehat",
+      "category": "prioritas"
+    },
+    {
+      "id": 3,
+      "title": "Gerakan #AnakSehat",
+      "description": "Gerakan nasional dalam edukasi dan peningkatan kesadaran terkait untuk bersatu untuk membuat masalah kuning...",
+      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&q=80",
+      "slug": "gerakan-anak-sehat",
+      "category": "prioritas"
+    },
+    {
+      "id": 4,
+      "title": "Libatkan Sehat",
+      "description": "Kampanye libatkan sehat untuk kecil dan cegat ke ayah dan menjaga kesehatan keluarga...",
+      "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80",
+      "slug": "libatkan-sehat",
+      "category": "prioritas"
+    },
+    {
+      "id": 5,
+      "title": "Program Inovasi Edukasi Kesehatan",
+      "description": "Program Inovasi Edukasi Kesehatan.",
+      "image": "https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=600&q=80",
+      "slug": "program-inovasi-edukasi",
+      "category": "prioritas"
+    },
+    {
+      "id": 6,
+      "title": "Hari Kesehatan Anak Sekolah 2024",
+      "description": "Hari Kesehatan : Anak Sekolah 2024...",
+      "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80",
+      "slug": "hari-kesehatan-anak-sekolah-2024",
+      "category": "prioritas"
+    },
+    {
+      "id": 7,
+      "title": "Ayo Sehat Fest 2024",
+      "description": "Lebih dari 80 komunitas akan Ikut dalam acara seru dan keluarga yang Ikut membawa gaya hidup sehat...",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80",
+      "slug": "ayo-sehat-fest-2024",
+      "category": "prioritas"
+    }
+  ],
+  "healthCampaigns": [
+    {
+      "id": 8,
+      "title": "Cek Kesehatan Gratis (CKG) Sekolah",
+      "description": "Ayo Ikut Cek Kesehatan Gratis (CKG) Sekolah! CKG akan bisa dilakukan pengenalan kesehatan sejak...",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+      "slug": "cek-kesehatan-gratis-sekolah",
+      "category": "kesehatan"
+    },
+    {
+      "id": 9,
+      "title": "Bulan Imunisasi Anak Sekolah (BIAS)",
+      "description": "Melalui program ini upaya pemerintah untuk memastikan kesejahteraan penyakit berbagai ...",
+      "image": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&q=80",
+      "slug": "bulan-imunisasi-anak-sekolah",
+      "category": "kesehatan"
+    },
+    {
+      "id": 10,
+      "title": "Layanan Terawat Indonesia Sehat",
+      "description": "Layanan Terawat, Indonesia Sehat! Memiliki Laman, Memulai Bersama",
+      "image": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80",
+      "slug": "layanan-terawat-indonesia-sehat",
+      "category": "kesehatan"
+    },
+    {
+      "id": 11,
+      "title": "Pekan Imunisasi Dunia",
+      "description": "Sejak dari 2025, peristiwa merentak dalam perbaikan untuk edukasi pun pentingnya imunisasi ...",
+      "image": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&q=80",
+      "slug": "pekan-imunisasi-dunia",
+      "category": "kesehatan"
+    },
+    {
+      "id": 12,
+      "title": "Pekan Imunisasi Dunia",
+      "description": "Sejak dari 2025, Instan untuk Merata dari Langkah penyakit biji lemah paling besar oleh imunisasi kepada Pekan Imunisasi Dunia",
+      "image": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=600&q=80",
+      "slug": "pekan-imunisasi-dunia-2",
+      "category": "kesehatan"
+    },
+    {
+      "id": 13,
+      "title": "Hari Kesehatan Nasional",
+      "description": "Peringsikan Hari Kesehatan-Nasional ke-60 bersama Kita buatlah bersama Sehat Bersama 12 November 2024.",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80",
+      "slug": "hari-kesehatan-nasional",
+      "category": "kesehatan"
+    },
+    {
+      "id": 14,
+      "title": "Hari Gizi Nasional 2024",
+      "description": "Memperingati Hari Gizi Nasional ke-64 mari bersama-sama mencegah masalah gizi sejak dini termasuk...",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
+      "slug": "hari-gizi-nasional-2024",
+      "category": "kesehatan"
+    }
+  ]
+}

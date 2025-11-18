@@ -26,7 +26,7 @@ const menuItems = [
   },
   {
     label: 'Hidup Sehat',
-    href: '/page/hidup-sehat',
+    href: '/page/perilaku-hidup-sehat',
     iconPath: '/assets/heart.svg',
   },
   {
@@ -36,7 +36,7 @@ const menuItems = [
   },
   {
     label: 'Download',
-    href: '/page/download',
+    href: '/page/media-download',
     iconPath: '/assets/paper.svg',
   },
   {

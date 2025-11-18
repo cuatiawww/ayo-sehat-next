@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://staging-ayo-sehat.vercel.app'
+  const baseUrl = 'http://localhost:3000'
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

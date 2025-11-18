@@ -1,0 +1,636 @@
+{
+  "lifecycleStages": [
+    {
+      "id": 1,
+      "name": "Bayi dan Balita",
+      "age": "< 5 Tahun",
+      "slug": "bayi-balita",
+      "image": "../assets/image.png",
+      "alt": "Bayi sehat sedang tersenyum dengan ibu dalam program ASI eksklusif dan imunisasi Kemenkes RI",
+      "width": 800,
+      "height": 600,
+      "color": "#d5dd23"
+    },
+    {
+      "id": 2,
+      "name": "Anak-Anak",
+      "age": "5-9 Tahun",
+      "slug": "anak-anak",
+      "image": "../assets/Image (4).png",
+      "alt": "Anak-anak bermain di taman dengan sehat dan ceria dalam program GERMAS Kementerian Kesehatan",
+      "width": 800,
+      "height": 600,
+      "color": "#d5dd23"
+    },
+    {
+      "id": 3,
+      "name": "Remaja",
+      "age": "10-18 Tahun",
+      "slug": "remaja",
+      "image": "../assets/Image (1).png",
+      "alt": "Remaja berolahraga bersama di lapangan untuk gaya hidup sehat sesuai anjuran Kemenkes RI",
+      "width": 800,
+      "height": 600,
+      "color": "#d5dd23"
+    },
+    {
+      "id": 4,
+      "name": "Dewasa", 
+      "age": "18-59 Tahun",
+      "slug": "dewasa",
+      "image":"../assets/Image (2).png",
+      "alt": "Orang dewasa melakukan pemeriksaan kesehatan rutin di puskesmas - Program deteksi dini Kemenkes",
+      "width": 800,
+      "height": 600,
+      "color": "#d5dd23"
+    },
+    {
+      "id": 5,
+      "name": "Lansia",
+      "age": "60+ Tahun",
+      "slug": "lansia",
+      "image": "../assets/Image (3).png",
+      "alt": "Lansia berjalan pagi dengan senyum sehat dalam program Posyandu Lansia Kemenkes RI",
+      "width": 800,
+      "height": 600,
+      "color": "#d5dd23"
+    }
+  ],
+  "stageContent": {
+    "bayi-balita": {
+      "title": "Bayi dan Balita (< 5 Tahun)",
+      "description": "Bayi dan balita merupakan kelompok usia di bawah 5 tahun yang merupakan periode emas pertumbuhan dan perkembangan. Upaya kesehatan bayi dan balita memiliki tujuan untuk mempersiapkan anak menjadi generasi yang sehat, cerdas, berkualitas, dan produktif serta berperan serta dalam menjaga, mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description2": "Kesehatan bayi merupakan hal yang sangat penting diperhatikan karena pada masa ini bayi mengalami perubahan fisik, psikologis, dan sosial yang signifikan. Kementerian Kesehatan RI menekankan bahwa kesehatan bayi sangat dipengaruhi oleh pola makan yang sehat, aktivitas fisik yang teratur. Bayi yang sehat ditandai dengan berat badan, tinggi badan, dan indeks massa tubuh yang sesuai dengan usianya.",
+      "description3": "Upaya Kesehatan Bayi meliputi perkembangan positif, pencegahan kecelakaan, pencegahan kekerasan, kesehatan reproduksi, pencegahan dan pengendalian penyakit menular dan pencegahan penyakit tidak menular, gizi dan aktifitas fisik; kesehatan Jiwa; dan kesehatan bayi pada situasi krisis.",
+      "description4": "Bayi juga perlu memiliki kesehatan mental dan emosional yang baik, serta kemampuan untuk mengambil keputusan yang baik dan bertanggung jawab atas tindakan mereka. Pola makan yang sehat dan bergizi sangat penting bagi kesehatan bayi. Orangtua dan bayi sendiri perlu memperhatikan asupan makanan yang mengandung karbohidrat, protein, lemak, vitamin, dan mineral yang cukup untuk mendukung pertumbuhan dan perkembangan mereka.",
+      "description5": "Aktivitas fisik yang teratur juga perlu diperhatikan, seperti olahraga ringan atau berjalan-jalan, untuk membantu meningkatkan kesehatan jantung dan paru-paru, serta kekuatan otot dan tulang. Jika ada keluhan atau tanda-tanda tidak sehat pada bayi, segera konsultasikan ke dokter atau fasilitas kesehatan terdekat. Pencegahan dan perawatan yang tepat dapat membantu mempertahankan kesehatan bayi dan mendukung pertumbuhan dan perkembangan yang optimal.",
+      "description6": "Upaya Kesehatan Bayi selain ditujukan kepada bayi juga ditujukan kepada orang tua atau pengasuh untuk mendukung dan mewujudkan bayi yang sehat. Upaya Kesehatan Bayi harus melibatkan peran serta bayi dalam menjaga mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description7": "Dukungan keluarga sangat diperlukan sehingga bayi dapat tumbuh sehat sesuai dengan kemampuan, minat, dan bakatnya; mencegah perkawinan bayi; dan memfasilitasi bayi mendapatkan pelayanan kesehatan sesuai standar. Dukungan Keluarga sebagaimana dimaksud dalam pengasuhan, pemeliharaan, Pendidikan, dan perlindungan kepada bayi.",
+      "articles": [
+        {
+          "id": 5,
+          "title": "Aktivitas Fisik Remaja",
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Remaja aktif berolahraga minimal 60 menit per hari - Anjuran Kemenkes",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 6,
+          "title": "Pola Hidup Sehat",
+          "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Remaja menerapkan pola hidup sehat CERDIK - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        }
+      ]
+    },
+    "dewasa": {
+      "title": "Dewasa (18-59 Tahun)",
+      "description": "Dewasa merupakan kelompok usia 18 tahun sampai sebelum berusia 60 tahun. Upaya kesehatan dewasa memiliki tujuan untuk mempersiapkan dewasa menjadi orang yang sehat, cerdas, berkualitas, dan produktif dan berperan serta dalam menjaga, mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description2": "Kesehatan dewasa merupakan hal yang sangat penting diperhatikan karena pada masa ini dewasa mengalami perubahan fisik, psikologis, dan sosial yang signifikan. Kementerian Kesehatan RI menekankan bahwa kesehatan dewasa sangat dipengaruhi oleh pola makan yang sehat, aktivitas fisik yang teratur. Dewasa yang sehat ditandai dengan berat badan, tinggi badan, dan indeks massa tubuh yang sesuai dengan usianya.",
+      "description3": "Upaya Kesehatan Dewasa meliputi perkembangan positif, pencegahan kecelakaan, pencegahan kekerasan, kesehatan reproduksi, pencegahan dan pengendalian penyakit menular dan pencegahan penyakit tidak menular, gizi dan aktifitas fisik; kesehatan Jiwa; dan kesehatan dewasa pada situasi krisis.",
+      "description4": "Dewasa juga perlu memiliki kesehatan mental dan emosional yang baik, serta kemampuan untuk mengambil keputusan yang baik dan bertanggung jawab atas tindakan mereka. Pola makan yang sehat dan bergizi sangat penting bagi kesehatan dewasa. Orangtua dan dewasa sendiri perlu memperhatikan asupan makanan yang mengandung karbohidrat, protein, lemak, vitamin, dan mineral yang cukup untuk mendukung pertumbuhan dan perkembangan mereka.",
+      "description5": "Aktivitas fisik yang teratur juga perlu diperhatikan, seperti olahraga ringan atau berjalan-jalan, untuk membantu meningkatkan kesehatan jantung dan paru-paru, serta kekuatan otot dan tulang. Jika ada keluhan atau tanda-tanda tidak sehat pada dewasa, segera konsultasikan ke dokter atau fasilitas kesehatan terdekat. Pencegahan dan perawatan yang tepat dapat membantu mempertahankan kesehatan dewasa dan mendukung pertumbuhan dan perkembangan yang optimal.",
+      "description6": "Upaya Kesehatan Dewasa selain ditujukan kepada dewasa juga ditujukan kepada orang tua atau pengasuh untuk mendukung dan mewujudkan dewasa yang sehat. Upaya Kesehatan Dewasa harus melibatkan peran serta dewasa dalam menjaga mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description7": "Dukungan keluarga sangat diperlukan sehingga dewasa dapat tumbuh sehat sesuai dengan kemampuan, minat, dan bakatnya; mencegah perkawinan dewasa; dan memfasilitasi dewasa mendapatkan pelayanan kesehatan sesuai standar. Dukungan Keluarga sebagaimana dimaksud dalam pengasuhan, pemeliharaan, Pendidikan, dan perlindungan kepada dewasa.",
+      "articles": [
+        {
+          "id": 1,
+          "title": "Hipertensi dan Pencegahannya",
+          "description": "Tekanan darah tinggi dapat dicegah dengan pola hidup sehat dan pemeriksaan rutin.",
+          "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80",
+          "alt": "Pemeriksaan tekanan darah untuk deteksi dini hipertensi - Kemenkes RI",
+          "date": "10 Nov 2025",
+          "readTime": "5 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Diabetes Mellitus di Usia Produktif",
+          "description": "Deteksi dini dan pengelolaan diabetes yang tepat mencegah komplikasi jangka panjang.",
+          "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+          "alt": "Cek gula darah rutin untuk pencegahan diabetes mellitus - Kemenkes",
+          "date": "8 Nov 2025",
+          "readTime": "6 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Kesehatan Jantung untuk Dewasa",
+          "description": "Menjaga kesehatan jantung dengan olahraga teratur dan pola makan seimbang sangat penting.",
+          "image": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=800&q=80",
+          "alt": "Jantung sehat dengan pola hidup CERDIK - Program PTM Kemenkes RI",
+          "date": "6 Nov 2025",
+          "readTime": "5 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Manajemen Stres di Tempat Kerja",
+          "description": "Stres kerja yang tidak dikelola dengan baik dapat berdampak pada kesehatan fisik dan mental.",
+          "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+          "alt": "Dewasa kelola stres kerja dengan baik untuk kesehatan mental",
+          "date": "4 Nov 2025",
+          "readTime": "4 menit",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "topics": [
+        {
+          "id": 1,
+          "title": "Hipertensi",
+          "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80",
+          "category": "Dewasa",
+          "alt": "Pencegahan dan pengendalian hipertensi pada usia dewasa - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Diabetes Mellitus",
+          "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+          "category": "Dewasa",
+          "alt": "Deteksi dini dan pengelolaan diabetes mellitus - Program PTM Kemenkes",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Kesehatan Jantung",
+          "image": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=800&q=80",
+          "category": "Dewasa",
+          "alt": "Jaga kesehatan jantung dengan CERDIK - Kementerian Kesehatan RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Kesehatan Mental Dewasa",
+          "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+          "category": "Dewasa",
+          "alt": "Kesehatan mental pekerja dan manajemen stres - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 5,
+          "title": "Kanker dan Deteksi Dini",
+          "image": "https://images.unsplash.com/photo-1579154204845-5e8a6cc07087?auto=format&fit=crop&w=800&q=80",
+          "category": "Dewasa",
+          "alt": "Deteksi dini kanker payudara dan serviks - Program SADANIS Kemenkes",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 6,
+          "title": "Gaya Hidup Sehat",
+          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+          "category": "Dewasa",
+          "alt": "GERMAS - Gerakan Masyarakat Hidup Sehat Kemenkes RI",
+          "width": 800,
+          "height": 600
+        }
+      ]
+    },
+    "anak-anak": {
+      "title": "Anak-Anak (5-9 Tahun)",
+      "description": "Anak-anak merupakan kelompok usia 5 tahun sampai sebelum berusia 10 tahun yang merupakan periode penting dalam pembentukan karakter dan pengembangan kemampuan akademis. Upaya kesehatan anak-anak memiliki tujuan untuk mempersiapkan anak menjadi generasi yang sehat, cerdas, berkualitas, dan produktif serta berperan serta dalam menjaga, mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description2": "Kesehatan anak-anak merupakan hal yang sangat penting diperhatikan karena pada masa ini anak mengalami perubahan fisik, psikologis, dan sosial yang signifikan. Kementerian Kesehatan RI menekankan bahwa kesehatan anak-anak sangat dipengaruhi oleh pola makan yang sehat, aktivitas fisik yang teratur. Anak yang sehat ditandai dengan berat badan, tinggi badan, dan indeks massa tubuh yang sesuai dengan usianya.",
+      "description3": "Upaya Kesehatan Anak-Anak meliputi perkembangan positif, pencegahan kecelakaan, pencegahan kekerasan, pencegahan dan pengendalian penyakit menular dan pencegahan penyakit tidak menular, gizi dan aktifitas fisik, kesehatan Jiwa, dan kesehatan anak pada situasi krisis.",
+      "description4": "Anak-anak juga perlu memiliki kesehatan mental dan emosional yang baik, serta kemampuan untuk mengambil keputusan yang baik dan bertanggung jawab atas tindakan mereka. Pola makan yang sehat dan bergizi sangat penting bagi kesehatan anak. Orangtua dan anak sendiri perlu memperhatikan asupan makanan yang mengandung karbohidrat, protein, lemak, vitamin, dan mineral yang cukup untuk mendukung pertumbuhan dan perkembangan mereka.",
+      "description5": "Aktivitas fisik yang teratur juga perlu diperhatikan, seperti olahraga, bermain di luar ruangan, atau kegiatan ekstrakurikuler, untuk membantu meningkatkan kesehatan jantung dan paru-paru, serta kekuatan otot dan tulang. Jika ada keluhan atau tanda-tanda tidak sehat pada anak, segera konsultasikan ke dokter atau fasilitas kesehatan terdekat. Pencegahan dan perawatan yang tepat dapat membantu mempertahankan kesehatan anak dan mendukung pertumbuhan dan perkembangan yang optimal.",
+      "description6": "Upaya Kesehatan Anak-Anak selain ditujukan kepada anak juga ditujukan kepada orang tua atau pengasuh untuk mendukung dan mewujudkan anak yang sehat. Upaya Kesehatan Anak harus melibatkan peran serta anak dalam menjaga mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description7": "Dukungan keluarga dan sekolah sangat diperlukan sehingga anak dapat tumbuh sehat sesuai dengan kemampuan, minat, dan bakatnya, serta memfasilitasi anak mendapatkan pelayanan kesehatan sesuai standar. Dukungan tersebut meliputi pengasuhan, pemeliharaan, pendidikan, dan perlindungan kepada anak.",
+      "articles": [
+        {
+          "id": 1,
+          "title": "Nutrisi untuk Anak Usia Sekolah",
+          "description": "Kebutuhan nutrisi anak sekolah harus dipenuhi untuk mendukung aktivitas belajar dan bermain.",
+          "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
+          "alt": "Bekal sekolah bergizi seimbang untuk anak usia sekolah - Kemenkes RI",
+          "date": "9 Nov 2025",
+          "readTime": "5 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Pentingnya Aktivitas Fisik Anak",
+          "description": "Bermain dan berolahraga membantu perkembangan fisik dan sosial anak secara optimal.",
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80",
+          "alt": "Anak-anak bermain dan berolahraga di luar ruangan untuk kesehatan fisik",
+          "date": "7 Nov 2025",
+          "readTime": "4 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Menjaga Kesehatan Gigi Anak",
+          "description": "Perawatan gigi sejak dini mencegah masalah kesehatan mulut di masa depan.",
+          "image": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80",
+          "alt": "Anak menyikat gigi dengan benar untuk kesehatan gigi dan mulut",
+          "date": "5 Nov 2025",
+          "readTime": "6 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Imunisasi Lanjutan untuk Anak",
+          "description": "Imunisasi lanjutan penting untuk menjaga kekebalan tubuh anak dari penyakit.",
+          "image": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80",
+          "alt": "Jadwal imunisasi lanjutan untuk anak usia sekolah - Kemenkes RI",
+          "date": "3 Nov 2025",
+          "readTime": "5 menit",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "topics": [
+        {
+          "id": 1,
+          "title": "Obesitas pada Anak",
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80",
+          "category": "Anak-Anak",
+          "alt": "Pencegahan obesitas pada anak dengan pola makan sehat dan aktif bergerak",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Kesehatan Mental Anak",
+          "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80",
+          "category": "Anak-Anak",
+          "alt": "Anak bahagia dan sehat mental bermain bersama teman sebaya",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Pola Tidur Sehat",
+          "image": "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&fit=crop&w=800&q=80",
+          "category": "Anak-Anak",
+          "alt": "Anak tidur nyenyak dengan pola tidur teratur untuk tumbuh kembang optimal",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Kesehatan Gigi Anak",
+          "image": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80",
+          "category": "Anak-Anak",
+          "alt": "Gigi anak sehat dengan kebiasaan menyikat gigi dua kali sehari",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 5,
+          "title": "Aktivitas Fisik Rutin",
+          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+          "category": "Anak-Anak",
+          "alt": "Anak berolahraga rutin minimal 60 menit per hari untuk kesehatan",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 6,
+          "title": "Nutrisi Seimbang",
+          "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
+          "category": "Anak-Anak",
+          "alt": "Piring isi piringku untuk anak dengan gizi seimbang - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        }
+      ]
+    },
+    "remaja": {
+      "title": "Remaja (10-18 Tahun)",
+      "description": "Remaja merupakan kelompok usia 10 tahun sampai sebelum berusia 18 tahun. Upaya kesehatan remaja memiliki tujuan untuk mempersiapkan remaja menjadi orang dewasa yang sehat, cerdas, berkualitas, dan produktif dan berperan serta dalam menjaga, mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description2": "Kesehatan remaja merupakan hal yang sangat penting diperhatikan karena pada masa ini remaja mengalami perubahan fisik, psikologis, dan sosial yang signifikan. Kementerian Kesehatan RI menekankan bahwa kesehatan remaja sangat dipengaruhi oleh pola makan yang sehat, aktivitas fisik yang teratur. Remaja yang sehat ditandai dengan berat badan, tinggi badan, dan indeks massa tubuh yang sesuai dengan usianya.",
+      "description3": "Upaya Kesehatan Remaja meliputi perkembangan positif, pencegahan kecelakaan, pencegahan kekerasan, kesehatan reproduksi, pencegahan dan pengendalian penyakit menular dan pencegahan penyakit tidak menular, gizi dan aktifitas fisik; kesehatan Jiwa; dan kesehatan remaja pada situasi krisis.",
+      "description4": "Remaja juga perlu memiliki kesehatan mental dan emosional yang baik, serta kemampuan untuk mengambil keputusan yang baik dan bertanggung jawab atas tindakan mereka. Pola makan yang sehat dan bergizi sangat penting bagi kesehatan remaja. Orangtua dan remaja sendiri perlu memperhatikan asupan makanan yang mengandung karbohidrat, protein, lemak, vitamin, dan mineral yang cukup untuk mendukung pertumbuhan dan perkembangan mereka.",
+      "description5": "Aktivitas fisik yang teratur juga perlu diperhatikan, seperti olahraga ringan atau berjalan-jalan, untuk membantu meningkatkan kesehatan jantung dan paru-paru, serta kekuatan otot dan tulang. Jika ada keluhan atau tanda-tanda tidak sehat pada remaja, segera konsultasikan ke dokter atau fasilitas kesehatan terdekat. Pencegahan dan perawatan yang tepat dapat membantu mempertahankan kesehatan remaja dan mendukung pertumbuhan dan perkembangan yang optimal.",
+      "description6": "Upaya Kesehatan Remaja selain ditujukan kepada remaja juga ditujukan kepada orang tua atau pengasuh untuk mendukung dan mewujudkan remaja yang sehat. Upaya Kesehatan Remaja harus melibatkan peran serta remaja dalam menjaga mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description7": "Dukungan keluarga sangat diperlukan sehingga remaja dapat tumbuh sehat sesuai dengan kemampuan, minat, dan bakatnya; mencegah perkawinan remaja; dan memfasilitasi remaja mendapatkan pelayanan kesehatan sesuai standar. Dukungan Keluarga sebagaimana dimaksud dalam pengasuhan, pemeliharaan, Pendidikan, dan perlindungan kepada remaja.",
+      "articles": [
+        {
+          "id": 1,
+          "title": "Pentingnya Aktivitas Fisik untuk Remaja",
+          "description": "Aktivitas fisik rutin membantu remaja tumbuh sehat, meningkatkan konsentrasi belajar, dan mengurangi stres.",
+          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+          "alt": "Remaja berolahraga bersama untuk kesehatan fisik dan mental",
+          "date": "5 Nov 2025",
+          "readTime": "4 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Nutrisi Seimbang untuk Pertumbuhan Optimal",
+          "description": "Pola makan bergizi seimbang penting untuk mendukung pertumbuhan dan perkembangan remaja.",
+          "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
+          "alt": "Makanan bergizi seimbang untuk remaja - Isi piringku Kemenkes RI",
+          "date": "3 Nov 2025",
+          "readTime": "5 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Kesehatan Mental Remaja di Era Digital",
+          "description": "Menjaga kesehatan mental remaja dengan manajemen stres dan penggunaan media sosial yang bijak.",
+          "image": "https://images.unsplash.com/photo-1573495627361-d9b87960b12d?auto=format&fit=crop&w=800&q=80",
+          "alt": "Remaja sehat mental dengan keseimbangan digital dan kehidupan nyata",
+          "date": "1 Nov 2025",
+          "readTime": "6 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Imunisasi dan Vaksinasi untuk Remaja",
+          "description": "Vaksinasi penting untuk melindungi remaja dari berbagai penyakit menular yang dapat dicegah.",
+          "image": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80",
+          "alt": "Imunisasi HPV dan vaksinasi lainnya untuk remaja - Program Kemenkes",
+          "date": "28 Okt 2025",
+          "readTime": "3 menit",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "topics": [
+        {
+          "id": 1,
+          "title": "Obesitas Remaja",
+          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Pencegahan obesitas remaja dengan olahraga teratur dan pola makan sehat",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Kesehatan Mental",
+          "image": "https://images.unsplash.com/photo-1573495627361-d9b87960b12d?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Remaja dengan kesehatan mental baik - Program pencegahan depresi Kemenkes",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Kesehatan Reproduksi",
+          "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Edukasi kesehatan reproduksi remaja - Program PKPR Kemenkes RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Gizi Seimbang Remaja",
+          "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Pola makan sehat remaja dengan isi piringku - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 5,
+          "title": "Aktivitas Fisik Remaja",
+          "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Remaja aktif berolahraga minimal 60 menit per hari - Anjuran Kemenkes",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 6,
+          "title": "Pola Hidup Sehat",
+          "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80",
+          "category": "Remaja",
+          "alt": "Remaja menerapkan pola hidup sehat CERDIK - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        }
+      ]
+    },
+    "lansia": {
+      "title": "Lansia (60+ Tahun)",
+      "description": "Lansia merupakan kelompok usia 60 tahun ke atas. Upaya kesehatan lansia memiliki tujuan untuk mempersiapkan lansia menjadi orang yang sehat, cerdas, berkualitas, dan produktif dan berperan serta dalam menjaga, mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description2": "Kesehatan lansia merupakan hal yang sangat penting diperhatikan karena pada masa ini lansia mengalami perubahan fisik, psikologis, dan sosial yang signifikan. Kementerian Kesehatan RI menekankan bahwa kesehatan lansia sangat dipengaruhi oleh pola makan yang sehat, aktivitas fisik yang teratur. Lansia yang sehat ditandai dengan berat badan, tinggi badan, dan indeks massa tubuh yang sesuai dengan usianya.",
+      "description3": "Upaya Kesehatan Lansia meliputi perkembangan positif, pencegahan kecelakaan, pencegahan kekerasan, kesehatan reproduksi, pencegahan dan pengendalian penyakit menular dan pencegahan penyakit tidak menular, gizi dan aktifitas fisik; kesehatan Jiwa; dan kesehatan lansia pada situasi krisis.",
+      "description4": "Lansia juga perlu memiliki kesehatan mental dan emosional yang baik, serta kemampuan untuk mengambil keputusan yang baik dan bertanggung jawab atas tindakan mereka. Pola makan yang sehat dan bergizi sangat penting bagi kesehatan lansia. Orangtua dan lansia sendiri perlu memperhatikan asupan makanan yang mengandung karbohidrat, protein, lemak, vitamin, dan mineral yang cukup untuk mendukung pertumbuhan dan perkembangan mereka.",
+      "description5": "Aktivitas fisik yang teratur juga perlu diperhatikan, seperti olahraga ringan atau berjalan-jalan, untuk membantu meningkatkan kesehatan jantung dan paru-paru, serta kekuatan otot dan tulang. Jika ada keluhan atau tanda-tanda tidak sehat pada lansia, segera konsultasikan ke dokter atau fasilitas kesehatan terdekat. Pencegahan dan perawatan yang tepat dapat membantu mempertahankan kesehatan lansia dan mendukung pertumbuhan dan perkembangan yang optimal.",
+      "description6": "Upaya Kesehatan Lansia selain ditujukan kepada lansia juga ditujukan kepada orang tua atau pengasuh untuk mendukung dan mewujudkan lansia yang sehat. Upaya Kesehatan Lansia harus melibatkan peran serta lansia dalam menjaga mempertahankan dan meningkatkan kesehatan dirinya.",
+      "description7": "Dukungan keluarga sangat diperlukan sehingga lansia dapat tumbuh sehat sesuai dengan kemampuan, minat, dan bakatnya; mencegah perkawinan lansia; dan memfasilitasi lansia mendapatkan pelayanan kesehatan sesuai standar. Dukungan Keluarga sebagaimana dimaksud dalam pengasuhan, pemeliharaan, Pendidikan, dan perlindungan kepada lansia.",
+      "articles": [
+        {
+          "id": 1,
+          "title": "Osteoporosis pada Lansia",
+          "description": "Pencegahan dan penanganan osteoporosis penting untuk mencegah patah tulang pada lansia.",
+          "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
+          "alt": "Lansia aktif bergerak untuk pencegahan osteoporosis - Kemenkes RI",
+          "date": "10 Nov 2025",
+          "readTime": "5 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Demensia dan Pencegahannya",
+          "description": "Stimulasi kognitif dan pola hidup sehat dapat memperlambat penurunan fungsi kognitif.",
+          "image": "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=800&q=80",
+          "alt": "Lansia senam otak untuk mencegah demensia - Program Kemenkes RI",
+          "date": "8 Nov 2025",
+          "readTime": "6 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Nutrisi untuk Lansia Sehat",
+          "description": "Kebutuhan nutrisi lansia berbeda dan perlu disesuaikan dengan kondisi kesehatan.",
+          "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
+          "alt": "Pola makan sehat lansia dengan gizi seimbang - Kemenkes RI",
+          "date": "6 Nov 2025",
+          "readTime": "5 menit",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Aktivitas Fisik untuk Lansia",
+          "description": "Olahraga ringan teratur membantu menjaga mobilitas dan kesehatan jantung lansia.",
+          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+          "alt": "Senam lansia untuk menjaga kesehatan dan mobilitas - Posyandu Lansia",
+          "date": "4 Nov 2025",
+          "readTime": "4 menit",
+          "width": 800,
+          "height": 600
+        }
+      ],
+      "topics": [
+        {
+          "id": 1,
+          "title": "Osteoporosis",
+          "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
+          "category": "Lansia",
+          "alt": "Pencegahan osteoporosis dengan kalsium dan vitamin D - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 2,
+          "title": "Demensia",
+          "image": "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=800&q=80",
+          "category": "Lansia",
+          "alt": "Pencegahan demensia dengan stimulasi kognitif - Program Kemenkes",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 3,
+          "title": "Kesehatan Jantung Lansia",
+          "image": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=800&q=80",
+          "category": "Lansia",
+          "alt": "Pemeriksaan jantung rutin untuk lansia - Posyandu Lansia Kemenkes",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 4,
+          "title": "Senam Lansia",
+          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+          "category": "Lansia",
+          "alt": "Senam lansia rutin untuk kesehatan fisik dan mental - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 5,
+          "title": "Gizi Lansia",
+          "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80",
+          "category": "Lansia",
+          "alt": "Pola makan bergizi untuk lansia sehat - Panduan Kemenkes RI",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "id": 6,
+          "title": "Pencegahan Jatuh",
+          "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
+          "category": "Lansia",
+          "alt": "Lingkungan aman untuk mencegah lansia jatuh - Kemenkes RI",
+          "width": 800,
+          "height": 600
+        }
+      ]
+    }
+  },
+  "publications": [
+    {
+      "id": 1,
+      "title": "Buku Saku Kesehatan",
+      "type": "PDF",
+      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+      "alt": "Buku saku panduan kesehatan lengkap untuk semua usia dari Kementerian Kesehatan RI",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 2,
+      "title": "Panduan Gizi Seimbang",
+      "type": "PDF",
+      "image": "https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?auto=format&fit=crop&w=800&q=80",
+      "alt": "Panduan resmi isi piringku sekali makan untuk gizi seimbang - Kemenkes RI",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 3,
+      "title": "Leaflet Imunisasi",
+      "type": "PDF",
+      "image": "https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=800&q=80",
+      "alt": "Leaflet jadwal imunisasi lengkap anak dari bayi hingga remaja - Kemenkes",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 4,
+      "title": "Poster Cuci Tangan Pakai Sabun",
+      "type": "PDF",
+      "image": "https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=800&q=80",
+      "alt": "Poster 6 langkah cuci tangan pakai sabun untuk cegah penyakit menular",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 5,
+      "title": "Brosur Pencegahan Stunting",
+      "type": "PDF",
+      "image": "https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?auto=format&fit=crop&w=800&q=80",
+      "alt": "Brosur pencegahan stunting sejak 1000 hari pertama kehidupan - Kemenkes",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "diseases": [
+    {
+      "id": 1,
+      "title": "ISPA (Infeksi Saluran Pernapasan Akut)",
+      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80",
+      "alt": "Ilustrasi anak batuk pilek karena ISPA - Pencegahan dengan masker dan cuci tangan",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 2,
+      "title": "Diare",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+      "alt": "Anak minum oralit untuk cegah dehidrasi akibat diare - Kemenkes RI",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 3,
+      "title": "Campak",
+      "image": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80",
+      "alt": "Ruam campak pada kulit anak - Imunisasi MR wajib untuk pencegahan",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 4,
+      "title": "Demam Berdarah Dengue (DBD)",
+      "image": "https://images.unsplash.com/photo-1579154204845-5e8a6cc07087?auto=format&fit=crop&w=800&q=80",
+      "alt": "Nyamuk Aedes aegypti penyebab DBD - Program 3M Plus Kemenkes",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 5,
+      "title": "Tuberkulosis (TBC)",
+      "image": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=800&q=80",
+      "alt": "Pemeriksaan dahak untuk deteksi TBC paru - Program TOSS TBC Kemenkes",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": 6,
+      "title": "Cacar Air",
+      "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=80",
+      "alt": "Ruam cacar air pada kulit anak - Penularan melalui udara dan kontak",
+      "width": 800,
+      "height": 600
+    }
+  ]
+}

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://staging-ayo-sehat.vercel.app/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml
 
 # Disallow admin or private pages (jika ada)
 # Disallow: /admin

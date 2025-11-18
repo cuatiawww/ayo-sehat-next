@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Calendar as CalendarIcon, X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Calendar as X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 
 // Health Observances Data
@@ -174,7 +174,7 @@ export default function CustomCalendar() {
   return (
     <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
       {/* Header */}
-      <div className="bg-gradient-to-r from-brand-primary/10 to-brand-primary/5 px-4 py-3 border-b border-gray-100">
+      {/* <div className="bg-gradient-to-r from-brand-primary/10 to-brand-primary/5 px-4 py-3 border-b border-gray-100">
         <div className="flex items-center gap-3">
           <div className="bg-brand-primary/10 p-2 rounded-lg">
             <CalendarIcon className="w-5 h-5 text-brand-primary" />
@@ -188,7 +188,7 @@ export default function CustomCalendar() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Calendar Body */}
       <div className="p-4">

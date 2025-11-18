@@ -1,0 +1,129 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Panduan Lengkap Manajemen Diabetes",
+      "description": "Pelajari cara mengontrol kadar gula darah dan menjalani hidup sehat dengan diabetes mellitus.",
+      "image": "https://images.unsplash.com/photo-1758691463198-dc663b8a64e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "8 Nov 2025",
+      "category": "Artikel Kesehatan",
+      "stage": "Dewasa (18-59 Tahun)",
+      "readTime": "3 menit",
+      "slug": "panduan-manajemen-diabetes"
+    },
+    {
+      "id": 2,
+      "title": "Pentingnya Pemeriksaan Kesehatan Keluarga",
+      "description": "Mengapa medical check-up rutin penting untuk menjaga kesehatan seluruh anggota keluarga.",
+      "image": "https://images.unsplash.com/photo-1576766125468-a5d48274c5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "7 Nov 2025",
+      "category": "Info Kesehatan",
+      "stage": "Semua Usia",
+      "readTime": "4 menit",
+      "slug": "pemeriksaan-kesehatan-keluarga"
+    },
+    {
+      "id": 3,
+      "title": "Deteksi Dini dan Pencegahan Penyakit",
+      "description": "Kenali gejala awal penyakit dan lakukan tindakan pencegahan yang tepat untuk kesehatan optimal.",
+      "image": "https://images.unsplash.com/photo-1615461066159-fea0960485d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "6 Nov 2025",
+      "category": "Artikel Kesehatan",
+      "stage": "Dewasa (18-59 Tahun)",
+      "readTime": "5 menit",
+      "slug": "deteksi-dini-penyakit"
+    },
+    {
+      "id": 4,
+      "title": "Kesehatan Bayi: Nutrisi dan Perkembangan",
+      "description": "Panduan lengkap nutrisi dan tahap perkembangan bayi untuk tumbuh kembang optimal.",
+      "image": "https://images.unsplash.com/flagged/photo-1551049215-23fd6d2ac3f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "5 Nov 2025",
+      "category": "Info Kesehatan",
+      "stage": "Bayi dan Balita (< 5 Tahun)",
+      "readTime": "6 menit",
+      "slug": "kesehatan-bayi-nutrisi"
+    },
+    {
+      "id": 5,
+      "title": "Diagnosis Medis Modern dan Akurat",
+      "description": "Teknologi terbaru dalam diagnosis medis untuk hasil yang lebih cepat dan tepat.",
+      "image": "https://images.unsplash.com/photo-1512102438733-bfa4ed29aef7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "4 Nov 2025",
+      "category": "Tips Kesehatan",
+      "stage": "Dewasa (18-59 Tahun)",
+      "readTime": "4 menit",
+      "slug": "diagnosis-medis-modern"
+    },
+    {
+      "id": 6,
+      "title": "Konsultasi dengan Dokter Spesialis",
+      "description": "Kapan waktu yang tepat untuk berkonsultasi dengan dokter spesialis dan bagaimana mempersiapkannya.",
+      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "3 Nov 2025",
+      "category": "Artikel Kesehatan",
+      "stage": "Semua Usia",
+      "readTime": "5 menit",
+      "slug": "konsultasi-dokter-spesialis"
+    }
+  ],
+  "downloadItems": [
+    {
+      "id": 1,
+      "title": "Buku Pedoman Kesehatan Ibu dan Anak (KIA)",
+      "description": "Panduan lengkap kesehatan untuk ibu hamil dan balita",
+      "date": "1 Nov 2025",
+      "downloads": 1000,
+      "slug": "pedoman-kia"
+    },
+    {
+      "id": 2,
+      "title": "Leaflet Imunisasi Rutin Lengkap",
+      "description": "Informasi jadwal dan jenis imunisasi untuk anak",
+      "date": "30 Okt 2025",
+      "downloads": 850,
+      "slug": "leaflet-imunisasi"
+    },
+    {
+      "id": 3,
+      "title": "Panduan Pencegahan Penyakit Menular",
+      "description": "Cara mencegah dan menangani penyakit menular",
+      "date": "28 Okt 2025",
+      "downloads": 1200,
+      "slug": "panduan-pencegahan"
+    }
+  ],
+  "topicItems": [
+    {
+      "id": 1,
+      "title": "Asma",
+      "description": "Penyakit pernapasan kronis yang menyebabkan kesulitan bernapas",
+      "image": "https://images.unsplash.com/photo-1676890578150-03af781f60e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "2 Nov 2025",
+      "stages": ["Dewasa", "Remaja", "Anak-Anak"],
+      "views": 1000,
+      "slug": "asma"
+    },
+    {
+      "id": 2,
+      "title": "Anemia",
+      "description": "Kondisi kekurangan sel darah merah atau hemoglobin",
+      "image": "https://images.unsplash.com/photo-1598519308220-094dbe75ff4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "1 Nov 2025",
+      "stages": ["Bayi dan Balita", "Anak-Anak"],
+      "views": 950,
+      "slug": "anemia"
+    }
+  ],
+  "campaignItems": [
+    {
+      "id": 1,
+      "title": "Gerakan Hidup Sehat",
+      "description": "Kampanye nasional untuk meningkatkan kesadaran masyarakat akan pentingnya pola hidup sehat",
+      "image": "https://images.unsplash.com/photo-1746190351529-6d19fa55de45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "5 Nov 2025",
+      "views": 10000,
+      "slug": "gerakan-hidup-sehat"
+    }
+  ]
+}
