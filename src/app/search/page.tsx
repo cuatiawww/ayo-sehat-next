@@ -30,7 +30,7 @@ export async function generateMetadata({
       title: pageTitle,
       description: pageDescription,
       type: 'website',
-      url: `http://localhost:3000/search${searchQuery ? `?q=${searchQuery}` : ''}`,
+      url: `https://staging-ayo-sehat-v2.vercel.app/search${searchQuery ? `?q=${searchQuery}` : ''}`,
       images: [
         {
           url: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',

@@ -59,7 +59,7 @@ export default function SearchResultsClient({
     '@context': 'https://schema.org',
     '@type': 'SearchResultsPage',
     name: `Hasil Pencarian: "${searchQuery}"`,
-    url: `http://localhost:3000/search?q=${encodeURIComponent(searchQuery)}`,
+    url: `https://staging-ayo-sehat-v2.vercel.app/search?q=${encodeURIComponent(searchQuery)}`,
     query: searchQuery,
     numberOfItems: totalResults,
   }

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
       'Ayo Sehat merupakan wadah penyediaan platform terbaik dalam upaya informasi, edukasi kesehatan, serta gaya hidup sehat bagi kami dari Kementerian Kesehatan sebagai bagian dari program pemerintah.',
     type: 'website',
-    url: 'http://localhost:3000/tentang',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/tentang',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/tentang',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/tentang',
   },
   robots: {
     index: true,

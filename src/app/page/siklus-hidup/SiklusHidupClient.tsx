@@ -35,6 +35,19 @@ export default function SiklusHidupClient() {
   const maxTopicIndex = Math.max(0, topics.length - visibleCount)
   const maxDiseaseIndex = Math.max(0, diseases.length - visibleCount)
 
+  // Format related articles untuk RightSidebar
+  const formattedRelatedArticles = ((currentContent as any)?.articles || []).map((article: any) => ({
+    id: article.id,
+    title: article.title,
+    description: article.description || '',
+    image: article.image,
+    lifecycleStage: article.lifecycleStage || [],
+    category: article.category || [],
+    date: article.date || '',
+    readTime: article.readTime || '',
+    slug: article.slug || article.id,
+  }))
+
   // Share handlers
   const handleShare = (platform: string) => {
     const url = encodeURIComponent(window.location.href)
@@ -48,12 +61,20 @@ export default function SiklusHidupClient() {
         window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank')
         break
       case 'whatsapp':
-        window.open(`https://wa.me/?text=${url}`, '_blank')
+        window.open(`https://wa.me/?text=${text} ${url}`, '_blank')
         break
       case 'copy':
         navigator.clipboard.writeText(window.location.href)
-        alert('Link disalin!')
+        alert('Link berhasil disalin!')
         break
+      default:
+        // Default share API
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            url: window.location.href,
+          }).catch((err) => console.log('Error sharing:', err))
+        }
     }
   }
 
@@ -62,8 +83,8 @@ export default function SiklusHidupClient() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: `Siklus Hidup Kesehatan - ${currentStageData?.name}`,
-    description: currentContent?.description,
-    url: 'http://localhost:3000/siklus-hidup',
+    description: (currentContent as any)?.description,
+    url: 'https://staging-ayo-sehat-v2.vercel.app/siklus-hidup',
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -77,7 +98,7 @@ export default function SiklusHidupClient() {
           '@type': 'ListItem',
           position: 2,
           name: 'Siklus Hidup',
-          item: 'http://localhost:3000/siklus-hidup',
+          item: 'https://staging-ayo-sehat-v2.vercel.app/siklus-hidup',
         },
       ],
     },
@@ -98,13 +119,7 @@ export default function SiklusHidupClient() {
 
         {/* Hero Section */}
         <div className="relative">
-          <section className="relative  bg-brand-gradient from-white to-gray-400 pt-8 sm:pt-12 lg:pt-16 pb-16 sm:pb-20 lg:pb-24 overflow-hidden">
-            {/* Decorative Background */}
-            <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute -top-32 -left-32 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-gray-100/40 blur-3xl" />
-              <div className="absolute -top-40 right-0 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] rounded-full bg-gray-100/30 blur-3xl" />
-            </div>
-
+          <section className="relative bg-gradient-to-br from-brand-primary to-brand-primary-dark pt-8 sm:pt-12 lg:pt-16 pb-16 sm:pb-20 lg:pb-24 overflow-hidden">
             <div className="container-custom relative z-10">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -112,10 +127,10 @@ export default function SiklusHidupClient() {
                 transition={{ duration: 0.6 }}
                 className="mb-6 sm:mb-8 lg:mb-10"
               >
-                <h1 className="text-display-sm sm:text-display-md lg:text-display-lg text-brand-primary mb-3 sm:mb-4 font-semibold">
+                <h1 className="text-display-sm sm:text-display-md lg:text-display-lg text-white mb-3 sm:mb-4 font-bold">
                   Siklus Hidup Kesehatan
                 </h1>
-                <p className="text-body-md sm:text-body-lg text-gray-600 max-w-[794px] leading-relaxed">
+                <p className="text-body-md sm:text-body-lg text-white/95 max-w-[794px] leading-relaxed">
                   Pendampingan menjaga kesehatan sepanjang siklus kehidupan,
                   dengan informasi khusus setiap tahap usia
                 </p>
@@ -142,14 +157,14 @@ export default function SiklusHidupClient() {
         </div>
 
         {/* Main Content */}
-        <section className="relative bg-white pt-[140px] sm:pt-[230px] lg:pt-[380px] pb-8 sm:pb-10 lg:pb-12">
+        <section className="relative bg-white pt-[140px] sm:pt-[180px] lg:pt-[280px] pb-8 sm:pb-10 lg:pb-12">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_380px] gap-8 lg:gap-12">
               {/* LEFT: Main Content */}
               <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12">
                 {/* Hero Image */}
                 <div>
-                  <div className="bg-brand-gradient rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 h-[250px] sm:h-[350px] lg:h-[500px] relative mb-6">
+                  <div className="bg-gradient-to-br from-brand-primary to-brand-primary-dark rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 h-[250px] sm:h-[350px] lg:h-[500px] relative mb-6">
                     <img
                       src={currentStageData?.image}
                       alt={currentStageData?.alt}
@@ -183,81 +198,83 @@ export default function SiklusHidupClient() {
                     </div>
                   </div>
 
-                 {/* Tags + Share */}
-<div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-gray-200">
-  {/* Tags */}
-  <div className="flex flex-wrap gap-2">
-    {['Penyakit Pernapasan', 'Kardiovaskular', 'Pencernaan', 'Neoplasma'].map((tag) => (
-      <Badge
-        key={tag}
-        variant="outline"
-        className="border-brand-primary text-brand-primary font-medium cursor-default
-                   hover:bg-brand-primary hover:text-white hover:border-brand-primary 
-                   transition-all duration-300 hover:shadow-md"
-      >
-        {tag}
-      </Badge>
-    ))}
-  </div>
+                  {/* Tags + Share */}
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-gray-200">
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2">
+                      {['Penyakit Pernapasan', 'Kardiovaskular', 'Pencernaan', 'Neoplasma'].map(
+                        (tag) => (
+                          <Badge
+                            key={tag}
+                            variant="outline"
+                            className="border-brand-primary text-brand-primary font-medium cursor-default
+                                     hover:bg-brand-primary hover:text-white hover:border-brand-primary 
+                                     transition-all duration-300 hover:shadow-md"
+                          >
+                            {tag}
+                          </Badge>
+                        )
+                      )}
+                    </div>
 
-  {/* Share Buttons */}
-  <div className="flex gap-2">
-    <button
-      onClick={() => handleShare('share')}
-      className="w-9 h-9 rounded bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
-      aria-label="Bagikan"
-    >
-      <Share2 size={16} />
-    </button>
-    <button
-      onClick={() => handleShare('facebook')}
-      className="w-9 h-9 rounded bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
-      aria-label="Bagikan ke Facebook"
-    >
-      <Facebook size={16} />
-    </button>
-    <button
-      onClick={() => handleShare('twitter')}
-      className="w-9 h-9 rounded bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
-      aria-label="Bagikan ke Twitter"
-    >
-      <Twitter size={16} />
-    </button>
-    <button
-      onClick={() => handleShare('copy')}
-      className="w-9 h-9 rounded bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
-      aria-label="Salin Link"
-    >
-      <Link2 size={16} />
-    </button>
-  </div>
-</div>
+                    {/* Share Buttons */}
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => handleShare('share')}
+                        className="w-9 h-9 rounded-lg bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
+                        aria-label="Bagikan"
+                      >
+                        <Share2 size={16} />
+                      </button>
+                      <button
+                        onClick={() => handleShare('facebook')}
+                        className="w-9 h-9 rounded-lg bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
+                        aria-label="Bagikan ke Facebook"
+                      >
+                        <Facebook size={16} />
+                      </button>
+                      <button
+                        onClick={() => handleShare('twitter')}
+                        className="w-9 h-9 rounded-lg bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
+                        aria-label="Bagikan ke Twitter"
+                      >
+                        <Twitter size={16} />
+                      </button>
+                      <button
+                        onClick={() => handleShare('copy')}
+                        className="w-9 h-9 rounded-lg bg-brand-primary text-white flex items-center justify-center hover:bg-brand-primary-dark transition-colors shadow-sm"
+                        aria-label="Salin Link"
+                      >
+                        <Link2 size={16} />
+                      </button>
+                    </div>
+                  </div>
 
                   {/* Article Content */}
-                  <div className="space-y-4 text-justify">
-                    {currentContent?.description && (
-                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed">
-                        {currentContent.description}
+                  <div className="space-y-4">
+                    {(currentContent as any)?.description && (
+                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed text-justify">
+                        {(currentContent as any).description}
                       </p>
                     )}
-                    {currentContent?.description2 && (
-                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed">
-                        {currentContent.description2}
+                    {(currentContent as any)?.description2 && (
+                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed text-justify">
+                        {(currentContent as any).description2}
                       </p>
                     )}
-                    {currentContent?.description3 && (
-                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed">
-                        {currentContent.description3}
+                    {(currentContent as any)?.description3 && (
+                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed text-justify">
+                        {(currentContent as any).description3}
                       </p>
                     )}
-                    {currentContent?.description4 && (
-                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed">
-                        {currentContent.description4}
+                    {(currentContent as any)?.description4 && (
+                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed text-justify">
+                        {(currentContent as any).description4}
                       </p>
                     )}
-                    {currentContent?.description5 && (
-                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed">
-                        {currentContent.description5}
+                    {(currentContent as any)?.description5 && (
+                      <p className="text-body-md lg:text-body-lg text-gray-700 leading-relaxed text-justify">
+                        {(currentContent as any).description5}
                       </p>
                     )}
                   </div>
@@ -281,29 +298,35 @@ export default function SiklusHidupClient() {
                 )}
 
                 {/* Penyakit Terkait */}
-                <DiseaseCarousel
-                  diseases={diseases}
-                  currentIndex={currentDiseaseIndex}
-                  onPrevious={() =>
-                    setCurrentDiseaseIndex((prev) => Math.max(0, prev - 1))
-                  }
-                  onNext={() =>
-                    setCurrentDiseaseIndex((prev) =>
-                      Math.min(maxDiseaseIndex, prev + 1)
-                    )
-                  }
-                  maxIndex={maxDiseaseIndex}
-                />
+                {diseases.length > 0 && (
+                  <DiseaseCarousel
+                    diseases={diseases}
+                    currentIndex={currentDiseaseIndex}
+                    onPrevious={() =>
+                      setCurrentDiseaseIndex((prev) => Math.max(0, prev - 1))
+                    }
+                    onNext={() =>
+                      setCurrentDiseaseIndex((prev) =>
+                        Math.min(maxDiseaseIndex, prev + 1)
+                      )
+                    }
+                    maxIndex={maxDiseaseIndex}
+                  />
+                )}
               </div>
 
               {/* RIGHT SIDEBAR */}
               <RightSidebar
                 className="lg:sticky lg:top-6 lg:self-start"
                 showCalendar={true}
-                showRelatedArticles={true}
-                showPublications={true}
-                relatedArticles={currentContent?.articles || []}
+                showRelatedArticles={formattedRelatedArticles.length > 0}
+                showPublications={publications.length > 0}
+                relatedArticles={formattedRelatedArticles}
                 publications={publications}
+                viewMoreLinks={{
+                  articles: `/artikel?lifecycle=${selectedStage}`,
+                  publications: '/publikasi',
+                }}
               />
             </div>
           </div>

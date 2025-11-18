@@ -44,7 +44,7 @@ export default function MediaDownloadClient() {
     '@type': 'CollectionPage',
     name: 'Media Download Ayo Sehat',
     description: 'Download berbagai media edukasi kesehatan dari Kemenkes.',
-    url: 'http://localhost:3000/media-download',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/media-download',
   }
 
   return (

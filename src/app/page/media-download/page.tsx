@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       'Download berbagai media edukasi kesehatan dari Kementerian Kesehatan RI.',
     type: 'website',
-    url: 'http://localhost:3000/media-download',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/media-download',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/media-download',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/media-download',
   },
 }
 

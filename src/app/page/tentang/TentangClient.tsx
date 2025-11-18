@@ -12,13 +12,13 @@ export default function TentangClient() {
     name: 'Tentang Ayo Sehat',
     description:
       'Ayo Sehat merupakan wadah penyediaan platform terbaik dalam upaya informasi, edukasi kesehatan, serta gaya hidup sehat bagi kami dari Kementerian Kesehatan sebagai bagian dari program pemerintah.',
-    url: 'http://localhost:3000/tentang',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/tentang',
     mainEntity: {
       '@type': 'Organization',
       name: 'Kementerian Kesehatan Republik Indonesia',
       alternateName: 'Kemenkes RI',
       url: 'http://localhost:3000',
-      logo: 'http://localhost:3000/logo-kemenkes.png',
+      logo: 'https://staging-ayo-sehat-v2.vercel.app/logo-kemenkes.png',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Jl. H.R. Rasuna Said Blok X-5, Kav. 4-9',

@@ -81,7 +81,7 @@ const jsonLd = {
   name: 'Ayo Sehat - Portal Kesehatan Keluarga Indonesia',
   description:
     'Informasi kesehatan terlengkap dan terpercaya untuk semua usia: bayi, anak, remaja, dewasa, lansia. Cegah penyakit, deteksi dini, dan pengobatan tepat.',
-  url: 'http://localhost:3000/',
+  url: 'https://staging-ayo-sehat-v2.vercel.app/',
   inLanguage: 'id-ID',
   breadcrumb: {
     '@type': 'BreadcrumbList',
@@ -90,7 +90,7 @@ const jsonLd = {
         '@type': 'ListItem',
         position: 1,
         name: 'Beranda',
-        item: 'http://localhost:3000/',
+        item: 'https://staging-ayo-sehat-v2.vercel.app/',
       },
     ],
   },
@@ -100,7 +100,7 @@ const jsonLd = {
     url: 'https://kemkes.go.id',
     logo: {
       '@type': 'ImageObject',
-      url: 'http://localhost:3000/logo.png',
+      url: 'https://staging-ayo-sehat-v2.vercel.app/logo.png',
       width: 600,
       height: 60,
       caption: 'Logo Kementerian Kesehatan RI',
@@ -127,7 +127,7 @@ const jsonLd = {
     target: {
       '@type': 'EntryPoint',
       urlTemplate:
-        'http://localhost:3000/search?q={search_term_string}',
+        'https://staging-ayo-sehat-v2.vercel.app/search?q={search_term_string}',
     },
     'query-input': 'required name=search_term_string',
   },
@@ -140,7 +140,7 @@ const organizationJsonLd = {
   name: 'Kementerian Kesehatan Republik Indonesia',
   alternateName: 'Kemenkes RI',
   url: 'https://kemkes.go.id',
-  logo: 'http://localhost:3000/logo.png',
+  logo: 'https://staging-ayo-sehat-v2.vercel.app/logo.png',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+62-21-5201590',

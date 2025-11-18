@@ -33,7 +33,7 @@ export default function KegiatanClient() {
     name: 'Kegiatan Ayo Sehat',
     description:
       'Gerakan nasional yang mengajak seluruh masyarakat Indonesia untuk menerapkan perilaku hidup bersih dan sehat dalam kehidupan sehari-hari.',
-    url: 'http://localhost:3000/kegiatan',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/kegiatan',
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: allEvents.length,

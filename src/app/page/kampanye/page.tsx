@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       'Kampanye dan peringatan hari besar kesehatan dari Kementerian Kesehatan RI.',
     type: 'website',
-    url: 'http://localhost:3000/kampanye',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/kampanye',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&q=80',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/kampanye',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/kampanye',
   },
 }
 

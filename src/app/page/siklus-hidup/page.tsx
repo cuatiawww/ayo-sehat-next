@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Siklus Hidup Kesehatan - Ayo Sehat Kemenkes',
     description:
       'Panduan kesehatan untuk setiap tahap kehidupan dari Kementerian Kesehatan RI.',
-    url: 'http://localhost:3000/siklus-hidup',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/siklus-hidup',
     type: 'website',
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/siklus-hidup',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/siklus-hidup',
   },
 }
 

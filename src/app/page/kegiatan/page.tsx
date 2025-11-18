@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       'Gerakan nasional yang mengajak seluruh masyarakat Indonesia untuk menerapkan perilaku hidup bersih dan sehat.',
     type: 'website',
-    url: 'http://localhost:3000/kegiatan',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/kegiatan',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=80',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/kegiatan',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/kegiatan',
   },
 }
 

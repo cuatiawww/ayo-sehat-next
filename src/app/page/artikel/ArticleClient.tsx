@@ -91,7 +91,7 @@ export default function ArtikelClient() {
     name: 'Artikel Ayo Sehat',
     description:
       'Kumpulan artikel kesehatan terlengkap dari bayi hingga lansia. Temukan tips cegah, deteksi, dan pengobatan berdasarkan tahap kehidupan.',
-    url: 'http://localhost:3000/artikel',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/artikel',
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: articles.length,

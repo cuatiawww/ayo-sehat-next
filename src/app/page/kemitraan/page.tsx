@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       'Bersama untuk Kesehatan Indonesia Lebih Baik. Kolaborasi strategis untuk program kesehatan yang inklusif dan berkelanjutan.',
     type: 'website',
-    url: 'http://localhost:3000/kemitraan',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/kemitraan',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/kemitraan',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/kemitraan',
   },
   robots: {
     index: true,

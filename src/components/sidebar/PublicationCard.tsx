@@ -16,14 +16,14 @@ interface Publication {
 
 interface PublicationCardProps {
   publications: Publication[]
-  onViewDetail?: () => void
+  viewMoreLink?: string
   delay?: number
 }
 
 export default function PublicationCard({
   publications,
-  onViewDetail,
-  delay = 0.5,
+  viewMoreLink = '/publikasi',
+  delay = 0.4,
 }: PublicationCardProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -48,28 +48,27 @@ export default function PublicationCard({
       transition={{ duration: 0.5, delay }}
     >
       {/* Header */}
-      <div className="flex items-start justify-between mb-3 sm:mb-4">
-        <div className="flex-1">
-          <h3 className="text-body-lg sm:text-heading-sm text-gray-900 mb-2 font-semibold">
-            Media Publikasi
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <h3 className="text-body-lg sm:text-heading-sm text-brand-primary font-bold mb-1">
+            Media Publikasi Terkait
           </h3>
-          <p className="text-body-sm text-gray-600">
+          <p className="text-tiny sm:text-caption text-gray-600">
             Informasi terkait dengan media publikasi kesehatan yang tersedia
           </p>
         </div>
-        {onViewDetail && (
-          <button
-            onClick={onViewDetail}
-            className="flex items-center gap-1 text-brand-primary text-caption hover:text-brand-primary-dark transition-colors whitespace-nowrap ml-3"
-          >
-            Lihat Detail →
-          </button>
-        )}
+        <Link
+          href={viewMoreLink}
+          className="flex items-center gap-1 text-body-sm text-brand-primary hover:text-brand-primary-dark transition-colors whitespace-nowrap group"
+        >
+          <span>Lihat Semua</span>
+          <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </Link>
       </div>
 
       {/* Slider */}
-      <div className="relative group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-        <div className="relative h-[300px] sm:h-[320px] overflow-hidden">
+      <div className="relative group/slider bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+        <div className="relative h-[320px] overflow-hidden">
           <div
             className="flex transition-transform duration-700 ease-in-out h-full"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -84,19 +83,19 @@ export default function PublicationCard({
                   className="block h-full group/item"
                 >
                   {/* Image */}
-                  <div className="relative h-[200px] sm:h-[220px] overflow-hidden">
+                  <div className="relative h-[220px] overflow-hidden">
                     <Image
                       src={publication.image}
                       alt={publication.title}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover/item:scale-110"
+                      className="object-cover transition-transform duration-700 group-hover/item:scale-105"
+                      sizes="(max-width: 768px) 100vw, 380px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                   </div>
 
                   {/* Content */}
-                  <div className="p-4 bg-white flex items-center justify-center h-[100px]">
-                    <p className="text-body-sm sm:text-body-md font-medium text-brand-primary text-center line-clamp-3 group-hover/item:text-brand-primary-dark transition-colors">
+                  <div className="p-5 bg-white flex items-center justify-center h-[100px]">
+                    <p className="text-body-sm sm:text-body-md font-semibold text-brand-primary text-center line-clamp-3 group-hover/item:text-brand-primary-dark transition-colors">
                       {publication.title}
                     </p>
                   </div>
@@ -111,14 +110,14 @@ export default function PublicationCard({
           <>
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-[100px] -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all z-10 opacity-0 group-hover:opacity-100"
+              className="absolute left-3 top-[110px] -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-2 shadow-lg transition-all z-10 opacity-0 group-hover/slider:opacity-100"
               aria-label="Publikasi sebelumnya"
             >
               <ChevronLeft className="w-4 h-4 text-gray-700" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-2 top-[100px] -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all z-10 opacity-0 group-hover:opacity-100"
+              className="absolute right-3 top-[110px] -translate-y-1/2 bg-white/95 hover:bg-white rounded-full p-2 shadow-lg transition-all z-10 opacity-0 group-hover/slider:opacity-100"
               aria-label="Publikasi berikutnya"
             >
               <ChevronRight className="w-4 h-4 text-gray-700" />

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       'Panduan lengkap perilaku hidup sehat untuk mencegah penyakit dan meningkatkan kualitas hidup.',
     type: 'website',
-    url: 'http://localhost:3000/perilaku-hidup-sehat',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/perilaku-hidup-sehat',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/perilaku-hidup-sehat',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/perilaku-hidup-sehat',
   },
 }
 

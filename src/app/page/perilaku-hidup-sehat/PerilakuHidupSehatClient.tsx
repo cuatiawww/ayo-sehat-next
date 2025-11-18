@@ -16,7 +16,7 @@ export default function PerilakuHidupSehatClient() {
     name: 'Perilaku Hidup Sehat',
     description:
       'Panduan lengkap perilaku hidup sehat untuk mencegah penyakit dan meningkatkan kualitas hidup.',
-    url: 'http://localhost:3000/perilaku-hidup-sehat',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/perilaku-hidup-sehat',
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: healthyBehaviors.length,
@@ -63,10 +63,7 @@ export default function PerilakuHidupSehatClient() {
                 Perilaku Hidup Sehat
               </h1>
               <p className="text-body-md sm:text-body-lg text-white/90">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Perilaku hidup sehat adalah pola kebiasaan sehari-hari yang kita pilih untuk menjaga dan meningkatkan kualitas kesehatan fisik, mental, dan sosial. Mulai dari makan makanan bergizi seimbang, berolahraga secara teratur minimal 30 menit setiap hari, tidur cukup 7–8 jam per malam, hingga mengelola stres dengan baik dan menghindari rokok serta alkohol berlebihan.
               </p>
             </motion.div>
           </div>

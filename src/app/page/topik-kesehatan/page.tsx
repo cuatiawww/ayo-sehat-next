@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     title: 'Daftar Topik Kesehatan A‑Z – Ayo Sehat Kemenkes',
     description:
       'Jelajahi ratusan topik kesehatan dari A sampai Z. Temukan info pencegahan, pengobatan, dan gaya hidup sehat dari Kemenkes.',
-    url: 'http://localhost:3000/topik-kesehatan',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/topik-kesehatan',
     type: 'website',
     images: [
       {
-        url: 'http://localhost:3000/og-topik-kesehatan.jpg',
+        url: 'https://staging-ayo-sehat-v2.vercel.app/og-topik-kesehatan.jpg',
         width: 1200,
         height: 630,
         alt: 'Daftar Topik Kesehatan A-Z - Ayo Sehat Kemenkes',
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     description:
       'Jelajahi ratusan topik kesehatan dari A sampai Z.',
     images: [
-      'http://localhost:3000/og-topik-kesehatan.jpg',
+      'https://staging-ayo-sehat-v2.vercel.app/og-topik-kesehatan.jpg',
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000/topik-kesehatan',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/topik-kesehatan',
   },
 }
 

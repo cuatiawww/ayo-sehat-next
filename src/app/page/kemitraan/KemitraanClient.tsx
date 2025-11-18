@@ -17,7 +17,7 @@ export default function KemitraanClient() {
     name: 'Kemitraan Kesehatan',
     description:
       'Kolaborasi antara pemerintah, masyarakat, dan mitra strategis untuk meningkatkan program kesehatan yang lebih inklusif, inovatif, dan berkelanjutan.',
-    url: 'http://localhost:3000/kemitraan',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/kemitraan',
     mainEntity: {
       '@type': 'Organization',
       name: 'Kementerian Kesehatan Republik Indonesia',
