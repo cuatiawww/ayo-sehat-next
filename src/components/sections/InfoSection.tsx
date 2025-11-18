@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 const features = [
@@ -12,6 +13,7 @@ const features = [
     position: 'left',
     icon: '/assets/icon1.png',
     alt: 'Ikon larangan merokok',
+    slug: 'tidak-merokok',
   },
   {
     title: 'Hindari Konsumsi Alkohol',
@@ -20,6 +22,7 @@ const features = [
     position: 'left',
     icon: '/assets/icon2.png',
     alt: 'Ikon larangan minum alkohol',
+    slug: 'hindari-konsumsi-alkohol',
   },
   {
     title: 'Batasi Konsumsi Gula, Garam, dan Lemak',
@@ -28,6 +31,7 @@ const features = [
     position: 'left',
     icon: '/assets/icon5.png',
     alt: 'Ikon batasi gula, garam, dan lemak',
+    slug: 'batasi-gula-garam-lemak',
   },
   {
     title: 'Minum Air Putih yang Cukup',
@@ -36,6 +40,7 @@ const features = [
     position: 'right',
     icon: '/assets/icon4.png',
     alt: 'Ikon minum air putih',
+    slug: 'minum-air-putih-cukup',
   },
   {
     title: 'Konsumsi Makanan Bergizi Seimbang',
@@ -44,6 +49,7 @@ const features = [
     position: 'right',
     icon: '/assets/icon6.png',
     alt: 'Ikon makanan sehat',
+    slug: 'konsumsi-makanan-bergizi-seimbang',
   },
   {
     title: 'Rutin Berolahraga',
@@ -51,6 +57,7 @@ const features = [
     position: 'right',
     icon: '/assets/icon3.png',
     alt: 'Ikon olahraga rutin',
+    slug: 'rutin-berolahraga',
   },
 ]
 
@@ -101,9 +108,10 @@ export default function InfoSection() {
         {/* Mobile/Tablet View */}
         <div className="lg:hidden space-y-5 sm:space-y-6">
           {features.map((feature, index) => (
-            <div
+            <Link
               key={index}
-              className={`card-brand transition-all duration-500 ${
+              href={`/page/perilaku-hidup-sehat/${feature.slug}`}
+              className={`card-brand transition-all duration-500 hover:scale-[1.02] hover:shadow-xl cursor-pointer group ${
                 isVisible
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-8'
@@ -113,7 +121,7 @@ export default function InfoSection() {
               }}
             >
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className="bg-brand-primary rounded-xl w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] flex-shrink-0 hover:bg-brand-primary-dark hover:rotate-6 hover:scale-110 transition-all duration-500 flex items-center justify-center overflow-hidden shadow-lg group">
+                <div className="bg-brand-primary rounded-xl w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] flex-shrink-0 group-hover:bg-brand-primary-dark group-hover:rotate-6 group-hover:scale-110 transition-all duration-500 flex items-center justify-center overflow-hidden shadow-lg">
                   <div className="relative w-[45px] h-[45px] sm:w-[55px] sm:h-[55px]">
                     <Image
                       src={feature.icon}
@@ -125,7 +133,7 @@ export default function InfoSection() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-body-md sm:text-body-lg text-brand-primary mb-1 sm:mb-2 transition-colors duration-300 hover:text-brand-primary-dark">
+                  <h3 className="text-body-md sm:text-body-lg text-brand-primary mb-1 sm:mb-2 group-hover:text-brand-primary-dark transition-colors duration-300 font-semibold">
                     {feature.title}
                   </h3>
                   <p className="text-body-sm sm:text-body-md text-gray-600">
@@ -133,7 +141,7 @@ export default function InfoSection() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -212,12 +220,14 @@ export default function InfoSection() {
           }`}
           style={{ transitionDelay: '1.2s' }}
         >
-          <Button
-            size="lg"
-            className="btn-brand-accent px-8 sm:px-12 lg:px-16 h-[55px] sm:h-[70px] lg:h-[80px] text-[16px] sm:text-[20px] lg:text-[25px] rounded-full"
-          >
-            Simak Perilaku Hidup Sehat Lainnya
-          </Button>
+          <Link href="/page/perilaku-hidup-sehat">
+            <Button
+              size="lg"
+              className="btn-brand-accent px-8 sm:px-12 lg:px-16 h-[55px] sm:h-[70px] lg:h-[80px] text-[16px] sm:text-[20px] lg:text-[25px] rounded-full hover:scale-105 transition-transform duration-300"
+            >
+              Simak Perilaku Hidup Sehat Lainnya
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -254,8 +264,9 @@ function FeatureItem({
   const marginOffset = index % 3 === 1 ? '40px' : '0'
 
   return (
-    <div
-      className={`flex items-start gap-4 xl:gap-6 group transition-all duration-800 ${
+    <Link
+      href={`/page/perilaku-hidup-sehat/${feature.slug}`}
+      className={`flex items-start gap-4 xl:gap-6 group transition-all duration-800 cursor-pointer ${
         isVisible
           ? 'opacity-100 translate-x-0'
           : side === 'left'
@@ -272,7 +283,7 @@ function FeatureItem({
       {side === 'left' ? (
         <>
           <div className="text-right max-w-[280px] xl:max-w-[335px] transition-all duration-500 group-hover:-translate-x-2">
-            <h3 className="text-body-lg text-brand-primary mb-2 group-hover:text-brand-primary-dark transition-colors duration-300">
+            <h3 className="text-body-lg font-semibold text-brand-primary mb-2 group-hover:text-brand-primary-dark transition-colors duration-300">
               {feature.title}
             </h3>
             <p className="text-body-md text-gray-600">{feature.description}</p>
@@ -283,14 +294,14 @@ function FeatureItem({
         <>
           <IconBox feature={feature} />
           <div className="max-w-[280px] xl:max-w-[335px] transition-all duration-500 group-hover:translate-x-2">
-            <h3 className="text-body-lg text-brand-primary mb-2 group-hover:text-brand-primary-dark transition-colors duration-300">
+            <h3 className="text-body-lg font-semibold text-brand-primary mb-2 group-hover:text-brand-primary-dark transition-colors duration-300">
               {feature.title}
             </h3>
             <p className="text-body-md text-gray-600">{feature.description}</p>
           </div>
         </>
       )}
-    </div>
+    </Link>
   )
 }
 

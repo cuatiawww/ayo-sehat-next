@@ -45,93 +45,91 @@ export default function TentangClient() {
         <CustomBreadcrumb currentPage="Tentang" />
 
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-brand-primary via-brand-primary to-brand-primary-dark text-white overflow-hidden">
+        <section className="relative bg-gradient-to-br from-brand-primary to-brand-primary-dark text-white py-12 lg:py-16">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center py-12 lg:py-16">
-              {/* Left Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-xl lg:max-w-2xl"
+            >
+              <h1 className="text-heading-lg sm:text-display-sm lg:text-display-md font-bold mb-4">
+                Ayo Sehat
+              </h1>
+              <p className="text-heading-sm sm:text-heading-md lg:text-heading-lg font-medium mb-2">
+                Kementerian Kesehatan
+              </p>
+              <p className="text-heading-sm sm:text-heading-md lg:text-heading-lg font-medium">
+                Republik Indonesia
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* About Content Section - Dengan Image Overlap */}
+        <section className="relative bg-white section-padding-lg">
+          <div className="container-custom">
+            <div className="relative">
               <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="order-2 lg:order-1 z-10"
+                className="max-w-4xl"
               >
-                <h1 className="text-heading-lg sm:text-display-sm lg:text-display-md font-bold mb-4">
-                  Ayo Sehat
-                </h1>
-                <p className="text-heading-sm sm:text-heading-md lg:text-heading-lg font-medium mb-2">
-                  Kementerian Kesehatan
-                </p>
-                <p className="text-heading-sm sm:text-heading-md lg:text-heading-lg font-medium">
-                  Republik Indonesia
-                </p>
+                {/* Tentang Title */}
+                <h2 className="text-heading-md sm:text-heading-lg lg:text-heading-xl font-bold text-brand-primary mb-6">
+                  Tentang
+                </h2>
+
+                {/* Paragraphs */}
+                <div className="space-y-6 text-body-md sm:text-body-lg text-gray-700 leading-relaxed">
+                  <p>
+                    Ayo Sehat merupakan wadah penyediaan platform terbaik dalam
+                    upaya informasi, edukasi kesehatan, serta gaya hidup sehat
+                    bagi kami dari Kementerian Kesehatan sebagai bagian dari
+                    program pemerintah yang bertanggung jawab dan informasi yang
+                    diberikan sejalan dengan program pemerintah.
+                  </p>
+
+                  <p>
+                    @ayosehat-kemkes hadir agar masyarakat dapat mengakses
+                    langsung informasi dan edukasi kesehatan yang dibagikan dari
+                    sumber resmi dan terpercaya.
+                  </p>
+
+                  <p>
+                    Konten yang ada di Ayo Sehat adalah hasil peliharaan dan
+                    kolaborasi dengan lintas program pada setiap pencegahan dan
+                    produktivitas.
+                  </p>
+
+                  <p>
+                    Ayo Sehat juga dapat menjadi wadah berbagi informasi tentang
+                    kegiatan seputar kesehatan yang dilaksanakan program hingga
+                    mitra yang dapat diikuti masyarakat.
+                  </p>
+                </div>
               </motion.div>
 
-              {/* Right Image */}
+              {/* Overlapping Image - Absolute Position */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.7, delay: 0.2 }}
-                className="order-1 lg:order-2"
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className="hidden lg:block absolute right-0 top-[-120px] z-10"
+                style={{ width: '500px' }}
               >
-                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                   <img
                     src={ogImage}
                     alt="Tim Ayo Sehat Kemenkes"
                     className="w-full h-full object-cover"
-                    loading="eager"
                   />
                 </div>
               </motion.div>
             </div>
           </div>
         </section>
-
-        {/* About Content Section */}
-        <section className="bg-white section-padding-lg">
-          <div className="container-custom">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="max-w-4xl"
-            >
-              {/* Tentang Title */}
-              <h2 className="text-heading-md sm:text-heading-lg lg:text-heading-xl font-bold text-brand-primary mb-6">
-                Tentang
-              </h2>
-
-              {/* Paragraphs */}
-              <div className="space-y-6 text-body-md sm:text-body-lg text-gray-700 leading-relaxed">
-                <p>
-                  Ayo Sehat merupakan wadah penyediaan platform terbaik dalam
-                  upaya informasi, edukasi kesehatan, serta gaya hidup sehat
-                  bagi kami dari Kementerian Kesehatan sebagai bagian dari
-                  program pemerintah yang bertanggung jawab dan informasi yang
-                  diberikan sejalan dengan program pemerintah.
-                </p>
-
-                <p>
-                  @ayosehat-kemkes hadir agar masyarakat dapat mengakses
-                  langsung informasi dan edukasi kesehatan yang dibagikan dari
-                  sumber resmi dan terpercaya.
-                </p>
-
-                <p>
-                  Konten yang ada di Ayo Sehat adalah hasil peliharaan dan
-                  kolaborasi dengan lintas program pada setiap pencegahan dan
-                  produktivitas.
-                </p>
-
-                <p>
-                  Ayo Sehat juga dapat menjadi wadah berbagi informasi tentang
-                  kegiatan seputar kesehatan yang dilaksanakan program hingga
-                  mitra yang dapat diikuti masyarakat.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
       </div>
     </>
   )

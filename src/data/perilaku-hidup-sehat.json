@@ -2,83 +2,205 @@
   "healthyBehaviors": [
     {
       "id": 1,
-      "title": "Konsumsi Makanan Bergizi Seimbang",
-      "description": "Konsumsi buah, sayur, protein tanpa lemak, dan karbohidrat kompleks.",
-      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
-      "slug": "konsumsi-makanan-bergizi-seimbang",
-      "category": "Nutrisi"
+      "title": "Tidak Merokok",
+      "description": "Rokok meningkatkan risiko kanker, penyakit jantung, dan paru-paru.",
+      "image": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=800&q=80",
+      "slug": "tidak-merokok",
+      "category": "Pencegahan",
+      "icon": "/assets/icon1.png",
+      "fullContent": {
+        "intro": "Merokok adalah salah satu kebiasaan paling berbahaya yang dapat merusak kesehatan tubuh secara menyeluruh. Asap rokok mengandung lebih dari 7.000 bahan kimia berbahaya, dengan setidaknya 70 di antaranya terbukti menyebabkan kanker.",
+        "whyImportant": "Berhenti merokok adalah salah satu keputusan terbaik yang dapat Anda buat untuk kesehatan. Dalam 20 menit setelah berhenti merokok, detak jantung dan tekanan darah Anda akan mulai kembali normal. Dalam 1 tahun, risiko penyakit jantung koroner berkurang setengahnya dibanding perokok aktif.",
+        "benefits": [
+          "Mengurangi risiko kanker paru-paru hingga 90%",
+          "Menurunkan risiko penyakit jantung dan stroke",
+          "Meningkatkan kapasitas paru-paru dan pernapasan",
+          "Memperbaiki sistem kekebalan tubuh",
+          "Meningkatkan kualitas hidup dan umur harapan hidup"
+        ],
+        "tips": [
+          "Tentukan tanggal pasti untuk berhenti merokok",
+          "Hindari pemicu seperti kopi atau alkohol di awal",
+          "Cari dukungan dari keluarga dan teman",
+          "Gunakan terapi pengganti nikotin jika diperlukan",
+          "Konsultasi dengan dokter untuk program berhenti merokok",
+          "Ganti kebiasaan merokok dengan aktivitas positif"
+        ],
+        "stats": {
+          "deaths": "Lebih dari 8 juta orang meninggal akibat rokok setiap tahun",
+          "cancer": "90% kasus kanker paru-paru disebabkan oleh merokok",
+          "passive": "1,2 juta kematian akibat paparan asap rokok pasif"
+        }
+      }
     },
     {
       "id": 2,
-      "title": "Minum Air Putih yang Cukup",
-      "description": "Minum 8 gelas atau 2 liter air per hari sesuai kebutuhan dengan aktivitas.",
-      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80",
-      "slug": "minum-air-putih-cukup",
-      "category": "Hidrasi"
+      "title": "Hindari Konsumsi Alkohol",
+      "description": "Alkohol dapat merusak organ tubuh dan memicu berbagai penyakit kronis.",
+      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80",
+      "slug": "hindari-konsumsi-alkohol",
+      "category": "Pencegahan",
+      "icon": "/assets/icon2.png",
+      "fullContent": {
+        "intro": "Konsumsi alkohol berlebihan dapat menyebabkan kerusakan serius pada berbagai organ tubuh, terutama hati, otak, jantung, dan sistem pencernaan. Alkohol adalah zat psikoaktif yang dapat menyebabkan ketergantungan dan berbagai masalah kesehatan jangka panjang.",
+        "whyImportant": "Menghindari atau membatasi konsumsi alkohol sangat penting untuk menjaga kesehatan organ vital. Hati yang sehat dapat memproses toksin dengan lebih efisien, dan otak yang tidak terpapar alkohol akan berfungsi lebih optimal.",
+        "benefits": [
+          "Mencegah kerusakan hati (sirosis dan fatty liver)",
+          "Mengurangi risiko kanker mulut, tenggorokan, dan hati",
+          "Meningkatkan fungsi kognitif dan memori",
+          "Menurunkan risiko hipertensi dan penyakit jantung",
+          "Memperbaiki kualitas tidur dan kesehatan mental"
+        ],
+        "tips": [
+          "Jika meminum alkohol, batasi maksimal 1-2 gelas per hari",
+          "Hindari minum alkohol saat perut kosong",
+          "Ganti minuman beralkohol dengan jus atau air infused",
+          "Hindari situasi sosial yang memicu konsumsi alkohol",
+          "Cari bantuan profesional jika mengalami ketergantungan",
+          "Fokus pada aktivitas sehat sebagai pengganti"
+        ],
+        "stats": {
+          "deaths": "3 juta kematian per tahun akibat konsumsi alkohol",
+          "liver": "50% kasus sirosis hati disebabkan alkohol",
+          "accident": "Alkohol berkontribusi pada 30% kecelakaan lalu lintas"
+        }
+      }
     },
     {
       "id": 3,
       "title": "Batasi Konsumsi Gula, Garam, dan Lemak",
-      "description": "Kudu maksimal 50 gram, garam 5 gram dan lemak tidak lebih 67 gram per hari.",
-      "image": "https://images.unsplash.com/photo-1587248720327-4a0d3c9d1d1e?w=600&q=80",
+      "description": "Gula maksimal 50 gram, garam 5 gram, dan lemak total 67 gram per hari.",
+      "image": "https://images.unsplash.com/photo-1587248720327-4a0d3c9d1d1e?w=800&q=80",
       "slug": "batasi-gula-garam-lemak",
-      "category": "Nutrisi"
+      "category": "Nutrisi",
+      "icon": "/assets/icon5.png",
+      "fullContent": {
+        "intro": "Konsumsi gula, garam, dan lemak berlebihan adalah penyebab utama berbagai penyakit tidak menular seperti diabetes, hipertensi, dan penyakit jantung. Kementerian Kesehatan RI merekomendasikan batas konsumsi harian: Gula 50 gram (4 sendok makan), Garam 5 gram (1 sendok teh), dan Lemak 67 gram (5 sendok makan).",
+        "whyImportant": "Membatasi konsumsi ketiga nutrisi ini dapat mencegah obesitas, diabetes tipe 2, hipertensi, dan penyakit kardiovaskular. Diet yang seimbang membantu menjaga berat badan ideal dan metabolisme tubuh yang sehat.",
+        "benefits": [
+          "Mencegah diabetes mellitus tipe 2",
+          "Menurunkan risiko hipertensi dan stroke",
+          "Mengurangi risiko penyakit jantung koroner",
+          "Menjaga berat badan ideal",
+          "Meningkatkan energi dan vitalitas"
+        ],
+        "tips": [
+          "Baca label nutrisi sebelum membeli makanan kemasan",
+          "Kurangi minuman manis dan ganti dengan air putih",
+          "Gunakan rempah-rempah sebagai pengganti garam berlebih",
+          "Pilih metode memasak dengan sedikit minyak (kukus, rebus, panggang)",
+          "Hindari makanan olahan dan fast food",
+          "Perbanyak konsumsi buah dan sayur segar"
+        ],
+        "stats": {
+          "sugar": "Rata-rata orang Indonesia konsumsi 14 sendok gula per hari",
+          "salt": "Konsumsi garam rata-rata 15 gram/hari (3x lipat rekomendasi)",
+          "fat": "70% penyakit jantung terkait konsumsi lemak berlebih"
+        }
+      }
     },
     {
       "id": 4,
-      "title": "Tidak merokok",
-      "description": "Bukan meningkatkan risiko kanker, penyakit jantung dan paru-paru.",
-      "image": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=600&q=80",
-      "slug": "tidak-merokok",
-      "category": "Pencegahan"
+      "title": "Minum Air Putih yang Cukup",
+      "description": "Minimal 8 gelas atau 2 liter per hari, sesuaikan dengan aktivitas.",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
+      "slug": "minum-air-putih-cukup",
+      "category": "Hidrasi",
+      "icon": "/assets/icon4.png",
+      "fullContent": {
+        "intro": "Air adalah komponen terbesar dalam tubuh manusia (60-70% dari berat badan). Air putih berperan penting dalam hampir semua fungsi tubuh, mulai dari mengatur suhu tubuh, melancarkan pencernaan, hingga mengeluarkan racun melalui urin dan keringat.",
+        "whyImportant": "Dehidrasi bahkan dalam tingkat ringan dapat mempengaruhi mood, konsentrasi, dan performa fisik. Minum air putih yang cukup membantu ginjal bekerja optimal dalam menyaring limbah dan racun dari darah.",
+        "benefits": [
+          "Menjaga fungsi ginjal dan mencegah batu ginjal",
+          "Meningkatkan konsentrasi dan fungsi kognitif",
+          "Membantu menjaga berat badan ideal",
+          "Menjaga kelembaban kulit dan mencegah penuaan dini",
+          "Melancarkan sistem pencernaan dan mencegah sembelit",
+          "Meningkatkan performa fisik saat olahraga"
+        ],
+        "tips": [
+          "Mulai hari dengan segelas air putih setelah bangun tidur",
+          "Bawa botol air minum ke mana-mana",
+          "Minum air sebelum merasa haus (haus = sudah dehidrasi)",
+          "Tingkatkan konsumsi saat cuaca panas atau setelah olahraga",
+          "Batasi minuman berkafein dan bergula",
+          "Konsumsi buah-buahan berkadar air tinggi seperti semangka"
+        ],
+        "stats": {
+          "brain": "75% otak terdiri dari air",
+          "dehydration": "Kehilangan 2% cairan tubuh menurunkan performa 25%",
+          "kidney": "Air cukup mengurangi risiko batu ginjal hingga 50%"
+        }
+      }
     },
     {
       "id": 5,
-      "title": "Hindari Konsumsi Alkohol",
-      "description": "Alkohol dapat merusak organ tubuh dan memicu berbagai penyakit kronis.",
-      "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80",
-      "slug": "hindari-konsumsi-alkohol",
-      "category": "Pencegahan"
+      "title": "Konsumsi Makanan Bergizi Seimbang",
+      "description": "Utamakan buah, sayur, protein tanpa lemak, dan karbohidrat kompleks.",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+      "slug": "konsumsi-makanan-bergizi-seimbang",
+      "category": "Nutrisi",
+      "icon": "/assets/icon6.png",
+      "fullContent": {
+        "intro": "Gizi seimbang adalah susunan makanan sehari-hari yang mengandung zat-zat gizi dalam jenis dan jumlah yang sesuai dengan kebutuhan tubuh. Prinsip Isi Piringku dari Kemenkes RI merekomendasikan: 50% buah dan sayur, 35% karbohidrat, dan 15% protein dalam setiap kali makan.",
+        "whyImportant": "Nutrisi yang seimbang memberikan energi, membangun dan memperbaiki sel-sel tubuh, serta menjaga sistem kekebalan tubuh. Kekurangan nutrisi dapat menyebabkan berbagai masalah kesehatan dari anemia hingga osteoporosis.",
+        "benefits": [
+          "Meningkatkan sistem kekebalan tubuh",
+          "Menjaga berat badan ideal dan mencegah obesitas",
+          "Mengurangi risiko penyakit kronis (diabetes, jantung, kanker)",
+          "Meningkatkan energi dan produktivitas",
+          "Memperbaiki kesehatan mental dan mood",
+          "Mendukung pertumbuhan optimal (pada anak)"
+        ],
+        "tips": [
+          "Terapkan prinsip 'Isi Piringku' setiap makan",
+          "Konsumsi 5 porsi buah dan sayur beragam warna setiap hari",
+          "Pilih karbohidrat kompleks (nasi merah, gandum utuh, oat)",
+          "Variasikan sumber protein (ikan, ayam, tahu, tempe, kacang)",
+          "Batasi makanan olahan dan tinggi natrium",
+          "Makan dengan porsi secukupnya, tidak berlebihan"
+        ],
+        "stats": {
+          "stunting": "21,6% balita Indonesia mengalami stunting akibat gizi buruk",
+          "obesity": "35% orang dewasa Indonesia kelebihan berat badan",
+          "fiber": "Hanya 5% orang Indonesia konsumsi serat cukup"
+        }
+      }
     },
     {
       "id": 6,
       "title": "Rutin Berolahraga",
       "description": "Minimal 150 menit aktivitas fisik sedang setiap minggu.",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
       "slug": "rutin-berolahraga",
-      "category": "Aktivitas Fisik"
-    },
-    {
-      "id": 7,
-      "title": "Jaga Berat Badan Ideal",
-      "description": "Indeks Massa Tubuh (IMT) normal berada di antara 18.5-24.9.",
-      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
-      "slug": "jaga-berat-badan-ideal",
-      "category": "Kesehatan"
-    },
-    {
-      "id": 8,
-      "title": "Istirahat cukup",
-      "description": "Tidur 7-8 jam per hari penting pemulihan tubuh, perbaikan tubuh dan kesehatan mental.",
-      "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&q=80",
-      "slug": "istirahat-cukup",
-      "category": "Kesehatan Mental"
-    },
-    {
-      "id": 9,
-      "title": "Cuci Tangan Pakai sabun dan Air Mengalir",
-      "description": "Mengurangi sebelum makan dan setelah ke toilet untuk mencegah infeksi.",
-      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80",
-      "slug": "cuci-tangan-pakai-sabun",
-      "category": "Kebersihan"
-    },
-    {
-      "id": 10,
-      "title": "Menjaga Kebersihan Diri dan Lingkungan",
-      "description": "Mandi teratur, padang kullu, bersihkan rumah untuk mencegah penyakit.",
-      "image": "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&q=80",
-      "slug": "menjaga-kebersihan",
-      "category": "Kebersihan"
+      "category": "Aktivitas Fisik",
+      "icon": "/assets/icon3.png",
+      "fullContent": {
+        "intro": "Aktivitas fisik teratur adalah salah satu pilar utama kesehatan. WHO merekomendasikan minimal 150 menit aktivitas fisik intensitas sedang atau 75 menit aktivitas intensitas tinggi per minggu untuk orang dewasa. Olahraga tidak harus intensif - berjalan kaki, bersepeda, atau berkebun juga termasuk aktivitas fisik yang bermanfaat.",
+        "whyImportant": "Olahraga teratur membantu menjaga berat badan, memperkuat otot dan tulang, meningkatkan kesehatan jantung, dan mengurangi risiko berbagai penyakit kronis. Selain itu, olahraga juga melepaskan endorfin yang meningkatkan mood dan mengurangi stres.",
+        "benefits": [
+          "Menurunkan risiko penyakit jantung hingga 35%",
+          "Mencegah dan mengelola diabetes tipe 2",
+          "Memperkuat tulang dan mencegah osteoporosis",
+          "Meningkatkan kesehatan mental dan mengurangi depresi",
+          "Memperbaiki kualitas tidur",
+          "Meningkatkan fungsi kognitif dan memori"
+        ],
+        "tips": [
+          "Mulai dengan aktivitas ringan 10-15 menit per hari",
+          "Pilih olahraga yang Anda sukai agar konsisten",
+          "Lakukan pemanasan sebelum dan pendinginan setelah olahraga",
+          "Tingkatkan intensitas secara bertahap",
+          "Kombinasikan cardio, kekuatan, dan fleksibilitas",
+          "Ajak teman atau keluarga agar lebih menyenangkan",
+          "Gunakan tangga dibanding lift dalam aktivitas sehari-hari"
+        ],
+        "stats": {
+          "inactive": "27,5% orang dewasa Indonesia kurang aktif bergerak",
+          "heart": "Olahraga teratur kurangi risiko jantung hingga 50%",
+          "life": "Olahraga teratur tambah harapan hidup 3-7 tahun"
+        }
+      }
     }
   ]
 }

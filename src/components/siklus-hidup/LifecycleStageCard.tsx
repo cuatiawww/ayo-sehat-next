@@ -83,32 +83,37 @@ export default function LifecycleStageCard({
           `} />
         </motion.div>
 
-        {/* LABEL KUNING */}
+        {/* LABEL KUNING - RESPONSIVE */}
         <div
           className={`
-            absolute bottom-[-14px] sm:bottom-[-18px] lg:bottom-[-24px] xl:bottom-[-28px]
+            absolute bottom-[-8px] xs:bottom-[-10px] sm:bottom-[-14px] lg:bottom-[-18px] xl:bottom-[-22px]
             left-1/2 -translate-x-1/2 z-40
-            bg-brand-accent rounded-2xl px-5 sm:px-6 lg:px-8 py-3 sm:py-4 lg:py-5
-            min-w-[140px] sm:min-w-[160px] lg:min-w-[200px] xl:min-w-[240px]
+            bg-brand-accent rounded-lg sm:rounded-xl lg:rounded-2xl 
+            px-2 xs:px-3 sm:px-4 lg:px-6 xl:px-8
+            py-1.5 xs:py-2 sm:py-2.5 lg:py-3 xl:py-4
+            min-w-[80px] xs:min-w-[100px] sm:min-w-[130px] lg:min-w-[180px] xl:min-w-[220px]
             flex flex-col items-center justify-center
-            shadow-2xl transition-all duration-400
+            shadow-lg sm:shadow-xl lg:shadow-2xl transition-all duration-400
             ${isSelected 
-              ? 'bg-brand-accent-dark scale-110 shadow-[0_15px_40px_rgba(213,221,35,0.6)] -translate-y-2' 
-              : 'group-hover:bg-brand-accent-dark group-hover:scale-105 group-hover:shadow-[0_12px_30px_rgba(213,221,35,0.5)]'
+              ? 'bg-brand-accent-dark scale-105 sm:scale-110 shadow-[0_8px_25px_rgba(213,221,35,0.6)] sm:shadow-[0_15px_40px_rgba(213,221,35,0.6)] -translate-y-1 sm:-translate-y-2' 
+              : 'group-hover:bg-brand-accent-dark group-hover:scale-[1.02] sm:group-hover:scale-105 group-hover:shadow-[0_8px_20px_rgba(213,221,35,0.5)] sm:group-hover:shadow-[0_12px_30px_rgba(213,221,35,0.5)]'
             }
           `}
         >
+          {/* Name */}
           <p className={`
-            font-bold text-[10px] sm:text-[13px] lg:text-[17px] xl:text-[22px] 
-            leading-none text-gray-900 text-center tracking-tight
-            ${isSelected ? 'drop-shadow-lg' : ''}
+            font-bold text-[8px] xs:text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] xl:text-[18px] 
+            leading-tight text-gray-900 text-center tracking-tight
+            ${isSelected ? 'drop-shadow-md sm:drop-shadow-lg' : ''}
           `}>
             {stage.name}
           </p>
+          
+          {/* Age */}
           <p className={`
-            text-[8px] sm:text-[10px] lg:text-[13px] xl:text-[16px] 
-            font-semibold text-gray-800 mt-1 leading-none
-            ${isSelected ? 'text-gray-900 font-black' : ''}
+            text-[6px] xs:text-[7px] sm:text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] 
+            font-semibold text-gray-800 mt-0.5 sm:mt-1 leading-tight
+            ${isSelected ? 'text-gray-900 font-bold sm:font-black' : ''}
           `}>
             {stage.age}
           </p>
