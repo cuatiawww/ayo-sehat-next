@@ -1,6 +1,6 @@
 {
   "articles": [
-    {
+   {
       "id": 1,
       "title": "Tips Menerapkan Kebiasaan Tidur yang Baik untuk Si Kecil, Begini Caranya!",
       "excerpt": "Tidur yang berkualitas sangat penting bagi tumbuh kembang anak. Pelajari cara membangun rutinitas tidur yang sehat untuk si kecil.",
@@ -10,7 +10,86 @@
       "readTime": "3",
       "category": "Cegah",
       "lifecycleStage": "Bayi dan Balita (<5 tahun)",
-      "slug": "tips-tidur-si-kecil"
+      "slug": "tips-tidur-si-kecil",
+      "author": {
+        "name": "Priana Yatiliya, Bsc (Hons)",
+        "title": "Ahli Kesehatan Anak"
+      },
+      "tags": [
+        "Air Susu Ibu",
+        "Kesehatan Bayi dan Anak",
+        "Pola Tidur",
+        "Tumbuh Kembang"
+      ],
+      "fullContent": {
+        "quote": "Tidur adalah kebutuhan dasar anak yang sama pentingnya dengan gizi dan stimulasi yang baik. Orang tua perlu memahami dan menerapkan kebiasaan tidur yang teratur, anak bisa merasa lebih aman dan nyaman karena mereka sudah mengetahui apa yang akan terjadi berikutnya.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Kualitas tidur memainkan peran krusial dalam proses tumbuh kembang anak. Selama tidur, tubuh anak melepaskan hormon pertumbuhan yang sangat penting untuk perkembangan fisik mereka. Tidak hanya itu, tidur yang cukup juga membantu mengonsolidasikan memori dan pembelajaran yang telah didapat anak sepanjang hari."
+          },
+          {
+            "type": "heading",
+            "content": "Mengapa Tidur Berkualitas Itu Penting?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Saat tidur, tubuh memproduksi hormon pertumbuhan yang diperlukan untuk perkembangan fisik anak. Sel-sel tubuh memperbaiki diri dan sistem kekebalan tubuh menguat. Pada anak-anak yang mengalami gangguan tidur atau kurang tidur, mereka cenderung lebih mudah sakit, mengalami kesulitan berkonsentrasi, dan menunjukkan perilaku yang lebih impulsif."
+          },
+          {
+            "type": "paragraph",
+            "content": "Tidur yang berkualitas juga sangat berpengaruh terhadap perkembangan kognitif anak. Penelitian menunjukkan bahwa anak yang mendapatkan tidur cukup memiliki kemampuan belajar yang lebih baik, daya ingat yang lebih kuat, dan kemampuan memecahkan masalah yang lebih baik dibandingkan anak yang kurang tidur."
+          },
+          {
+            "type": "heading",
+            "content": "1. Waktu Produksi Hormon Pertumbuhan"
+          },
+          {
+            "type": "paragraph",
+            "content": "Hormon pertumbuhan diproduksi dalam jumlah maksimal antara pukul 11 malam hingga 1 dini hari. Periode ini sangat penting untuk pertumbuhan tulang, otot, dan organ-organ vital lainnya. Ketika anak tidak mendapatkan tidur yang cukup, produksi hormon ini terganggu, yang dapat berdampak pada tinggi badan anak dan kesehatan secara keseluruhan."
+          },
+          {
+            "type": "heading",
+            "content": "2. Otak Menyimpan Kenangan dan Menyerap Informasi"
+          },
+          {
+            "type": "paragraph",
+            "content": "Selama fase tidur REM (Rapid Eye Movement), otak aktif memproses pengalaman dan pembelajaran hari itu. Koneksi neural diperkuat, dan informasi yang tidak penting disaring. Proses ini sangat penting untuk pembelajaran dan perkembangan kognitif anak, terutama di usia dini ketika otak mereka berkembang dengan sangat cepat."
+          },
+          {
+            "type": "heading",
+            "content": "3. Mengatur Emosi dan Konsentrasi"
+          },
+          {
+            "type": "paragraph",
+            "content": "Kurang tidur dapat membuat anak menjadi lebih mudah marah, cemas, atau sedih. Tidur yang cukup membantu mengatur neurotransmiter di otak yang bertanggung jawab atas regulasi mood dan emosi. Anak yang kurang tidur sering kali menunjukkan gejala yang mirip dengan ADHD, seperti hiperaktif, impulsif, dan kesulitan mempertahankan perhatian."
+          },
+          {
+            "type": "heading",
+            "content": "Tips Praktis Membangun Rutinitas Tidur"
+          },
+          {
+            "type": "paragraph",
+            "content": "Untuk membantu anak tidur dengan baik, orang tua perlu menciptakan rutinitas tidur yang konsisten. Mulai dengan menetapkan waktu tidur yang sama setiap malam, ciptakan suasana kamar yang nyaman dan tenang, hindari layar gadget minimal 1 jam sebelum tidur, dan lakukan aktivitas yang menenangkan seperti membaca buku atau mendengarkan musik lembut."
+          }
+        ],
+        "relatedTopics": [
+          "Batuk Rejan",
+          "Pneumonia",
+          "Influenza"
+        ],
+        "relatedDiseases": [
+          "Insomnia Anak",
+          "Sleep Apnea",
+          "Gangguan Tidur"
+        ],
+        "references": [
+          "Panduan Tidur Sehat untuk Anak - WHO",
+          "Kesehatan Bayi dan Anak - Kemenkes RI",
+          "Pentingnya Tidur Berkualitas - IDAI",
+          "Cara Membuat Jadwal Tidur - Sleep Foundation"
+        ]
+      }
     },
     {
       "id": 2,
@@ -22,19 +101,158 @@
       "readTime": "5",
       "category": "Cegah",
       "lifecycleStage": "Dewasa (19-59 tahun)",
-      "slug": "program-keluarga-berencana"
+      "slug": "program-keluarga-berencana",
+      "author": {
+        "name": "Dr. Siti Fadilah, SpOG",
+        "title": "Spesialis Obstetri dan Ginekologi"
+      },
+      "tags": [
+        "Keluarga Berencana",
+        "KB",
+        "Kesehatan Reproduksi",
+        "Generasi Emas"
+      ],
+      "fullContent": {
+        "quote": "Program Keluarga Berencana bukan hanya tentang mengatur jumlah anak, tetapi juga tentang memastikan setiap anak yang lahir mendapatkan perhatian, kasih sayang, dan pendidikan yang optimal untuk menjadi generasi emas Indonesia.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Program Keluarga Berencana (KB) merupakan salah satu program prioritas pemerintah Indonesia dalam mewujudkan Generasi Emas 2045. Program ini tidak hanya fokus pada pengendalian jumlah penduduk, tetapi juga pada peningkatan kualitas hidup keluarga Indonesia."
+          },
+          {
+            "type": "heading",
+            "content": "Mengapa KB Penting untuk Generasi Emas?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Keluarga berencana memberikan kesempatan kepada pasangan untuk merencanakan kehamilan dengan lebih baik, sehingga mereka dapat mempersiapkan diri secara fisik, mental, dan finansial. Dengan jarak kelahiran yang ideal (minimal 2-3 tahun), kesehatan ibu dan anak dapat terjaga dengan lebih baik."
+          },
+          {
+            "type": "paragraph",
+            "content": "Penelitian menunjukkan bahwa anak dari keluarga berencana cenderung memiliki akses pendidikan yang lebih baik, nutrisi yang lebih terjaga, dan kesempatan untuk mengembangkan potensi mereka secara maksimal. Ini adalah fondasi penting untuk mencetak generasi emas yang berkualitas."
+          },
+          {
+            "type": "heading",
+            "content": "Metode KB Modern yang Tersedia"
+          },
+          {
+            "type": "paragraph",
+            "content": "Saat ini tersedia berbagai metode KB yang dapat dipilih sesuai dengan kondisi dan kebutuhan masing-masing pasangan. Metode jangka panjang seperti IUD, implan, dan sterilisasi menawarkan efektivitas tinggi dengan kepraktisan penggunaan. Sementara metode jangka pendek seperti pil KB, suntik, dan kondom memberikan fleksibilitas lebih bagi pasangan yang masih ingin memiliki anak di masa depan."
+          },
+          {
+            "type": "heading",
+            "content": "Peran Penting Konseling KB"
+          },
+          {
+            "type": "paragraph",
+            "content": "Konseling KB membantu pasangan memahami berbagai pilihan metode kontrasepsi, efek samping yang mungkin terjadi, dan cara penggunaan yang benar. Tenaga kesehatan terlatih dapat memberikan informasi yang akurat dan membantu pasangan membuat keputusan yang tepat sesuai kondisi kesehatan dan rencana keluarga mereka."
+          },
+          {
+            "type": "paragraph",
+            "content": "Dengan program KB yang baik, Indonesia dapat mengoptimalkan bonus demografi dan memastikan setiap anak yang lahir adalah anak yang diinginkan, direncanakan, dan mendapatkan perawatan terbaik untuk menjadi generasi emas di tahun 2045."
+          }
+        ],
+        "relatedTopics": [
+          "Kesehatan Reproduksi",
+          "Kontrasepsi",
+          "Perencanaan Kehamilan"
+        ],
+        "relatedDiseases": [
+          "Kanker Serviks",
+          "Infeksi Menular Seksual",
+          "Endometriosis"
+        ],
+        "references": [
+          "Panduan KB Nasional - BKKBN",
+          "Kesehatan Reproduksi - Kemenkes RI",
+          "Metode Kontrasepsi Modern - WHO",
+          "Generasi Emas 2045 - Bappenas"
+        ]
+      }
     },
     {
       "id": 3,
-      "title": "Melihat Fakta Antara Kontrasepsi dan Kanker Payudara",
-      "excerpt": "Memahami hubungan antara penggunaan kontrasepsi hormonal dan risiko kanker payudara berdasarkan penelitian terkini.",
-      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "date": "9 Sep 2025",
-      "views": "1234",
-      "readTime": "4",
-      "category": "Cegah",
+      "title": "Deteksi Dini Kanker Serviks: Pentingnya Pap Smear dan IVA Test",
+      "excerpt": "Pemeriksaan rutin dapat mendeteksi kanker serviks sejak dini dan meningkatkan peluang kesembuhan.",
+      "image": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "date": "27 Agu 2025",
+      "views": "1876",
+      "readTime": "5",
+      "category": "Deteksi",
       "lifecycleStage": "Dewasa (19-59 tahun)",
-      "slug": "kontrasepsi-kanker-payudara"
+      "slug": "deteksi-dini-kanker-serviks",
+      "author": {
+        "name": "Dr. Amelia Kartini, SpOG",
+        "title": "Spesialis Onkologi Ginekologi"
+      },
+      "tags": [
+        "Kanker Serviks",
+        "Pap Smear",
+        "IVA Test",
+        "Deteksi Dini",
+        "HPV"
+      ],
+      "fullContent": {
+        "quote": "Kanker serviks adalah salah satu jenis kanker yang dapat dicegah dan dideteksi sejak dini. Dengan pemeriksaan rutin, kita dapat menyelamatkan ribuan nyawa setiap tahunnya.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Kanker serviks merupakan salah satu jenis kanker yang paling banyak menyerang wanita di Indonesia. Meskipun demikian, kanker serviks adalah jenis kanker yang dapat dicegah dan memiliki tingkat kesembuhan yang tinggi jika dideteksi pada stadium awal."
+          },
+          {
+            "type": "heading",
+            "content": "Mengapa Deteksi Dini Penting?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Kanker serviks berkembang secara bertahap, biasanya dimulai dari perubahan sel abnormal (pra-kanker) yang dapat berlangsung selama bertahun-tahun sebelum menjadi kanker. Pada tahap awal, kanker serviks sering kali tidak menimbulkan gejala yang jelas. Oleh karena itu, pemeriksaan rutin sangat penting untuk mendeteksi perubahan sel abnormal sebelum berkembang menjadi kanker."
+          },
+          {
+            "type": "heading",
+            "content": "Metode Deteksi Dini: Pap Smear"
+          },
+          {
+            "type": "paragraph",
+            "content": "Pap smear adalah metode pemeriksaan yang mengambil sampel sel dari leher rahim untuk diperiksa di laboratorium. Pemeriksaan ini dapat mendeteksi sel abnormal jauh sebelum berubah menjadi kanker. Wanita yang aktif secara seksual direkomendasikan untuk melakukan pap smear setiap 3 tahun untuk usia 21-65 tahun."
+          },
+          {
+            "type": "heading",
+            "content": "Metode Deteksi Dini: IVA Test"
+          },
+          {
+            "type": "paragraph",
+            "content": "IVA (Inspeksi Visual dengan Asam Asetat) adalah metode pemeriksaan yang lebih sederhana dan dapat dilakukan di fasilitas kesehatan primer. Hasil pemeriksaan dapat diketahui langsung saat itu juga. IVA test sangat cocok untuk program skrining massal karena prosedurnya sederhana, murah, dan efektif."
+          },
+          {
+            "type": "heading",
+            "content": "Vaksinasi HPV sebagai Pencegahan"
+          },
+          {
+            "type": "paragraph",
+            "content": "Human Papillomavirus (HPV) adalah penyebab utama kanker serviks. Vaksinasi HPV dapat mencegah infeksi virus ini dan sangat direkomendasikan untuk remaja putri usia 9-14 tahun. Vaksinasi ini memberikan perlindungan optimal jika diberikan sebelum seseorang aktif secara seksual."
+          },
+          {
+            "type": "paragraph",
+            "content": "Kombinasi antara vaksinasi HPV, pemeriksaan rutin (pap smear atau IVA), dan gaya hidup sehat dapat secara signifikan mengurangi risiko kanker serviks. Deteksi dini adalah kunci keberhasilan pengobatan, dengan tingkat kesembuhan mencapai 90% jika dideteksi pada stadium awal."
+          }
+        ],
+        "relatedTopics": [
+          "Vaksinasi HPV",
+          "Kesehatan Reproduksi",
+          "Pencegahan Kanker"
+        ],
+        "relatedDiseases": [
+          "Kanker Ovarium",
+          "Kanker Endometrium",
+          "Infeksi HPV"
+        ],
+        "references": [
+          "Panduan Deteksi Dini Kanker Serviks - Kemenkes RI",
+          "Screening for Cervical Cancer - WHO",
+          "HPV Vaccination - IDAI",
+          "Pap Smear Guidelines - POGI"
+        ]
+      }
     },
     {
       "id": 4,

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 
 import { useState } from 'react'
@@ -6,62 +7,13 @@ import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-
-const articles = [
-  {
-    image:
-      'https://images.unsplash.com/photo-1631507623121-eaaba8d4e7dc?w=1080&q=80',
-    category: 'Kesehatan Umum',
-    title:
-      'Tips Menjaga Kesehatan di Musim Hujan: Hindari Penyakit Flu dan Demam',
-    date: '5 Nov 2024',
-    readTime: '5 Menit',
-    slug: 'tips-kesehatan-musim-hujan',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1584362917165-526a968579e8?w=1080&q=80',
-    category: 'Nutrisi',
-    title:
-      'Panduan Lengkap Vitamin dan Suplemen untuk Meningkatkan Imunitas Tubuh',
-    date: '3 Nov 2024',
-    readTime: '4 Menit',
-    slug: 'panduan-vitamin-suplemen',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1080&q=80',
-    category: 'Vaksinasi',
-    title:
-      'Pentingnya Vaksinasi untuk Anak: Jadwal dan Jenis Vaksin yang Wajib',
-    date: '1 Nov 2024',
-    readTime: '6 Menit',
-    slug: 'vaksinasi-anak',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1080&q=80',
-    category: 'Konsultasi Dokter',
-    title:
-      'Kapan Harus ke Dokter? Kenali Gejala yang Memerlukan Perhatian Medis',
-    date: '30 Okt 2024',
-    readTime: '4 Menit',
-    slug: 'kapan-ke-dokter',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1080&q=80',
-    category: 'Pemeriksaan Kesehatan',
-    title:
-      'Medical Check Up Rutin: Mengapa Penting dan Apa Saja yang Diperiksa?',
-    date: '28 Okt 2024',
-    readTime: '7 Menit',
-    slug: 'medical-check-up',
-  },
-]
+import data from '@/data/artikel.json'
 
 export default function ArticleSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  // Use real articles from data
+  const articles = data.articles.slice(0, 5)
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % articles.length)
@@ -85,7 +37,11 @@ export default function ArticleSection() {
           <h2 className="text-heading-lg sm:text-display-sm lg:text-display-md text-brand-primary">
             Artikel Terbaru
           </h2>
-          <Button variant="outline" asChild className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white">
+          <Button
+            variant="outline"
+            asChild
+            className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white"
+          >
             <Link href="/page/artikel">Lihat Artikel Lainnya</Link>
           </Button>
         </div>
@@ -98,14 +54,14 @@ export default function ArticleSection() {
           {/* Desktop Grid */}
           <div className="hidden lg:grid grid-cols-3 gap-6 xl:gap-8">
             {visibleArticles.map((article, index) => (
-              <ArticleCard key={index} article={article} />
+              <ArticleCard key={article.id} article={article} />
             ))}
           </div>
 
           {/* Tablet Grid */}
           <div className="hidden md:grid lg:hidden grid-cols-2 gap-6 relative">
             {visibleArticles.slice(0, 2).map((article, index) => (
-              <ArticleCard key={index} article={article} />
+              <ArticleCard key={article.id} article={article} />
             ))}
 
             {/* Tablet Navigation */}
@@ -133,7 +89,7 @@ export default function ArticleSection() {
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
                 {articles.map((article, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-2">
+                  <div key={article.id} className="w-full flex-shrink-0 px-2">
                     <ArticleCard article={article} />
                   </div>
                 ))}
@@ -197,10 +153,14 @@ export default function ArticleSection() {
 }
 
 // Article Card Component
-function ArticleCard({ article }: { article: (typeof articles)[0] }) {
+function ArticleCard({
+  article,
+}: {
+  article: (typeof data.articles)[0]
+}) {
   return (
     <Link
-      href={`/artikel/${article.slug}`}
+      href={`/page/artikel/${article.slug}`}
       className="group cursor-pointer w-full block"
     >
       <div className="relative w-full">
@@ -235,7 +195,7 @@ function ArticleCard({ article }: { article: (typeof articles)[0] }) {
             <div className="flex items-center gap-1.5 sm:gap-2 text-caption text-gray-600">
               <span>{article.date}</span>
               <div className="w-1 h-1 rounded-full bg-gray-600" />
-              <span>Waktu Baca {article.readTime}</span>
+              <span>Waktu Baca {article.readTime} Menit</span>
             </div>
           </div>
         </div>

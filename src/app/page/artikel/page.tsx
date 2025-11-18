@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       'Pendekatan menjaga kesehatan sejak lahir hingga lanjut usia.',
     type: 'website',
-    url: 'https://staging-ayo-sehat-v2.vercel.app/artikel',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/page/artikel',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200',

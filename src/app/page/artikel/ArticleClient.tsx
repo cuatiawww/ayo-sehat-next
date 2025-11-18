@@ -15,11 +15,11 @@ const { articles, popularTopics } = data
 
 const lifecycleStages = [
   'Semua Usia',
-  'Bayi dan Balita',
-  'Anak-Anak',
-  'Remaja',
-  'Dewasa',
-  'Lansia',
+  'Bayi dan Balita (<5 tahun)',
+  'Anak (5-9 tahun)',
+  'Remaja (10-18 tahun)',
+  'Dewasa (19-59 tahun)',
+  'Lansia (>60 tahun)',
 ]
 const sortOptions = ['Terbaru', 'Terlama', 'Paling Populer']
 
@@ -38,7 +38,7 @@ export default function ArtikelClient() {
       if (activeTab !== 'Semua' && article.category !== activeTab) return false
       if (
         selectedLifecycle !== 'Semua Usia' &&
-        !article.lifecycleStage.includes(selectedLifecycle)
+        article.lifecycleStage !== selectedLifecycle
       )
         return false
       if (
@@ -91,7 +91,7 @@ export default function ArtikelClient() {
     name: 'Artikel Ayo Sehat',
     description:
       'Kumpulan artikel kesehatan terlengkap dari bayi hingga lansia. Temukan tips cegah, deteksi, dan pengobatan berdasarkan tahap kehidupan.',
-    url: 'https://staging-ayo-sehat-v2.vercel.app/artikel',
+    url: 'https://staging-ayo-sehat-v2.vercel.app/page/artikel',
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: articles.length,
