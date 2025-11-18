@@ -58,7 +58,7 @@ export default function MediaDownloadClient() {
         <CustomBreadcrumb currentPage="Media Download" />
 
         {/* HERO */}
-        <section className="relative bg-brand-gradient py-12 sm:py-16 lg:py-20">
+        <section className="relative bg-gradient-to-br from-brand-primary to-brand-primary-dark py-12 sm:py-16 lg:py-20">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -84,53 +84,53 @@ export default function MediaDownloadClient() {
         {/* MAIN CONTENT */}
         <section className="section-padding-lg bg-white">
           <div className="container-custom">
-            {/* Search + Filter*/}
-<div className="mb-10 bg-white border-2 border-brand-primary/20 rounded-3xl shadow-sm overflow-hidden">
-  {/* Search Bar */}
-  <div className="p-6 pb-4">
-    <div className="relative max-w-2xl mx-auto">
-      <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-brand-primary/70" />
-      <input
-        type="text"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        placeholder="Masukkan Kata Kunci"
-        className="w-full h-14 pl-14 pr-6 text-body-lg rounded-2xl border-2 border-brand-primary/30 
-                   focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-primary/10 
-                   transition-all placeholder:text-gray-400 font-medium bg-white"
-      />
-      {/* Tombol search dekoratif di kanan */}
-      {/* <div className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-brand-primary rounded-xl 
-                      flex items-center justify-center text-white shadow-md">
-        <Search className="w-5 h-5" />
-      </div> */}
-    </div>
-  </div>
+            {/* Search + Filter Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="mb-12 bg-white rounded-3xl border-2 border-brand-primary/20 shadow-md overflow-hidden"
+            >
+              {/* Search Bar */}
+              <div className="p-6 sm:p-8">
+                <div className="relative max-w-3xl mx-auto">
+                  <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-primary" />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Masukkan Kata Kunci"
+                    className="w-full h-14 pl-14 pr-6 text-body-md rounded-xl border-2 border-gray-200 
+                             focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-primary/10 
+                             transition-all placeholder:text-gray-400 bg-white"
+                  />
+                </div>
+              </div>
 
-  {/* Filter Checkboxes – Grid rapi di dalam card */}
-  <div className="px-6 pb-8 pt-2 bg-gray-50/50 border-t border-brand-primary/10">
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-8 gap-y-5">
-      {filterCategories.map((category) => (
-        <MediaFilterCheckbox
-          key={category.id}
-          title={category.title}
-          options={category.options}
-          selectedFilters={selectedFilters}
-          onFilterChange={setSelectedFilters}
-        />
-      ))}
-    </div>
-  </div>
-</div>
+              {/* Filter Checkboxes */}
+              <div className="px-6 sm:px-8 pb-8 pt-4 bg-gray-50/50 border-t border-gray-200">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-4">
+                  {filterCategories.map((category) => (
+                    <MediaFilterCheckbox
+                      key={category.id}
+                      title={category.title}
+                      options={category.options}
+                      selectedFilters={selectedFilters}
+                      onFilterChange={setSelectedFilters}
+                    />
+                  ))}
+                </div>
+              </div>
+            </motion.div>
 
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_380px] gap-8 lg:gap-12">
               {/* LEFT: Media Grid */}
               <div>
                 <div className="mb-6 flex items-center justify-between">
-                  <h2 className="text-heading-lg sm:text-display-sm text-brand-primary font-semibold">
-                    Pencarian Media Download
-                  </h2>
-                  <select className="px-4 py-2 border border-gray-300 rounded-lg text-body-sm focus:outline-none focus:ring-2 focus:ring-brand-primary">
+                  <p className="text-body-md text-gray-600">
+                    Menampilkan {filteredItems.length} media
+                  </p>
+                  <select className="px-4 py-2 border border-gray-200 rounded-lg text-body-sm focus:outline-none focus:ring-2 focus:ring-brand-primary bg-white">
                     <option>Terbaru</option>
                     <option>Terlama</option>
                     <option>Paling Populer</option>

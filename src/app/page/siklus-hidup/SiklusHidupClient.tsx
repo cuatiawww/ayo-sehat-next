@@ -115,7 +115,7 @@ export default function SiklusHidupClient() {
                 <h1 className="text-display-sm sm:text-display-md lg:text-display-lg text-brand-primary mb-3 sm:mb-4 font-semibold">
                   Siklus Hidup Kesehatan
                 </h1>
-                <p className="text-body-sm sm:text-body-md lg:text-heading-sm text-gray-600 max-w-[794px] leading-relaxed">
+                <p className="text-body-md sm:text-body-lg text-gray-600 max-w-[794px] leading-relaxed">
                   Pendampingan menjaga kesehatan sepanjang siklus kehidupan,
                   dengan informasi khusus setiap tahap usia
                 </p>

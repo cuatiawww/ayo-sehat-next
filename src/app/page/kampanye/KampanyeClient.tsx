@@ -21,7 +21,7 @@ export default function KampanyeClient() {
     '@type': 'CollectionPage',
     name: 'Kampanye Ayo Sehat',
     description: 'Kampanye dan peringatan hari besar kesehatan...',
-    url: 'https://ayosehat.com/kampanye', // ganti kalau udah punya domain
+    url: 'https://ayosehat.com/kampanye', 
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: allCampaigns.length,
@@ -61,8 +61,8 @@ export default function KampanyeClient() {
               <h1 className="font-bold text-display-sm sm:text-display-md lg:text-display-lg leading-tight text-white mb-4 sm:mb-6">
                 Kampanye Ayo Sehat
               </h1>
-              <p className="text-body-md sm:text-body-lg lg:text-heading-sm leading-relaxed text-white/90">
-                Kegiatan dan peringatan hari besar kesehatan...
+              <p className="text-body-md sm:text-body-lg  text-white/90">
+                Kegiatan dan peringatan hari besar kesehatan yang diselenggarakan oleh Kementerian Kesehatan dan mitra terkait. Melalui agenda ini, masyarakat diajak berpartisipasi aktif dalam berbagai kampanye, edukasi, dan aksi nyata untuk mewujudkan Indonesia yang lebih sehat, tangguh, dan sejahtera.
               </p>
             </motion.div>
           </div>

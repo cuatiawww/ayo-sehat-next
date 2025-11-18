@@ -62,7 +62,7 @@ export default function PerilakuHidupSehatClient() {
               <h1 className="font-bold text-display-sm sm:text-display-md lg:text-display-lg leading-tight text-white mb-4 sm:mb-6">
                 Perilaku Hidup Sehat
               </h1>
-              <p className="text-body-md sm:text-body-lg lg:text-heading-sm leading-relaxed text-white/90">
+              <p className="text-body-md sm:text-body-lg text-white/90">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris

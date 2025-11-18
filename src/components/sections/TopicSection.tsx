@@ -190,12 +190,11 @@ export default function TopicSection() {
                   informasi kesehatan yang Anda butuhkan
                 </p>
                 <Button
-                  asChild
-                  size="lg"
-                  className="btn-brand-accent px-8 sm:px-10 lg:px-12 h-[48px] sm:h-[56px] text-body-md sm:text-body-lg font-semibold shadow-lg hover:shadow-xl"
-                >
-                  <Link href="/kontak">Hubungi Kami</Link>
-                </Button>
+  size="lg"
+  className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+>
+  Hubungi Kami
+</Button>
               </div>
 
               {/* Decorative circles */}

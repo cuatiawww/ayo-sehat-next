@@ -80,7 +80,7 @@ export default function KegiatanClient() {
               <h1 className="font-bold text-display-sm sm:text-display-md lg:text-display-lg leading-tight text-white mb-4 sm:mb-6">
                 Kegiatan Ayo Sehat
               </h1>
-              <p className="text-body-md sm:text-body-lg lg:text-heading-sm leading-relaxed text-white/90">
+              <p className="text-body-md sm:text-body-lg leading-relaxed text-white/90">
                 Gerakan nasional yang mengajak seluruh masyarakat Indonesia
                 untuk menerapkan perilaku hidup bersih dan sehat dalam
                 kehidupan sehari-hari. Melalui berbagai kegiatan edukasi, media

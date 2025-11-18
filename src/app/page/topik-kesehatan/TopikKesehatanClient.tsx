@@ -210,11 +210,11 @@ export default function TopikKesehatanClient() {
                 informasi kesehatan yang Anda butuhkan
               </p>
               <Button
-                size="lg"
-                className="btn-brand-accent px-8 sm:px-10 lg:px-12"
-              >
-                Hubungi Kami
-              </Button>
+  size="lg"
+  className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+>
+  Hubungi Kami
+</Button>
             </motion.div>
           </div>
         </section>
