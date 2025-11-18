@@ -4,15 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-
-interface Campaign {
-  id: number
-  title: string
-  description: string
-  image: string
-  slug: string
-  category: 'prioritas' | 'kesehatan'
-}
+import type { Campaign } from '@/types/campaign'
 
 interface CampaignCardProps {
   campaign: Campaign
@@ -24,44 +16,34 @@ export default function CampaignCard({ campaign, index }: CampaignCardProps) {
     <motion.article
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
+      transition={{ duration: 0.4, delay: index * 0.1 }}
       className="group"
     >
       <Link
         href={`/kampanye/${campaign.slug}`}
-        className="block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
+        className="block bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-primary/30 shadow-sm hover:shadow-xl transition-all duration-300 h-full"
       >
-        {/* Image */}
-        <div className="relative h-[200px] sm:h-[220px] overflow-hidden">
+        <div className="relative h-[180px] overflow-hidden">
           <Image
             src={campaign.image}
             alt={campaign.title}
             fill
-            className="object-cover group-hover:scale-110 transition-transform duration-700"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
 
-        {/* Content */}
-        <div className="p-5 sm:p-6">
-          {/* Title */}
-          <h3 className="text-body-lg sm:text-heading-sm font-semibold text-brand-primary mb-2 group-hover:text-brand-primary-dark transition-colors">
+        <div className="p-5 relative">
+          <h3 className="text-body-md sm:text-body-lg font-bold text-brand-primary mb-2 line-clamp-1 pr-10">
             {campaign.title}
           </h3>
 
-          {/* Description */}
-          <p className="text-body-sm sm:text-body-md text-gray-600 line-clamp-2 mb-4">
+          <p className="text-body-sm text-gray-600 leading-relaxed line-clamp-2 pr-10">
             {campaign.description}
           </p>
 
-          {/* Read More Link */}
-          <div className="flex items-center gap-2 text-brand-primary text-body-sm font-medium">
-            <span className="w-6 h-6 rounded-full bg-brand-primary flex items-center justify-center">
-              <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-0.5 transition-transform" />
-            </span>
+          <div className="absolute bottom-5 right-5 w-8 h-8 rounded-full bg-brand-primary flex items-center justify-center group-hover:scale-110 group-hover:rotate-45 transition-all duration-300 shadow-md">
+            <ArrowRight className="w-4 h-4 text-white" strokeWidth={2.5} />
           </div>
         </div>
       </Link>

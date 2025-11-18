@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { List } from 'lucide-react'
+import { List, ChevronDown } from 'lucide-react'
 
 interface ArticleFilterProps {
   activeTab: string
@@ -37,17 +37,17 @@ export default function ArticleFilter({
   const tabs = ['Semua', 'Cegah', 'Deteksi', 'Pengobatan']
 
   return (
-    <div className="flex flex-col gap-4 pb-5 border-b border-gray-200">
-      {/* TABS */}
-      <div className="flex gap-2 flex-wrap">
+    <div className="flex bg-black flex-col gap-4 pb-6">
+      {/* TABS - Horizontal */}
+      <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-hide">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => onTabChange(tab)}
-            className={`flex items-center gap-2 px-3 xs:px-4 py-2.5 rounded-lg text-body-sm sm:text-body-md font-medium transition-all ${
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-body-sm font-medium transition-all whitespace-nowrap flex-shrink-0 ${
               activeTab === tab
-                ? 'bg-brand-primary text-white shadow-sm'
-                : 'bg-white border border-gray-300 text-gray-700 hover:border-brand-primary/50'
+                ? 'bg-brand-primary text-white shadow-md'
+                : 'bg-white border border-gray-200 text-gray-700 hover:border-brand-primary/50 hover:text-brand-primary'
             }`}
           >
             {tab === 'Semua' && <List className="w-4 h-4" />}
@@ -56,8 +56,8 @@ export default function ArticleFilter({
         ))}
       </div>
 
-      {/* DROPDOWNS */}
-      <div className="flex flex-wrap gap-2">
+      {/* DROPDOWNS - Right Aligned */}
+      <div className="flex items-center justify-end gap-3 flex-wrap">
         {/* Lifecycle Dropdown */}
         <div className="relative">
           <button
@@ -66,17 +66,19 @@ export default function ArticleFilter({
               setShowTopicDropdown(false)
               setShowSortDropdown(false)
             }}
-            className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-300 rounded-lg text-caption sm:text-body-sm text-gray-600 hover:border-brand-primary transition-all"
+            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-body-sm text-gray-700 hover:border-brand-primary/50 transition-all min-w-[140px]"
           >
-            <span className="truncate max-w-[100px] xs:max-w-[120px]">
+            <span className="flex-1 text-left truncate">
               {selectedLifecycle}
             </span>
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24">
-              <path d="M7 10L12 15L17 10H7Z" fill="#18B3AB" />
-            </svg>
+            <ChevronDown
+              className={`w-4 h-4 text-brand-primary transition-transform ${
+                showLifecycleDropdown ? 'rotate-180' : ''
+              }`}
+            />
           </button>
           {showLifecycleDropdown && (
-            <div className="absolute top-full left-0 mt-1 w-full min-w-[160px] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+            <div className="absolute top-full right-0 mt-2 w-full min-w-[180px] bg-white border border-gray-200 rounded-lg shadow-xl z-50 overflow-hidden">
               {lifecycleStages.map((stage) => (
                 <button
                   key={stage}
@@ -84,7 +86,11 @@ export default function ArticleFilter({
                     onLifecycleChange(stage)
                     setShowLifecycleDropdown(false)
                   }}
-                  className="w-full text-left px-3 py-2 text-caption sm:text-body-sm text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary"
+                  className={`w-full text-left px-4 py-2.5 text-body-sm transition-colors ${
+                    selectedLifecycle === stage
+                      ? 'bg-brand-primary/10 text-brand-primary font-medium'
+                      : 'text-gray-700 hover:bg-gray-50'
+                  }`}
                 >
                   {stage}
                 </button>
@@ -101,23 +107,27 @@ export default function ArticleFilter({
               setShowLifecycleDropdown(false)
               setShowSortDropdown(false)
             }}
-            className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-300 rounded-lg text-caption sm:text-body-sm text-gray-600 hover:border-brand-primary transition-all"
+            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-body-sm text-gray-700 hover:border-brand-primary/50 transition-all min-w-[160px]"
           >
-            <span className="truncate max-w-[100px] xs:max-w-[120px]">
-              {selectedTopic}
-            </span>
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24">
-              <path d="M7 10L12 15L17 10H7Z" fill="#18B3AB" />
-            </svg>
+            <span className="flex-1 text-left truncate">{selectedTopic}</span>
+            <ChevronDown
+              className={`w-4 h-4 text-brand-primary transition-transform ${
+                showTopicDropdown ? 'rotate-180' : ''
+              }`}
+            />
           </button>
           {showTopicDropdown && (
-            <div className="absolute top-full left-0 mt-1 w-full min-w-[160px] bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-[300px] overflow-y-auto">
+            <div className="absolute top-full right-0 mt-2 w-full min-w-[200px] bg-white border border-gray-200 rounded-lg shadow-xl z-50 max-h-[300px] overflow-y-auto">
               <button
                 onClick={() => {
                   onTopicChange('Topik Kesehatan')
                   setShowTopicDropdown(false)
                 }}
-                className="w-full text-left px-3 py-2 text-caption sm:text-body-sm text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary"
+                className={`w-full text-left px-4 py-2.5 text-body-sm transition-colors ${
+                  selectedTopic === 'Topik Kesehatan'
+                    ? 'bg-brand-primary/10 text-brand-primary font-medium'
+                    : 'text-gray-700 hover:bg-gray-50'
+                }`}
               >
                 Topik Kesehatan
               </button>
@@ -128,7 +138,11 @@ export default function ArticleFilter({
                     onTopicChange(topic)
                     setShowTopicDropdown(false)
                   }}
-                  className="w-full text-left px-3 py-2 text-caption sm:text-body-sm text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary"
+                  className={`w-full text-left px-4 py-2.5 text-body-sm transition-colors ${
+                    selectedTopic === topic
+                      ? 'bg-brand-primary/10 text-brand-primary font-medium'
+                      : 'text-gray-700 hover:bg-gray-50'
+                  }`}
                 >
                   {topic}
                 </button>
@@ -145,17 +159,17 @@ export default function ArticleFilter({
               setShowLifecycleDropdown(false)
               setShowTopicDropdown(false)
             }}
-            className="flex items-center gap-2 px-3 py-2 bg-white border border-gray-300 rounded-lg text-caption sm:text-body-sm text-gray-600 hover:border-brand-primary transition-all"
+            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-body-sm text-gray-700 hover:border-brand-primary/50 transition-all min-w-[120px]"
           >
-            <span className="truncate max-w-[100px] xs:max-w-[120px]">
-              {selectedSort}
-            </span>
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24">
-              <path d="M7 10L12 15L17 10H7Z" fill="#18B3AB" />
-            </svg>
+            <span className="flex-1 text-left truncate">{selectedSort}</span>
+            <ChevronDown
+              className={`w-4 h-4 text-brand-primary transition-transform ${
+                showSortDropdown ? 'rotate-180' : ''
+              }`}
+            />
           </button>
           {showSortDropdown && (
-            <div className="absolute top-full left-0 mt-1 w-full min-w-[160px] bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+            <div className="absolute top-full right-0 mt-2 w-full min-w-[160px] bg-white border border-gray-200 rounded-lg shadow-xl z-50 overflow-hidden">
               {sortOptions.map((option) => (
                 <button
                   key={option}
@@ -163,7 +177,11 @@ export default function ArticleFilter({
                     onSortChange(option)
                     setShowSortDropdown(false)
                   }}
-                  className="w-full text-left px-3 py-2 text-caption sm:text-body-sm text-gray-700 hover:bg-brand-primary/5 hover:text-brand-primary"
+                  className={`w-full text-left px-4 py-2.5 text-body-sm transition-colors ${
+                    selectedSort === option
+                      ? 'bg-brand-primary/10 text-brand-primary font-medium'
+                      : 'text-gray-700 hover:bg-gray-50'
+                  }`}
                 >
                   {option}
                 </button>

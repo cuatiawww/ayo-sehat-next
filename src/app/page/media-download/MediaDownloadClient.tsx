@@ -84,34 +84,44 @@ export default function MediaDownloadClient() {
         {/* MAIN CONTENT */}
         <section className="section-padding-lg bg-white">
           <div className="container-custom">
-            {/* Search */}
-            <div className="max-w-2xl mx-auto mb-8">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Masukkan Kata Kunci"
-                  className="w-full h-[52px] pl-12 pr-4 text-body-md rounded-xl border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-brand-primary transition-all placeholder:text-gray-400"
-                />
-              </div>
-            </div>
+            {/* Search + Filter*/}
+<div className="mb-10 bg-white border-2 border-brand-primary/20 rounded-3xl shadow-sm overflow-hidden">
+  {/* Search Bar */}
+  <div className="p-6 pb-4">
+    <div className="relative max-w-2xl mx-auto">
+      <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-brand-primary/70" />
+      <input
+        type="text"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        placeholder="Masukkan Kata Kunci"
+        className="w-full h-14 pl-14 pr-6 text-body-lg rounded-2xl border-2 border-brand-primary/30 
+                   focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-primary/10 
+                   transition-all placeholder:text-gray-400 font-medium bg-white"
+      />
+      {/* Tombol search dekoratif di kanan */}
+      {/* <div className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-brand-primary rounded-xl 
+                      flex items-center justify-center text-white shadow-md">
+        <Search className="w-5 h-5" />
+      </div> */}
+    </div>
+  </div>
 
-            {/* Filter Checkboxes */}
-            <div className="mb-8 bg-gray-50 rounded-2xl p-6">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                {filterCategories.map((category) => (
-                  <MediaFilterCheckbox
-                    key={category.id}
-                    title={category.title}
-                    options={category.options}
-                    selectedFilters={selectedFilters}
-                    onFilterChange={setSelectedFilters}
-                  />
-                ))}
-              </div>
-            </div>
+  {/* Filter Checkboxes – Grid rapi di dalam card */}
+  <div className="px-6 pb-8 pt-2 bg-gray-50/50 border-t border-brand-primary/10">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-8 gap-y-5">
+      {filterCategories.map((category) => (
+        <MediaFilterCheckbox
+          key={category.id}
+          title={category.title}
+          options={category.options}
+          selectedFilters={selectedFilters}
+          onFilterChange={setSelectedFilters}
+        />
+      ))}
+    </div>
+  </div>
+</div>
 
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_380px] gap-8 lg:gap-12">
               {/* LEFT: Media Grid */}

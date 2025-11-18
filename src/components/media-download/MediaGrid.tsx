@@ -35,7 +35,7 @@ export default function MediaGrid({ items }: MediaGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
       {items.map((item, index) => (
         <MediaCard key={item.id} item={item} index={index} />
       ))}

@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/set-state-in-effect */
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -10,7 +10,6 @@ import ArticleFilter from '@/components/article/ArticleFilter'
 import ArticleGrid from '@/components/article/ArticleGrid'
 import Pagination from '@/components/article/Pagination'
 import data from '@/data/artikel.json'
-
 
 const { articles, popularTopics } = data
 
@@ -26,7 +25,8 @@ const sortOptions = ['Terbaru', 'Terlama', 'Paling Populer']
 
 export default function ArtikelClient() {
   const [activeTab, setActiveTab] = useState<string>('Semua')
-  const [selectedLifecycle, setSelectedLifecycle] = useState<string>('Semua Usia')
+  const [selectedLifecycle, setSelectedLifecycle] =
+    useState<string>('Semua Usia')
   const [selectedTopic, setSelectedTopic] = useState<string>('Topik Kesehatan')
   const [selectedSort, setSelectedSort] = useState<string>('Terbaru')
   const [currentPage, setCurrentPage] = useState(1)
@@ -110,8 +110,8 @@ export default function ArtikelClient() {
     },
   }
 
-  const ogImage =
-    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200'
+  const heroImage =
+    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80'
 
   return (
     <>
@@ -124,79 +124,88 @@ export default function ArtikelClient() {
       <div className="min-h-screen bg-white">
         <CustomBreadcrumb currentPage="Artikel" />
 
-        {/* HERO */}
-        <section className="relative bg-brand-gradient py-10 sm:py-14 lg:py-20 overflow-hidden">
+        {/* HERO SECTION */}
+        <section className="relative bg-gradient-to-br from-brand-primary to-brand-primary-dark py-12 lg:py-16">
           <div className="container-custom">
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-full sm:max-w-[600px]"
+              className="max-w-xl lg:max-w-2xl"
             >
-              <h1 className="font-bold text-display-sm sm:text-display-md lg:text-display-lg leading-tight text-white mb-3 sm:mb-4">
+              <h1 className="font-bold text-display-sm sm:text-display-md lg:text-display-lg leading-tight text-white mb-4">
                 Artikel Ayo Sehat
               </h1>
-              <p className="text-body-sm sm:text-body-md lg:text-body-lg leading-relaxed text-white/90">
+              <p className="text-body-md lg:text-body-lg leading-relaxed text-white/95">
                 Pendekatan menjaga kesehatan sejak lahir hingga lanjut usia,
                 dengan perhatian khusus sesuai kebutuhan di setiap tahap usia.
               </p>
             </motion.div>
           </div>
-
-         
         </section>
 
-        {/* TOPIK POPULER */}
-        <section className="bg-white section-padding-lg">
-          
+        {/* TOPIK POPULER - Dengan Image Overlap */}
+        <section className="relative bg-gray-50 section-padding-lg">
           <div className="container-custom">
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <h2 className="text-heading-lg sm:text-display-sm lg:text-display-md text-gray-800 mb-5 sm:mb-6 font-semibold">
-                Topik yang Banyak Dicari
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
-                {popularTopics.map((topic, index) => (
-                  <motion.button
-                    key={topic.id}
-                    initial={{ opacity: 0, x: -15 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.5 + index * 0.05 }}
-                    onClick={() => setSelectedTopic(topic.text)}
-                    className="text-left text-body-sm sm:text-body-md text-brand-primary bg-white border border-brand-primary/20 hover:border-brand-primary hover:bg-brand-primary/5 px-4 py-3 rounded-lg transition-all duration-200 hover:shadow-sm"
-                  >
-                    # {topic.text}
-                  </motion.button>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-           {/* GAMBAR HERO - DESKTOP ONLY */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="absolute right-0 bottom-[-60px] sm:bottom-[-80px] lg:bottom-[-120px] hidden lg:block z-10"
-          >
-            <div className="w-[300px] sm:w-[400px] lg:w-[480px] xl:w-[580px] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-              <img
-                src={ogImage}
-                alt="Dokter sedang bekerja"
-                className="w-full h-full object-cover"
-                loading="eager"
-              />
+            <div className="relative">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className="text-heading-lg sm:text-heading-xl lg:text-display-sm text-gray-900 mb-6 font-bold">
+                  Topik yang Banyak Dicari
+                </h2>
+
+                {/* Layout dengan space untuk image di desktop */}
+                <div className="grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-8 items-start">
+                  {/* Left: Topik List - White Container */}
+                  <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-gray-100">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {popularTopics.map((topic, index) => (
+                        <motion.button
+                          key={topic.id}
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.3, delay: index * 0.05 }}
+                          onClick={() => setSelectedTopic(topic.text)}
+                          className="text-left text-body-sm sm:text-body-md text-brand-primary hover:text-brand-primary-dark font-medium transition-colors duration-200"
+                        >
+                          # {topic.text}
+                        </motion.button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Right: Image Space (placeholder untuk desktop) */}
+                  <div className="hidden lg:block" />
+                </div>
+              </motion.div>
+
+              {/* Overlapping Image - Absolute Position */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className="hidden lg:block absolute right-0 top-[-120px] z-10"
+                style={{ width: '450px' }}
+              >
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src={heroImage}
+                    alt="Artikel Kesehatan"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </section>
 
-        {/* MAIN CONTENT */}
-        <section className="section-padding-lg bg-white border-t border-gray-100">
+        {/* MAIN CONTENT - Artikel List */}
+        <section className="section-padding-lg bg-white">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_380px] gap-6 lg:gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_380px] gap-8 lg:gap-12">
               {/* LEFT: ARTIKEL */}
               <div className="space-y-6">
                 {/* FILTER */}

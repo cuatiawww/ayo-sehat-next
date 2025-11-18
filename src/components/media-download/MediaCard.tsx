@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { Download, Eye } from 'lucide-react'
+import { Download } from 'lucide-react'
 
 interface MediaItem {
   id: number
@@ -37,13 +37,7 @@ export default function MediaCard({ item, index }: MediaCardProps) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         
-        {/* Overlay on hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-          <button className="flex items-center gap-2 bg-white text-brand-primary px-4 py-2 rounded-full text-body-sm font-medium hover:bg-brand-primary hover:text-white transition-colors">
-            <Eye className="w-4 h-4" />
-            <span>Lihat Detail</span>
-          </button>
-        </div>
+
       </div>
 
       {/* Content */}
@@ -68,12 +62,6 @@ export default function MediaCard({ item, index }: MediaCardProps) {
             {item.downloads.toLocaleString()} kali diunduh
           </span>
         </div>
-
-        {/* Download Button */}
-        <button className="w-full flex items-center justify-center gap-2 bg-brand-primary text-white py-2.5 rounded-lg hover:bg-brand-primary-dark transition-colors font-medium text-body-sm">
-          <Download className="w-4 h-4" />
-          <span>Unduh</span>
-        </button>
       </div>
     </motion.article>
   )

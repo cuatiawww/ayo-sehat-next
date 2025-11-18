@@ -3,15 +3,18 @@ import { Suspense } from 'react'
 import SearchResultsClient from './SearchResultClient'
 
 interface SearchPageProps {
-  searchParams: {
+  searchParams: Promise<{
     q?: string
-  }
+  }>
 }
 
 export async function generateMetadata({
   searchParams,
 }: SearchPageProps): Promise<Metadata> {
-  const searchQuery = searchParams.q || ''
+  // Await searchParams dulu
+  const params = await searchParams
+  const searchQuery = params.q || ''
+  
   const pageTitle = searchQuery
     ? `Hasil Pencarian: "${searchQuery}" - Ayo Sehat Kemenkes`
     : 'Pencarian Kesehatan - Ayo Sehat Kemenkes'
@@ -43,8 +46,10 @@ export async function generateMetadata({
   }
 }
 
-export default function SearchPage({ searchParams }: SearchPageProps) {
-  const searchQuery = searchParams.q || ''
+export default async function SearchPage({ searchParams }: SearchPageProps) {
+  // Await searchParams dulu
+  const params = await searchParams
+  const searchQuery = params.q || ''
 
   return (
     <Suspense
