@@ -35,7 +35,7 @@ export default function SearchSection() {
         >
           {/* Title */}
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-heading-lg sm:text-display-sm text-brand-primary mb-3 font-semibold">
+            <h2 className="text-heading-lg sm:text-display-sm lg:text-display-md text-brand-primary mb-3 font-semibold">
               Pencarian Ayo Sehat
             </h2>
             <p className="text-body-sm sm:text-body-md text-gray-600">
@@ -74,7 +74,7 @@ export default function SearchSection() {
 
             {/* Popular Keywords (Optional) */}
             <div className="mt-4 flex flex-wrap items-center gap-2">
-              <span className="text-caption text-gray-500">Populer:</span>
+              <span className="text-caption text-gray-500">Topik Populer:</span>
               {[
                 'Diabetes',
                 'Hipertensi',

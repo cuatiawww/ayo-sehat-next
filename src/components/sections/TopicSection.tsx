@@ -192,7 +192,7 @@ export default function TopicSection() {
                   size="lg"
                   className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
-                  Hubungi Kami
+                  <Link href="/page/hubungi-kami">Hubungi Kami</Link>
                 </Button>
               </div>
 
