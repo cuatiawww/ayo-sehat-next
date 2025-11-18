@@ -21,7 +21,7 @@ export default function KemitraanClient() {
     mainEntity: {
       '@type': 'Organization',
       name: 'Kementerian Kesehatan Republik Indonesia',
-      url: 'http://localhost:3000',
+      url: 'https://staging-ayo-sehat-v2.vercel.app',
     },
   }
 

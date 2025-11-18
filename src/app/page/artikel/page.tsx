@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://staging-ayo-sehat-v2.vercel.app/artikel',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/page/artikel',
   },
   robots: {
     index: true,

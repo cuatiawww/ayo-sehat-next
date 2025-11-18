@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://staging-ayo-sehat-v2.vercel.app/kemitraan',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/page/kemitraan',
   },
   robots: {
     index: true,

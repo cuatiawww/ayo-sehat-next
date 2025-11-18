@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://staging-ayo-sehat-v2.vercel.app/media-download',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/page/media-download',
   },
 }
 

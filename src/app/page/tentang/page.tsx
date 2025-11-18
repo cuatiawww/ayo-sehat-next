@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://staging-ayo-sehat-v2.vercel.app/tentang',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/page/tentang',
   },
   robots: {
     index: true,

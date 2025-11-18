@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://staging-ayo-sehat-v2.vercel.app/topik-kesehatan',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/page/topik-kesehatan',
   },
 }
 

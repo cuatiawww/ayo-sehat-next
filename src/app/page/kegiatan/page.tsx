@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://staging-ayo-sehat-v2.vercel.app/kegiatan',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app/page/kegiatan',
   },
 }
 

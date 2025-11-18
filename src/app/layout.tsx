@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description:
     'Informasi kesehatan terlengkap dan terpercaya untuk semua usia: bayi, anak, remaja, dewasa, lansia.',
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://staging-ayo-sehat-v2.vercel.app'),
   keywords: [
     'kesehatan keluarga',
     'kesehatan anak',

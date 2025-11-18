@@ -17,7 +17,7 @@ export default function TentangClient() {
       '@type': 'Organization',
       name: 'Kementerian Kesehatan Republik Indonesia',
       alternateName: 'Kemenkes RI',
-      url: 'http://localhost:3000',
+      url: 'https://staging-ayo-sehat-v2.vercel.app',
       logo: 'https://staging-ayo-sehat-v2.vercel.app/logo-kemenkes.png',
       address: {
         '@type': 'PostalAddress',

@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    url: 'http://localhost:3000',
+    url: 'https://staging-ayo-sehat-v2.vercel.app',
     siteName: 'Ayo Sehat Kemenkes',
     title: 'Ayo Sehat - Portal Kesehatan Keluarga Indonesia',
     description:
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'http://localhost:3000',
+    canonical: 'https://staging-ayo-sehat-v2.vercel.app',
   },
   verification: {
     google: 'your-google-verification-code', 

@@ -92,7 +92,7 @@ export default function SiklusHidupClient() {
           '@type': 'ListItem',
           position: 1,
           name: 'Beranda',
-          item: 'http://localhost:3000',
+          item: 'https://staging-ayo-sehat-v2.vercel.app',
         },
         {
           '@type': 'ListItem',
