@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://staging-ayo-sehat.vercel.app/sitemap.xml
+
+# Disallow admin or private pages (jika ada)
+# Disallow: /admin
+# Disallow: /api

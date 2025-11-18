@@ -1,26 +1,163 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* === SHADCN UI VARIABLES === */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%; /* #212121 */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    
+    /* Primary = Brand Primary */
+    --primary: 174 74% 40%; /* #18b3ab */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 13%;
+    
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    
+    /* Accent = Brand Accent */
+    --accent: 64 73% 50%; /* #d5dd23 */
+    --accent-foreground: 0 0% 22%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 174 74% 40%; /* Brand primary for focus ring */
+    
+    --radius: 0.5rem;
+  }
+  
+  /* === BASE STYLES === */
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-poppins antialiased;
+  }
+  
+  /* === TYPOGRAPHY DEFAULTS === */
+  h1 {
+    @apply text-display-sm sm:text-display-md lg:text-display-lg;
+  }
+  
+  h2 {
+    @apply text-heading-lg sm:text-heading-lg lg:text-display-sm;
+  }
+  
+  h3 {
+    @apply text-heading-md sm:text-heading-md lg:text-heading-lg;
+  }
+  
+  p {
+    @apply text-body-sm sm:text-body-md lg:text-body-lg;
+  }
+  
+  /* === CUSTOM SCROLLBAR === */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* === FOCUS STYLES === */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-brand-primary ring-offset-2;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* === REUSABLE COMPONENT CLASSES === */
+  
+  /* Container */
+  .container-custom {
+    @apply w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Brand Gradient Background */
+  .bg-brand-gradient {
+    @apply bg-gradient-to-b from-brand-primary to-brand-primary-dark;
+  }
+  
+  .bg-brand-gradient-br {
+    @apply bg-gradient-to-br from-brand-primary to-brand-primary-dark;
+  }
+  
+  /* Brand Button Styles */
+  .btn-brand-primary {
+    @apply bg-brand-primary hover:bg-brand-primary-dark text-white 
+           font-medium rounded-lg transition-all duration-300 
+           hover:shadow-button;
+  }
+  
+  .btn-brand-accent {
+    @apply bg-brand-accent hover:bg-brand-accent-dark text-gray-800
+           font-medium rounded-full transition-all duration-300
+           hover:shadow-lg hover:scale-105;
+  }
+  
+  .btn-brand-outline {
+    @apply bg-white/20 text-white border-2 border-white/50
+           hover:bg-white hover:text-brand-primary hover:border-white
+           font-medium rounded-lg transition-all duration-300;
+  }
+  
+  /* Card Styles */
+  .card-brand {
+    @apply bg-white rounded-xl p-4 sm:p-5 lg:p-6 
+           border border-gray-200 
+           hover:border-brand-primary/30 
+           hover:shadow-card 
+           transition-all duration-300;
+  }
+  
+  /* Badge Styles */
+  .badge-new {
+    @apply inline-flex items-center px-2 py-1 
+           bg-brand-accent rounded-md
+           text-tiny font-medium text-gray-800;
+  }
+  
+  /* Section Spacing */
+  .section-padding {
+    @apply py-8 sm:py-10 lg:py-12;
+  }
+  
+  .section-padding-lg {
+    @apply py-10 sm:py-12 lg:py-16;
+  }
+}
+
+@layer utilities {
+  /* === UTILITY CLASSES === */
+  
+  /* Text Gradient */
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-brand-primary to-brand-primary-light 
+           bg-clip-text text-transparent;
+  }
+  
+  /* Backdrop Blur */
+  .backdrop-brand {
+    @apply backdrop-blur-sm bg-white/90;
+  }
 }

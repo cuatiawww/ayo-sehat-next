@@ -1,0 +1,76 @@
+{
+  "healthTopicsData": {
+    "A": [
+      "ADHD",
+      "AIDS",
+      "Alzheimer",
+      "Alzheimer pada Lansia",
+      "Anemia",
+      "Anoreksia Nervosa",
+      "Antraks",
+      "Asam Urat",
+      "ASI",
+      "Asma",
+      "Autisme"
+    ],
+    "B": ["Balita", "Bayi Baru Lahir", "Bayi Tabung", "Bronkitis"],
+    "C": ["Campak", "Cacar Air", "Cerebral Palsy", "COVID-19"],
+    "D": [
+      "Demam Berdarah",
+      "Dengue",
+      "Diabetes",
+      "Difteri",
+      "Diare",
+      "Diare pada Anak",
+      "Diare pada Bayi"
+    ],
+    "E": ["Ebola", "Eksim", "Epilepsi"],
+    "F": ["Flu Burung"],
+    "G": ["Gagal Ginjal", "Gangguan Jiwa", "GERD"],
+    "H": ["Hemofilia", "Hepatitis", "Hipertensi", "HIV/AIDS"],
+    "I": ["Imunisasi", "Infeksi Saluran Kemih", "Insomnia"],
+    "J": ["Jantung Koroner"],
+    "K": [
+      "Kanker",
+      "Kanker Payudara",
+      "Kanker Serviks",
+      "Katarak",
+      "Kehamilan",
+      "Kesehatan Jiwa",
+      "Kolesterol",
+      "Kurang Gizi (Malnutrisi)",
+      "Kusta"
+    ],
+    "L": ["Leukemia", "Leptospirosis", "Lupus"],
+    "M": ["Malaria", "Malnutrisi", "Meningitis", "Migrain", "Mpox"],
+    "N": ["NAPZA", "Neoplasma", "Nifas", "Nipah"],
+    "O": ["Obesitas", "Osteoporosis"],
+    "P": [
+      "Parkinson",
+      "PCOS",
+      "Pencegahan Infeksi",
+      "Penyakit Ginjal",
+      "Penyakit Jantung",
+      "Penyakit Menular",
+      "Pneumonia",
+      "Polio",
+      "PTM (Penyakit Tidak Menular)"
+    ],
+    "Q": [],
+    "R": ["Rabies", "Rheumatoid Arthritis"],
+    "S": ["Sepsis", "Sifilis", "Skizofrenia", "Stroke", "Stunting"],
+    "T": ["Thalassemia", "Tetanus", "TBC (Tuberkulosis)", "Tifus"],
+    "U": [],
+    "V": ["Vaksin"],
+    "W": ["Wasting"],
+    "X": [],
+    "Y": [],
+    "Z": ["Zika"]
+  },
+  "newTopics": {
+    "A": [4],
+    "K": [1],
+    "M": [4],
+    "P": [3]
+  }
+}
