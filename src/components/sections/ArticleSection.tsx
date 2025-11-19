@@ -42,7 +42,7 @@ export default function ArticleSection() {
             asChild
             className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white"
           >
-            <Link href="/page/artikel">Lihat Artikel Lainnya</Link>
+            <Link href="/artikel">Lihat Artikel Lainnya</Link>
           </Button>
         </div>
 
@@ -160,7 +160,7 @@ function ArticleCard({
 }) {
   return (
     <Link
-      href={`/page/artikel/${article.slug}`}
+      href={`/artikel/${article.slug}`}
       className="group cursor-pointer w-full block"
     >
       <div className="relative w-full">

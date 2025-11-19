@@ -29,7 +29,7 @@ export default function MediaCard({ item, index }: MediaCardProps) {
       className="group"
     >
       <Link
-        href={`/page/media-download/${item.slug}`}
+        href={`/media-download/${item.slug}`}
         className="block bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
       >
         {/* Image */}

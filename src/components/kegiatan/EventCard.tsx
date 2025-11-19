@@ -29,7 +29,7 @@ export default function EventCard({ event, index }: EventCardProps) {
       className="group"
     >
       <Link
-        href={`/page/kegiatan/${event.slug}`}
+        href={`/kegiatan/${event.slug}`}
         className="flex flex-col sm:flex-row bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
       >
         {/* Image with Date Badge (Mobile Only) */}

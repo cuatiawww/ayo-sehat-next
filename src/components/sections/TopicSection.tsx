@@ -84,11 +84,11 @@ export default function TopicSection() {
 
     // Cek apakah topik ada di daftar availableTopics
     if (availableTopics.includes(slug)) {
-      return `/page/topik-kesehatan/${slug}`
+      return `/topik-kesehatan/${slug}`
     }
 
     // Jika tidak ada, redirect ke anemia
-    return '/page/topik-kesehatan/anemia'
+    return '/topik-kesehatan/anemia'
   }
 
   return (
@@ -208,7 +208,7 @@ export default function TopicSection() {
                     size="lg"
                     className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
-                    <Link href="/page/hubungi-kami">Hubungi Kami</Link>
+                    <Link href="/hubungi-kami">Hubungi Kami</Link>
                   </Button>
                 </div>
 

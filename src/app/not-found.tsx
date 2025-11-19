@@ -83,7 +83,7 @@ export default function NotFound() {
             variant="outline"
             className="border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white px-8 py-6 text-body-lg rounded-xl transition-all group min-w-[200px]"
           >
-            <Link href="/page/kegiatan" className="flex items-center gap-2">
+            <Link href="/kegiatan" className="flex items-center gap-2">
               <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
               Lihat Kegiatan
             </Link>

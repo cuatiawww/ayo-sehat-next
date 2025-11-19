@@ -110,7 +110,7 @@ export default function InfoSection() {
           {features.map((feature, index) => (
             <Link
               key={index}
-              href={`/page/perilaku-hidup-sehat/${feature.slug}`}
+              href={`/perilaku-hidup-sehat/${feature.slug}`}
               className={`card-brand transition-all duration-500 hover:scale-[1.02] hover:shadow-xl cursor-pointer group ${
                 isVisible
                   ? 'opacity-100 translate-y-0'
@@ -220,7 +220,7 @@ export default function InfoSection() {
           }`}
           style={{ transitionDelay: '1.2s' }}
         >
-          <Link href="/page/perilaku-hidup-sehat">
+          <Link href="/perilaku-hidup-sehat">
             <Button
               size="lg"
               className="btn-brand-accent bg-brand-accent hover:bg-brand-accent-hover text-black px-8 sm:px-12 lg:px-16 h-[55px] sm:h-[70px] lg:h-[80px] text-[16px] sm:text-[20px] lg:text-[25px] rounded-full hover:scale-105 transition-transform duration-300"
@@ -265,7 +265,7 @@ function FeatureItem({
 
   return (
     <Link
-      href={`/page/perilaku-hidup-sehat/${feature.slug}`}
+      href={`/perilaku-hidup-sehat/${feature.slug}`}
       className={`flex items-start gap-4 xl:gap-6 group transition-all duration-800 cursor-pointer ${
         isVisible
           ? 'opacity-100 translate-x-0'

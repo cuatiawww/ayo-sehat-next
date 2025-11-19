@@ -31,7 +31,7 @@ export default function ArticleCard({ article, index }: ArticleCardProps) {
       className="group"
     >
       <Link
-        href={`/page/artikel/${article.slug}`}
+        href={`/artikel/${article.slug}`}
         className="flex flex-col sm:flex-row gap-5 bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-brand-primary/30 hover:shadow-lg transition-all duration-300 p-4"
       >
         {/* Image - Left Side */}

@@ -11,42 +11,42 @@ import { Menu, X } from 'lucide-react'
 const menuItems = [
   {
     label: 'TENTANG',
-    href: '/page/tentang',
+    href: '/tentang',
     iconPath: '/assets/info.svg',
   },
   {
     label: 'TOPIK',
-    href: '/page/topik-kesehatan',
+    href: '/topik-kesehatan',
     iconPath: '/assets/category.svg',
   },
   {
     label: 'SIKLUS HIDUP',
-    href: '/page/siklus-hidup',
+    href: '/siklus-hidup',
     iconPath: '/assets/user.svg',
   },
   {
     label: 'HIDUP SEHAT',
-    href: '/page/perilaku-hidup-sehat',
+    href: '/perilaku-hidup-sehat',
     iconPath: '/assets/heart.svg',
   },
   {
     label: 'KEGIATAN',
-    href: '/page/kegiatan',
+    href: '/kegiatan',
     iconPath: '/assets/calendar.svg',
   },
   {
     label: 'DOWNLOAD',
-    href: '/page/media-download',
+    href: '/media-download',
     iconPath: '/assets/paper.svg',
   },
   {
     label: 'KAMPANYE',
-    href: '/page/kampanye',
+    href: '/kampanye',
     iconPath: '/assets/Activity.svg',
   },
   {
     label: 'KEMITRAAN',
-    href: '/page/kemitraan',
+    href: '/kemitraan',
     iconPath: '/assets/Document.svg',
   },
 ]

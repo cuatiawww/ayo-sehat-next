@@ -4,73 +4,73 @@
       "id": 1,
       "title": "Kaos Polo Hari Kesehatan Nasional (HKN) Ke-61",
       "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80",
-      "category": "Dewasa (18-59 Tahun)",
+      "category": "Merchandise",
       "date": "9 Jul 2025",
-      "downloads": 900,
+      "downloads": 1240,
       "slug": "kaos-polo-hkn-61"
     },
     {
       "id": 2,
       "title": "Goody Bag Hari Kesehatan Nasional (HKN) Ke-61",
       "image": "https://images.unsplash.com/photo-1547949003-9792a18a2601?w=600&q=80",
-      "category": "Dewasa (18-59 Tahun)",
+      "category": "Merchandise",
       "date": "9 Jul 2025",
-      "downloads": 850,
+      "downloads": 980,
       "slug": "goody-bag-hkn-61"
     },
     {
       "id": 3,
       "title": "Payung Hari Kesehatan Nasional (HKN) Ke-61",
       "image": "https://images.unsplash.com/photo-1534601504352-a36c715846d0?w=600&q=80",
-      "category": "Dewasa (18-59 Tahun)",
+      "category": "Merchandise",
       "date": "9 Jul 2025",
-      "downloads": 920,
+      "downloads": 1120,
       "slug": "payung-hkn-61"
     },
     {
       "id": 4,
-      "title": "Handuk Hari Kesehatan Nasional (HKN) Ke-61",
-      "image": "https://images.unsplash.com/photo-1602582426209-670e7c25af64?w=600&q=80",
-      "category": "Dewasa (18-59 Tahun)",
-      "date": "9 Jul 2025",
-      "downloads": 600,
-      "slug": "handuk-hkn-61"
-    },
-    {
-      "id": 5,
-      "title": "Kaos Oblong Hari Kesehatan Nasional (HKN) Ke-61",
-      "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&q=80",
-      "category": "Dewasa (18-59 Tahun)",
-      "date": "9 Jul 2025",
-      "downloads": 1050,
-      "slug": "kaos-oblong-hkn-61"
-    },
-    {
-      "id": 6,
-      "title": "Umbul-Umbul Hari Kesehatan Nasional (HKN) Ke-61",
-      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
-      "category": "Banner",
-      "date": "9 Jul 2025",
-      "downloads": 800,
-      "slug": "umbul-umbul-hkn-61"
-    },
-    {
-      "id": 7,
-      "title": "Banner Hari Kesehatan Nasional (HKN) Ke-61",
-      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
-      "category": "Banner",
-      "date": "9 Jul 2025",
-      "downloads": 680,
-      "slug": "banner-hkn-61"
-    },
-    {
-      "id": 8,
       "title": "Buku Panduan Hari Kesehatan Nasional (HKN) Ke-61",
       "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&q=80",
       "category": "Publikasi",
       "date": "9 Jul 2025",
-      "downloads": 1200,
+      "downloads": 2450,
       "slug": "buku-panduan-hkn-61"
+    },
+    {
+      "id": 5,
+      "title": "Infografis Pencegahan Stunting",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
+      "category": "Infografis",
+      "date": "15 Jun 2025",
+      "downloads": 3200,
+      "slug": "infografis-pencegahan-stunting"
+    },
+    {
+      "id": 6,
+      "title": "Poster Kampanye Germas (Gerakan Masyarakat Hidup Sehat)",
+      "image": "https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=600&q=80",
+      "category": "Poster",
+      "date": "20 Mei 2025",
+      "downloads": 2890,
+      "slug": "poster-germas"
+    },
+    {
+      "id": 7,
+      "title": "Banner Digital Hari Gizi Nasional 2025",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&q=80",
+      "category": "Banner",
+      "date": "25 Jan 2025",
+      "downloads": 1650,
+      "slug": "banner-hari-gizi-nasional"
+    },
+    {
+      "id": 8,
+      "title": "Brosur Imunisasi Lengkap untuk Anak",
+      "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80",
+      "category": "Brosur",
+      "date": "10 Apr 2025",
+      "downloads": 4120,
+      "slug": "brosur-imunisasi-anak"
     },
     {
       "id": 9,
@@ -78,67 +78,766 @@
       "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=80",
       "category": "Logo",
       "date": "11 Jul 2025",
-      "downloads": 950,
+      "downloads": 1820,
       "slug": "logo-hkn-61"
     },
     {
       "id": 10,
-      "title": "Buku Pangan Aman Sehat di Masyarakat",
-      "image": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=600&q=80",
+      "title": "Leaflet Pola Hidup Bersih dan Sehat (PHBS)",
+      "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80",
+      "category": "Leaflet",
+      "date": "5 Mar 2025",
+      "downloads": 3670,
+      "slug": "leaflet-phbs"
+    },
+    {
+      "id": 11,
+      "title": "Panduan Gizi Seimbang - Isi Piringku",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
       "category": "Publikasi",
-      "date": "9 Jul 2025",
-      "downloads": 900,
-      "slug": "buku-pangan-aman"
+      "date": "18 Feb 2025",
+      "downloads": 5240,
+      "slug": "panduan-gizi-seimbang"
+    },
+    {
+      "id": 12,
+      "title": "Video Edukasi Cuci Tangan Pakai Sabun (CTPS)",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80",
+      "category": "Video",
+      "date": "22 Apr 2025",
+      "downloads": 2980,
+      "slug": "video-ctps"
     }
   ],
   "filterCategories": [
     {
-      "id": "type",
-      "title": "Jenis Media",
+      "id": "category",
+      "title": "Kategori",
       "options": [
-        { "id": "publikasi", "label": "Publikasi" },
-        { "id": "buku", "label": "Buku" },
-        { "id": "flyer", "label": "Flyer" },
-        { "id": "brosur", "label": "Brosur" },
-        { "id": "laporan", "label": "Laporan" },
-        { "id": "poster", "label": "Poster" }
-      ]
-    },
-    {
-      "id": "format",
-      "title": "Format",
-      "options": [
-        { "id": "infografis", "label": "Infografis" },
-        { "id": "video", "label": "Video ILM" },
-        { "id": "audio", "label": "Audio" },
-        { "id": "spanduk", "label": "Spanduk" },
-        { "id": "umbul", "label": "Umbul-Umbul" },
-        { "id": "banner", "label": "Banner" }
-      ]
-    },
-    {
-      "id": "promo",
-      "title": "Promosi",
-      "options": [
-        { "id": "backdrop", "label": "Backdrop" },
-        { "id": "merchandise", "label": "Merchandise" },
-        { "id": "leaflet", "label": "Leaflet" },
-        { "id": "peraturan", "label": "Peraturan" },
-        { "id": "kalender", "label": "Kalender" },
-        { "id": "materi", "label": "Materi" }
-      ]
-    },
-    {
-      "id": "digital",
-      "title": "Media Digital",
-      "options": [
-        { "id": "publikasi-media", "label": "Media Publikasi" },
-        { "id": "konten-media", "label": "Konten Media" },
-        { "id": "cetak-media", "label": "Media Cetak" },
-        { "id": "audio-visual", "label": "Audio Visual" },
-        { "id": "film-pendek", "label": "Film Pendek" },
-        { "id": "media-sosial", "label": "Media Sosial" }
+        { "id": "Publikasi", "label": "Publikasi" },
+        { "id": "Infografis", "label": "Infografis" },
+        { "id": "Poster", "label": "Poster" },
+        { "id": "Banner", "label": "Banner" },
+        { "id": "Brosur", "label": "Brosur" },
+        { "id": "Leaflet", "label": "Leaflet" },
+        { "id": "Merchandise", "label": "Merchandise" },
+        { "id": "Logo", "label": "Logo & Branding" },
+        { "id": "Video", "label": "Video Edukasi" }
       ]
     }
-  ]
+  ],
+  "mediaDetails": {
+    "kaos-polo-hkn-61": {
+      "id": 1,
+      "title": "Kaos Polo Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "kaos-polo-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "1906",
+      "downloads": "900",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200&q=80",
+      "tags": ["Hari Kesehatan Nasional", "HKN 61", "Kaos Polo", "Merchandise", "Kesehatan"],
+      "description": "Kaos Polo resmi untuk peringatan Hari Kesehatan Nasional ke-61 tahun 2025 dengan tema Generasi Sehat, Masa Depan Hebat.",
+      "fullContent": {
+        "intro": "Kaos Polo resmi untuk peringatan Hari Kesehatan Nasional ke-61 tahun 2025 dengan tema Generasi Sehat, Masa Depan Hebat.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Download file master kaos polo dalam format PDF untuk memastikan konsistensi desain dan kualitas produksi."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Kaos Polo HKN 61",
+          "format": "PDF",
+          "size": "2.5 MB",
+          "url": "/downloads/kaos-polo-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["goody-bag-hkn-61", "payung-hkn-61"]
+    },
+    "goody-bag-hkn-61": {
+      "id": 2,
+      "title": "Goody Bag Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "goody-bag-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "1650",
+      "downloads": "850",
+      "image": "https://images.unsplash.com/photo-1547949003-9792a18a2601?w=1200&q=80",
+      "tags": ["HKN 61", "Goody Bag", "Merchandise"],
+      "description": "Goody bag resmi untuk peringatan Hari Kesehatan Nasional ke-61 tahun 2025.",
+      "fullContent": {
+        "intro": "Goody bag resmi untuk peringatan Hari Kesehatan Nasional ke-61 tahun 2025 dengan tema Generasi Sehat, Masa Depan Hebat.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Download file master goody bag dalam format PDF untuk memastikan konsistensi branding."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Goody Bag HKN 61",
+          "format": "PDF",
+          "size": "1.8 MB",
+          "url": "/downloads/goody-bag-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["kaos-polo-hkn-61", "payung-hkn-61"]
+    },
+    "payung-hkn-61": {
+      "id": 3,
+      "title": "Payung Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "payung-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "1845",
+      "downloads": "920",
+      "image": "https://images.unsplash.com/photo-1534601504352-a36c715846d0?w=1200&q=80",
+      "tags": ["HKN 61", "Payung", "Merchandise"],
+      "description": "Design payung resmi HKN ke-61 untuk kampanye kesehatan nasional.",
+      "fullContent": {
+        "intro": "Design payung resmi HKN ke-61 untuk kampanye kesehatan nasional dengan tema Generasi Sehat, Masa Depan Hebat.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "File master payung tersedia dalam format PDF berkualitas tinggi untuk keperluan produksi merchandise resmi."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Payung HKN 61",
+          "format": "PDF",
+          "size": "3.2 MB",
+          "url": "/downloads/payung-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["kaos-polo-hkn-61", "goody-bag-hkn-61"]
+    },
+    "handuk-hkn-61": {
+      "id": 4,
+      "title": "Handuk Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "handuk-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "1200",
+      "downloads": "600",
+      "image": "https://images.unsplash.com/photo-1602582426209-670e7c25af64?w=1200&q=80",
+      "tags": ["HKN 61", "Handuk", "Merchandise"],
+      "description": "Design handuk resmi HKN ke-61.",
+      "fullContent": {
+        "intro": "Design handuk resmi HKN ke-61 untuk kampanye kesehatan nasional.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "File master handuk tersedia dalam format PDF."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Handuk HKN 61",
+          "format": "PDF",
+          "size": "2.1 MB",
+          "url": "/downloads/handuk-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["kaos-polo-hkn-61", "kaos-oblong-hkn-61"]
+    },
+    "kaos-oblong-hkn-61": {
+      "id": 5,
+      "title": "Kaos Oblong Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "kaos-oblong-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "2100",
+      "downloads": "1050",
+      "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=1200&q=80",
+      "tags": ["HKN 61", "Kaos Oblong", "Merchandise"],
+      "description": "Kaos oblong resmi HKN ke-61.",
+      "fullContent": {
+        "intro": "Kaos oblong resmi untuk peringatan Hari Kesehatan Nasional ke-61.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Download file master kaos oblong dalam format PDF."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Kaos Oblong HKN 61",
+          "format": "PDF",
+          "size": "2.3 MB",
+          "url": "/downloads/kaos-oblong-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["kaos-polo-hkn-61", "handuk-hkn-61"]
+    },
+    "umbul-umbul-hkn-61": {
+      "id": 6,
+      "title": "Umbul-Umbul Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "umbul-umbul-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "1600",
+      "downloads": "800",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80",
+      "tags": ["HKN 61", "Umbul-umbul", "Banner"],
+      "description": "Design umbul-umbul resmi HKN ke-61.",
+      "fullContent": {
+        "intro": "Design umbul-umbul resmi untuk peringatan Hari Kesehatan Nasional ke-61.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "File master umbul-umbul tersedia dalam format PDF."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Umbul-umbul HKN 61",
+          "format": "PDF",
+          "size": "4.5 MB",
+          "url": "/downloads/umbul-umbul-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["banner-hkn-61", "logo-hkn-61"]
+    },
+    "banner-hkn-61": {
+      "id": 7,
+      "title": "Banner Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "banner-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "1360",
+      "downloads": "680",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80",
+      "tags": ["HKN 61", "Banner"],
+      "description": "Design banner resmi HKN ke-61.",
+      "fullContent": {
+        "intro": "Design banner resmi untuk peringatan Hari Kesehatan Nasional ke-61.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "File master banner tersedia dalam format PDF."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Banner HKN 61",
+          "format": "PDF",
+          "size": "5.2 MB",
+          "url": "/downloads/banner-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["umbul-umbul-hkn-61", "logo-hkn-61"]
+    },
+    "buku-panduan-hkn-61": {
+      "id": 8,
+      "title": "Buku Panduan Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "buku-panduan-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-09",
+      "displayDate": "9 Jul 2025",
+      "views": "2400",
+      "downloads": "1200",
+      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&q=80",
+      "tags": ["HKN 61", "Buku Panduan", "Publikasi"],
+      "description": "Buku panduan lengkap untuk peringatan HKN ke-61.",
+      "fullContent": {
+        "intro": "Buku panduan lengkap untuk peringatan Hari Kesehatan Nasional ke-61.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Panduan lengkap pelaksanaan kegiatan HKN ke-61 di seluruh Indonesia."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Buku Panduan HKN 61",
+          "format": "PDF",
+          "size": "8.5 MB",
+          "url": "/downloads/buku-panduan-hkn-61.pdf"
+        }
+      ],
+      "relatedMedia": ["logo-hkn-61", "kaos-polo-hkn-61"]
+    },
+    "logo-hkn-61": {
+      "id": 9,
+      "title": "Logo Hari Kesehatan Nasional (HKN) Ke-61",
+      "slug": "logo-hkn-61",
+      "category": "Media Download",
+      "date": "2025-07-11",
+      "displayDate": "11 Jul 2025",
+      "views": "1900",
+      "downloads": "950",
+      "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80",
+      "tags": ["HKN 61", "Logo", "Branding"],
+      "description": "Logo resmi HKN ke-61.",
+      "fullContent": {
+        "intro": "Logo resmi untuk peringatan Hari Kesehatan Nasional ke-61.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "File master logo tersedia dalam berbagai format (PNG, JPG, SVG, AI)."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Logo HKN 61 - PNG",
+          "format": "PNG",
+          "size": "1.2 MB",
+          "url": "/downloads/logo-hkn-61.png"
+        },
+        {
+          "id": 2,
+          "title": "Logo HKN 61 - SVG",
+          "format": "SVG",
+          "size": "500 KB",
+          "url": "/downloads/logo-hkn-61.svg"
+        }
+      ],
+      "relatedMedia": ["buku-panduan-hkn-61", "banner-hkn-61"]
+    },
+    "infografis-pencegahan-stunting": {
+      "id": 5,
+      "title": "Infografis Pencegahan Stunting",
+      "slug": "infografis-pencegahan-stunting",
+      "category": "Media Download",
+      "date": "2025-06-15",
+      "displayDate": "15 Jun 2025",
+      "views": "6400",
+      "downloads": "3200",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
+      "tags": ["Stunting", "Gizi", "Infografis", "Kesehatan Anak", "1000 HPK"],
+      "description": "Infografis lengkap tentang pencegahan stunting pada 1000 Hari Pertama Kehidupan (HPK).",
+      "fullContent": {
+        "intro": "Stunting adalah kondisi gagal tumbuh pada anak akibat kekurangan gizi kronis. Infografis ini memberikan panduan lengkap pencegahan stunting sejak masa kehamilan hingga anak berusia 2 tahun.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Apa itu Stunting?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Stunting adalah kondisi gagal tumbuh pada anak balita akibat kekurangan gizi kronis terutama pada 1000 Hari Pertama Kehidupan (HPK), yaitu sejak janin hingga anak berusia 2 tahun."
+          },
+          {
+            "type": "heading",
+            "content": "Dampak Stunting"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Pertumbuhan fisik dan otak terhambat",
+              "Penurunan kemampuan kognitif dan prestasi belajar",
+              "Daya tahan tubuh lemah, mudah sakit",
+              "Risiko penyakit kronis di masa dewasa meningkat",
+              "Produktivitas rendah saat dewasa"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Cara Mencegah Stunting"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Ibu hamil rutin periksa ke fasilitas kesehatan",
+              "Konsumsi makanan bergizi seimbang saat hamil dan menyusui",
+              "Berikan ASI Eksklusif 6 bulan",
+              "Berikan MPASI berkualitas mulai usia 6 bulan",
+              "Pantau tumbuh kembang anak secara rutin di Posyandu",
+              "Jaga kebersihan lingkungan dan sanitasi"
+            ]
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Infografis Pencegahan Stunting",
+          "format": "PDF",
+          "size": "3.2 MB",
+          "url": "/downloads/infografis-pencegahan-stunting.pdf"
+        },
+        {
+          "id": 2,
+          "title": "Infografis Pencegahan Stunting (JPG)",
+          "format": "JPG",
+          "size": "1.8 MB",
+          "url": "/downloads/infografis-pencegahan-stunting.jpg"
+        }
+      ],
+      "relatedMedia": ["panduan-gizi-seimbang", "brosur-imunisasi-anak"]
+    },
+    "poster-germas": {
+      "id": 6,
+      "title": "Poster Kampanye Germas (Gerakan Masyarakat Hidup Sehat)",
+      "slug": "poster-germas",
+      "category": "Media Download",
+      "date": "2025-05-20",
+      "displayDate": "20 Mei 2025",
+      "views": "5780",
+      "downloads": "2890",
+      "image": "https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=1200&q=80",
+      "tags": ["Germas", "Hidup Sehat", "Poster", "Kampanye"],
+      "description": "Poster kampanye Gerakan Masyarakat Hidup Sehat (Germas) untuk edukasi masyarakat.",
+      "fullContent": {
+        "intro": "Gerakan Masyarakat Hidup Sehat (Germas) adalah gerakan nasional yang mengajak masyarakat untuk menerapkan perilaku hidup bersih dan sehat.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "7 Langkah Germas"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Melakukan aktivitas fisik minimal 30 menit setiap hari",
+              "Mengonsumsi buah dan sayur",
+              "Tidak merokok",
+              "Tidak mengonsumsi alkohol",
+              "Memeriksa kesehatan secara rutin",
+              "Membersihkan lingkungan",
+              "Menggunakan jamban"
+            ]
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Poster Germas A3",
+          "format": "PDF",
+          "size": "4.5 MB",
+          "url": "/downloads/poster-germas-a3.pdf"
+        },
+        {
+          "id": 2,
+          "title": "Poster Germas A4",
+          "format": "PDF",
+          "size": "2.8 MB",
+          "url": "/downloads/poster-germas-a4.pdf"
+        }
+      ],
+      "relatedMedia": ["leaflet-phbs", "video-ctps"]
+    },
+    "banner-hari-gizi-nasional": {
+      "id": 7,
+      "title": "Banner Digital Hari Gizi Nasional 2025",
+      "slug": "banner-hari-gizi-nasional",
+      "category": "Media Download",
+      "date": "2025-01-25",
+      "displayDate": "25 Jan 2025",
+      "views": "3300",
+      "downloads": "1650",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80",
+      "tags": ["Hari Gizi Nasional", "Banner", "HGN 2025"],
+      "description": "Banner digital untuk kampanye Hari Gizi Nasional 2025.",
+      "fullContent": {
+        "intro": "Hari Gizi Nasional diperingati setiap tanggal 25 Januari sebagai momentum untuk meningkatkan kesadaran masyarakat tentang pentingnya gizi seimbang.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Download banner digital dalam berbagai ukuran untuk media sosial dan website Anda."
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Banner Instagram Post (1080x1080)",
+          "format": "JPG",
+          "size": "2.1 MB",
+          "url": "/downloads/banner-hgn-ig-post.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Banner Instagram Story (1080x1920)",
+          "format": "JPG",
+          "size": "2.5 MB",
+          "url": "/downloads/banner-hgn-ig-story.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Banner Facebook (1200x630)",
+          "format": "JPG",
+          "size": "1.8 MB",
+          "url": "/downloads/banner-hgn-fb.jpg"
+        }
+      ],
+      "relatedMedia": ["panduan-gizi-seimbang", "infografis-pencegahan-stunting"]
+    },
+    "brosur-imunisasi-anak": {
+      "id": 8,
+      "title": "Brosur Imunisasi Lengkap untuk Anak",
+      "slug": "brosur-imunisasi-anak",
+      "category": "Media Download",
+      "date": "2025-04-10",
+      "displayDate": "10 Apr 2025",
+      "views": "8240",
+      "downloads": "4120",
+      "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&q=80",
+      "tags": ["Imunisasi", "Vaksin", "Anak", "Brosur", "Kesehatan Anak"],
+      "description": "Brosur lengkap tentang jadwal dan jenis imunisasi dasar dan lanjutan untuk anak.",
+      "fullContent": {
+        "intro": "Imunisasi adalah investasi terbaik untuk kesehatan anak. Brosur ini berisi informasi lengkap tentang jadwal imunisasi anak sesuai rekomendasi Kemenkes RI.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Imunisasi Dasar Lengkap"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Hepatitis B (HB-0): Diberikan segera setelah lahir",
+              "BCG dan Polio 1: Usia 1 bulan",
+              "DPT-HB-Hib 1 dan Polio 2: Usia 2 bulan",
+              "DPT-HB-Hib 2 dan Polio 3: Usia 3 bulan",
+              "DPT-HB-Hib 3, Polio 4, dan IPV: Usia 4 bulan",
+              "Campak/MR: Usia 9 bulan"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Imunisasi Lanjutan"
+          },
+          {
+            "type": "list",
+            "items": [
+              "DPT-HB-Hib dan Campak/MR: Usia 18 bulan",
+              "DT: Usia 5 tahun (Kelas 1 SD)",
+              "Td: Usia 10-12 tahun (Kelas 5-6 SD)",
+              "HPV (untuk anak perempuan): Kelas 5-6 SD"
+            ]
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Brosur Imunisasi Anak",
+          "format": "PDF",
+          "size": "2.8 MB",
+          "url": "/downloads/brosur-imunisasi-anak.pdf"
+        },
+        {
+          "id": 2,
+          "title": "Jadwal Imunisasi (Tabel)",
+          "format": "PDF",
+          "size": "1.2 MB",
+          "url": "/downloads/jadwal-imunisasi.pdf"
+        }
+      ],
+      "relatedMedia": ["infografis-pencegahan-stunting", "leaflet-phbs"]
+    },
+    "leaflet-phbs": {
+      "id": 10,
+      "title": "Leaflet Pola Hidup Bersih dan Sehat (PHBS)",
+      "slug": "leaflet-phbs",
+      "category": "Media Download",
+      "date": "2025-03-05",
+      "displayDate": "5 Mar 2025",
+      "views": "7340",
+      "downloads": "3670",
+      "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80",
+      "tags": ["PHBS", "Hidup Sehat", "Leaflet", "Sanitasi"],
+      "description": "Leaflet edukasi tentang Pola Hidup Bersih dan Sehat (PHBS) di rumah tangga.",
+      "fullContent": {
+        "intro": "PHBS adalah upaya untuk memberikan pengalaman belajar atau menciptakan suatu kondisi bagi perorangan, keluarga, kelompok dan masyarakat, dengan membuka jalur komunikasi, memberikan informasi dan melakukan edukasi, untuk meningkatkan pengetahuan, sikap dan perilaku.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "10 Indikator PHBS di Rumah Tangga"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Persalinan ditolong oleh tenaga kesehatan",
+              "Memberi bayi ASI Eksklusif",
+              "Menimbang balita setiap bulan",
+              "Menggunakan air bersih",
+              "Mencuci tangan dengan air bersih dan sabun",
+              "Menggunakan jamban sehat",
+              "Memberantas jentik di rumah",
+              "Makan buah dan sayur setiap hari",
+              "Melakukan aktivitas fisik setiap hari",
+              "Tidak merokok di dalam rumah"
+            ]
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Leaflet PHBS",
+          "format": "PDF",
+          "size": "2.5 MB",
+          "url": "/downloads/leaflet-phbs.pdf"
+        }
+      ],
+      "relatedMedia": ["poster-germas", "video-ctps"]
+    },
+    "panduan-gizi-seimbang": {
+      "id": 11,
+      "title": "Panduan Gizi Seimbang - Isi Piringku",
+      "slug": "panduan-gizi-seimbang",
+      "category": "Media Download",
+      "date": "2025-02-18",
+      "displayDate": "18 Feb 2025",
+      "views": "10480",
+      "downloads": "5240",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80",
+      "tags": ["Gizi Seimbang", "Isi Piringku", "Nutrisi", "Publikasi"],
+      "description": "Panduan lengkap gizi seimbang dengan konsep Isi Piringku untuk keluarga Indonesia.",
+      "fullContent": {
+        "intro": "Isi Piringku adalah panduan sekali makan yang menggambarkan porsi makan yang dikonsumsi dalam satu piring, terdiri dari 50% buah dan sayur, dan 50% dari karbohidrat dan protein.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Komposisi Isi Piringku"
+          },
+          {
+            "type": "list",
+            "items": [
+              "1/3 piring makanan pokok (nasi, jagung, singkong, dll)",
+              "1/3 piring lauk pauk (protein hewani dan nabati)",
+              "1/3 piring sayuran dan buah-buahan"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Pesan Gizi Seimbang"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Syukuri dan nikmati keanekaragaman makanan",
+              "Banyak makan sayuran dan cukup buah-buahan",
+              "Biasakan mengonsumsi lauk pauk berprotein tinggi",
+              "Biasakan mengonsumsi aneka ragam makanan pokok",
+              "Batasi konsumsi pangan manis, asin, dan berlemak",
+              "Biasakan sarapan",
+              "Biasakan minum air putih yang cukup dan aman",
+              "Biasakan membaca label pada kemasan pangan",
+              "Cuci tangan dengan sabun dan air mengalir",
+              "Lakukan aktivitas fisik yang cukup dan pertahankan berat badan normal"
+            ]
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Panduan Gizi Seimbang",
+          "format": "PDF",
+          "size": "8.5 MB",
+          "url": "/downloads/panduan-gizi-seimbang.pdf"
+        },
+        {
+          "id": 2,
+          "title": "Poster Isi Piringku",
+          "format": "PDF",
+          "size": "3.2 MB",
+          "url": "/downloads/poster-isi-piringku.pdf"
+        }
+      ],
+      "relatedMedia": ["infografis-pencegahan-stunting", "brosur-imunisasi-anak"]
+    },
+    "video-ctps": {
+      "id": 12,
+      "title": "Video Edukasi Cuci Tangan Pakai Sabun (CTPS)",
+      "slug": "video-ctps",
+      "category": "Media Download",
+      "date": "2025-04-22",
+      "displayDate": "22 Apr 2025",
+      "views": "5960",
+      "downloads": "2980",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+      "tags": ["CTPS", "Cuci Tangan", "Video", "Edukasi", "Sanitasi"],
+      "description": "Video edukasi animasi tentang 6 langkah cuci tangan yang benar dengan sabun.",
+      "fullContent": {
+        "intro": "Cuci Tangan Pakai Sabun (CTPS) adalah salah satu tindakan sanitasi dengan membersihkan tangan dan jari-jemari menggunakan air dan sabun untuk menjadi bersih.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "6 Langkah Cuci Tangan yang Benar"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Basahi tangan dengan air mengalir, tuangkan sabun",
+              "Gosok telapak tangan dan punggung tangan",
+              "Gosok sela-sela jari kedua tangan",
+              "Gosok punggung jari-jari tangan",
+              "Gosok ibu jari secara memutar",
+              "Gosok ujung jari pada telapak tangan, lalu bilas dengan air bersih"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Kapan Harus Cuci Tangan?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sebelum makan",
+              "Sebelum menyiapkan makanan",
+              "Setelah dari toilet/buang air",
+              "Setelah bermain",
+              "Setelah menyentuh hewan",
+              "Setelah batuk atau bersin"
+            ]
+          }
+        ]
+      },
+      "downloadFiles": [
+        {
+          "id": 1,
+          "title": "Video CTPS (MP4 HD)",
+          "format": "MP4",
+          "size": "45 MB",
+          "url": "/downloads/video-ctps-hd.mp4"
+        },
+        {
+          "id": 2,
+          "title": "Video CTPS (MP4 SD)",
+          "format": "MP4",
+          "size": "18 MB",
+          "url": "/downloads/video-ctps-sd.mp4"
+        },
+        {
+          "id": 3,
+          "title": "Poster 6 Langkah CTPS",
+          "format": "PDF",
+          "size": "2.1 MB",
+          "url": "/downloads/poster-6-langkah-ctps.pdf"
+        }
+      ],
+      "relatedMedia": ["leaflet-phbs", "poster-germas"]
+    }
+  }
 }

@@ -118,7 +118,7 @@ function CategoryCard({
 }) {
   return (
     <Link
-      href={`/page/siklus-hidup#${category.slug}`}
+      href={`/siklus-hidup#${category.slug}`}
       className="flex-none w-[220px] lg:w-full snap-center group cursor-pointer flex flex-col items-center"
     >
       {/* Image Container */}

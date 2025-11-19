@@ -46,7 +46,7 @@ export default function TopBar() {
 
             {/* LOGIN - ukuran ikon dan teks disesuaikan untuk mobile */}
             <Link
-              href="/page/login"
+              href="/login"
               className="flex items-center gap-2 hover:opacity-70 transition-opacity"
               title="Masuk ke Akun Anda"
             >
