@@ -77,7 +77,7 @@ export default function HeroSection() {
   size="lg"
   className="h-[55px] sm:h-[70px] lg:h-[80px] px-8 sm:px-12 lg:px-16 text-[20px] sm:text-[26px] lg:text-[30px] rounded-full bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium shadow-lg hover:scale-105 transition-all"
 >
-  <Link href="/konsultasi">Mulai Konsultasi</Link>
+  <Link href="/konsultasi">Selengkapnya</Link>
 </Button>
         </motion.div>
       </div>
