@@ -10,42 +10,42 @@ import { Menu, X } from 'lucide-react'
 // Menu Items Configuration
 const menuItems = [
   {
-    label: 'Tentang',
+    label: 'TENTANG',
     href: '/page/tentang',
     iconPath: '/assets/info.svg',
   },
   {
-    label: 'Topik',
+    label: 'TOPIK',
     href: '/page/topik-kesehatan',
     iconPath: '/assets/category.svg',
   },
   {
-    label: 'Siklus Hidup',
+    label: 'SIKLUS HIDUP',
     href: '/page/siklus-hidup',
     iconPath: '/assets/user.svg',
   },
   {
-    label: 'Hidup Sehat',
+    label: 'HIDUP SEHAT',
     href: '/page/perilaku-hidup-sehat',
     iconPath: '/assets/heart.svg',
   },
   {
-    label: 'Kegiatan',
+    label: 'KEGIATAN',
     href: '/page/kegiatan',
     iconPath: '/assets/calendar.svg',
   },
   {
-    label: 'Download',
+    label: 'DOWNLOAD',
     href: '/page/media-download',
     iconPath: '/assets/paper.svg',
   },
   {
-    label: 'Kampanye',
+    label: 'KAMPANYE',
     href: '/page/kampanye',
     iconPath: '/assets/Activity.svg',
   },
   {
-    label: 'Kemitraan',
+    label: 'KEMITRAAN',
     href: '/page/kemitraan',
     iconPath: '/assets/Document.svg',
   },
@@ -80,9 +80,9 @@ export default function Navbar() {
       aria-label="Navigasi utama"
     >
       <div className="container-custom">
-        <div className="relative py-2 lg:py-3">
+        <div className="relative py-4 lg:py-6">
           {/* ===== DESKTOP LAYOUT ===== */}
-          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8 2xl:gap-10">
             {/* Logo */}
             <Link
               href="/"
@@ -105,14 +105,14 @@ export default function Navbar() {
             </Link>
 
             {/* Menu Items */}
-            <div className="flex-1 flex justify-end gap-4 xl:gap-5 2xl:gap-6">
+            <div className="flex-1 flex justify-end gap-6 xl:gap-8 2xl:gap-10">
               {menuItems.map((item) => {
                 const isActive = pathname === item.href
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`flex flex-col items-center justify-center gap-2 rounded-xl w-[85px] h-[85px] xl:w-[95px] xl:h-[95px] transition-all duration-300 group ${
+                    className={`flex flex-col items-center justify-center gap-3 rounded-xl w-[110px] h-[110px] xl:w-[120px] xl:h-[120px] transition-all duration-300 group ${
                       isActive
                         ? 'bg-brand-primary shadow-card'
                         : 'bg-transparent hover:bg-[#e9fffe] hover:shadow-md'
@@ -135,7 +135,7 @@ export default function Navbar() {
 
                     {/* Label */}
                     <span
-                      className={`font-semibold text-[10px] xl:text-[11px] 2xl:text-caption leading-tight text-center transition-colors duration-300 ${
+                      className={`font-bold text-[10px] xl:text-[12px] 2xl:text-base leading-tight text-center transition-colors duration-300 ${
                         isActive
                           ? 'text-white'
                           : 'text-brand-primary group-hover:text-brand-primary-dark'
@@ -150,7 +150,7 @@ export default function Navbar() {
           </div>
 
           {/* ===== TABLET LAYOUT ===== */}
-          <div className="hidden md:flex lg:hidden items-center justify-between gap-3">
+          <div className="hidden md:flex lg:hidden items-center justify-between gap-4">
             <Link
               href="/"
               className="block w-[130px] hover:opacity-80 transition-opacity"
@@ -168,7 +168,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-brand-primary p-1.5 hover:bg-gray-100 rounded-lg transition-colors shrink-0"
+              className="text-brand-primary p-2 hover:bg-gray-100 rounded-lg transition-colors shrink-0"
               aria-label={mobileMenuOpen ? 'Tutup menu' : 'Buka menu'}
               aria-expanded={mobileMenuOpen}
             >
@@ -195,7 +195,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-brand-primary p-1.5 hover:bg-gray-100 rounded-lg transition-colors"
+              className="text-brand-primary p-2 hover:bg-gray-100 rounded-lg transition-colors"
               aria-label={mobileMenuOpen ? 'Tutup menu' : 'Buka menu'}
               aria-expanded={mobileMenuOpen}
             >
@@ -206,15 +206,15 @@ export default function Navbar() {
 
         {/* ===== MOBILE MENU DROPDOWN ===== */}
         {mobileMenuOpen && (
-          <div className="lg:hidden pb-3 space-y-2 border-t border-gray-200 pt-3 bg-white">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+          <div className="lg:hidden pb-4 space-y-3 border-t border-gray-200 pt-4 bg-white">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
               {menuItems.map((item) => {
                 const isActive = pathname === item.href
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`flex flex-col items-center justify-center gap-1 rounded-xl w-full aspect-square transition-all duration-300 ${
+                    className={`flex flex-col items-center justify-center gap-2 rounded-xl w-full aspect-square transition-all duration-300 ${
                       isActive
                         ? 'bg-brand-primary shadow-card'
                         : 'bg-transparent hover:bg-[#e9fffe]'
@@ -237,7 +237,7 @@ export default function Navbar() {
 
                     {/* Label */}
                     <span
-                      className={`font-semibold text-[10px] leading-tight text-center transition-colors duration-300 ${
+                      className={`font-medium text-[12px] leading-tight text-center transition-colors duration-300 ${
                         isActive ? 'text-white' : 'text-brand-primary'
                       }`}
                     >

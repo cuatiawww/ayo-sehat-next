@@ -4,260 +4,147 @@ import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react'
 
 export default function Footer() {
   const socialLinks = [
-    {
-      name: 'Facebook',
-      href: 'https://facebook.com/kemenkes',
-      icon: Facebook,
-      label: 'Facebook Ayo Sehat',
-    },
-    {
-      name: 'Twitter',
-      href: 'https://twitter.com/kemenkesri',
-      icon: Twitter,
-      label: 'Twitter Ayo Sehat',
-    },
-    {
-      name: 'Instagram',
-      href: 'https://instagram.com/kemenkesri',
-      icon: Instagram,
-      label: 'Instagram Ayo Sehat',
-    },
-    {
-      name: 'YouTube',
-      href: 'https://youtube.com/@kemenkesri',
-      icon: Youtube,
-      label: 'YouTube Ayo Sehat',
-    },
+    { href: 'https://facebook.com/kemenkes', icon: Facebook },
+    { href: 'https://twitter.com/kemenkesri', icon: Twitter },
+    { href: 'https://instagram.com/kemenkesri', icon: Instagram },
+    { href: 'https://youtube.com/@kemenkesri', icon: Youtube },
   ]
-
-  const footerLinks = {
-    layanan: [
-      { label: 'Konsultasi Online', href: '/layanan/konsultasi' },
-      { label: 'Medical Check-Up', href: '/layanan/mcu' },
-      { label: 'Laboratorium', href: '/layanan/lab' },
-    ],
-    spesialis: [
-      { label: 'Dokter Umum', href: '/spesialis/umum' },
-      { label: 'Dokter Gigi', href: '/spesialis/gigi' },
-    ],
-    informasi: [
-      { label: 'Tentang Kami', href: '/page/tentang' },
-      { label: 'Tim Medis', href: '/tim' },
-      { label: 'Karir', href: '/karir' },
-    ],
-    artikel: [
-      { label: 'Tips Kesehatan', href: '/artikel/tips' },
-      { label: 'Pencegahan Penyakit', href: '/artikel/pencegahan' },
-      { label: 'Gaya Hidup Sehat', href: '/artikel/gaya-hidup' },
-      { label: 'Nutrisi & Gizi', href: '/artikel/nutrisi' },
-      { label: 'Kesehatan Mental', href: '/artikel/mental' },
-    ],
-    kontak: [
-      { label: 'Customer Service', href: '/kontak/cs' },
-      { label: 'WhatsApp', href: 'https://wa.me/6281234567890' },
-      { label: 'FAQ', href: '/faq' },
-    ],
-  }
 
   return (
     <footer className="bg-white border-t border-gray-300">
-      {/* Main Footer Content */}
-      <div className="container-custom py-8 sm:py-12 lg:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
-          {/* Column 1 - Logo & Info */}
-          <div>
-            <div className="mb-6">
-              {/* Logo */}
-              <div className="mb-3 sm:mb-4">
-                <Image
-                  src="/assets/logo.png"
-                  alt="Logo Ayo Sehat - Kementerian Kesehatan RI"
-                  title="Ayo Sehat - Platform Kesehatan Resmi Kemenkes"
-                  width={160}
-                  height={53}
-                  className="w-[120px] sm:w-[140px] lg:w-[160px] h-auto object-contain"
-                />
-              </div>
+      {/* MAIN FOOTER – 2 KOLOM SAJA */}
+      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+          {/* KOLOM KIRI – Logo & Info (seperti permintaan: bold, tidak turun ke bawah) */}
+          <div className="lg:col-span-5 space-y-6">
+            <div className="flex items-start gap-4">
+              <Image
+                src="/assets/logo.png"
+                alt="Ayo Sehat - Kementerian Kesehatan RI"
+                width={160}
+                height={53}
+                className="w-36 lg:w-40 h-auto"
+              />
+            </div>
 
-              {/* Organization Name */}
-              <div className="leading-tight mb-3 sm:mb-4">
-                <p className="font-bold text-body-sm sm:text-body-md text-gray-900">
-                  Ayo Sehat
-                </p>
-                <p className="font-medium text-body-xs sm:text-body-sm text-gray-900">
-                  Kementerian Kesehatan Republik Indonesia
-                </p>
-              </div>
+            <div className="space-y-3 text-gray-700">
+              <p className="font-bold text-lg text-gray-900">Ayo Sehat</p>
+              <p className="font-bold text-base text-gray-900">
+                Kementerian Kesehatan Republik Indonesia
+              </p>
 
-              {/* Address */}
-              <p className="text-body-xs sm:text-body-sm text-gray-900 mb-3 sm:mb-4">
+              <p className="text-sm leading-relaxed">
                 Jl. H.R. Rasuna Said Blok X5 Kav. 4-9
                 <br />
                 Jakarta Selatan, DKI Jakarta
               </p>
 
-              {/* WhatsApp Chatbot */}
               <Link
                 href="https://wa.me/6281234567890"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-body-xs sm:text-body-sm text-brand-primary hover:text-brand-primary-dark transition-colors inline-flex items-center gap-1"
+                className="inline-flex items-center gap-2 text-brand-primary hover:text-brand-primary-dark font-medium text-sm"
               >
                 Chatbot WhatsApp Ayo Sehat
-                <svg
-                  className="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </Link>
             </div>
 
-            {/* Social Media */}
             <div>
-              <h4 className="font-medium text-body-sm sm:text-body-md text-gray-900 mb-3 sm:mb-4">
-                Media Sosial
-              </h4>
+              <p className="font-medium text-gray-900 mb-3">Media Sosial</p>
               <div className="flex gap-3">
-                {socialLinks.map((social) => (
+                {socialLinks.map((social, i) => (
                   <Link
-                    key={social.name}
+                    key={i}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-[30px] h-[30px] rounded-md bg-brand-primary-dark hover:bg-brand-primary-hover flex items-center justify-center transition-all duration-300 hover:scale-110"
-                    aria-label={social.label}
+                    className="w-9 h-9 bg-brand-primary-dark hover:bg-brand-primary-hover rounded-md flex items-center justify-center transition-all hover:scale-110"
                   >
-                    <social.icon className="w-4 h-4 text-white" />
+                    <social.icon className="w-5 h-5 text-white" />
                   </Link>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Column 2 - Layanan & Spesialis */}
-          <div>
-            <h3 className="font-bold text-body-sm sm:text-body-md text-gray-900 mb-3 sm:mb-4 uppercase">
-              Layanan Kami
-            </h3>
-            <ul className="space-y-2">
-              {footerLinks.layanan.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-tiny sm:text-caption text-brand-primary hover:text-brand-primary-dark transition-all duration-300 inline-block hover:translate-x-1 uppercase"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* KOLOM KANAN – Semua menu dalam 1 blok rapi */}
+          <div className="lg:col-span-7">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+              {/* Program Unggulan */}
+              <div>
+                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">
+                  Program Unggulan
+                </h3>
+                <ul className="space-y-2 text-sm text-brand-primary">
+                  <li><Link href="#" className="hover:underline">Pemeriksaan Kesehatan Gratis</Link></li>
+                  <li><Link href="#" className="hover:underline">1000 Hari Pertama Kehidupan</Link></li>
+                  <li><Link href="#" className="hover:underline">Penanganan Stunting</Link></li>
+                </ul>
+              </div>
 
-            <h3 className="font-bold text-body-sm sm:text-body-md text-gray-900 mb-3 sm:mb-4 mt-6 sm:mt-8 uppercase">
-              Spesialis
-            </h3>
-            <ul className="space-y-2">
-              {footerLinks.spesialis.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-tiny sm:text-caption text-brand-primary hover:text-brand-primary-dark transition-all duration-300 inline-block hover:translate-x-1 uppercase"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+              {/* Kampanye Prioritas */}
+              <div>
+                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">
+                  Kampanye Prioritas
+                </h3>
+                <ul className="space-y-2 text-sm text-brand-primary">
+                  <li><Link href="#" className="hover:underline">Mudik Sehat</Link></li>
+                  <li><Link href="#" className="hover:underline">Program Inovasi Edukasi Kesehatan</Link></li>
+                  <li><Link href="#" className="hover:underline">Gerakan Aksi Bergizi</Link></li>
+                  <li><Link href="#" className="hover:underline">Cegah Stunting</Link></li>
+                  <li><Link href="#" className="hover:underline">Gerakan Sehat</Link></li>
+                  <li><Link href="#" className="hover:underline">Germas</Link></li>
+                </ul>
+              </div>
 
-          {/* Column 3 - Informasi & Artikel */}
-          <div>
-            <h3 className="font-bold text-body-sm sm:text-body-md text-gray-900 mb-3 sm:mb-4 uppercase">
-              Informasi
-            </h3>
-            <ul className="space-y-2">
-              {footerLinks.informasi.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-tiny sm:text-caption text-brand-primary hover:text-brand-primary-dark transition-all duration-300 inline-block hover:translate-x-1 uppercase"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+              {/* Informasi */}
+              <div>
+                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">
+                  Informasi
+                </h3>
+                <ul className="space-y-2 text-sm text-brand-primary">
+                  <li><Link href="#" className="hover:underline">Kampanye Kesehatan</Link></li>
+                </ul>
+              </div>
 
-            <h3 className="font-bold text-body-sm sm:text-body-md text-gray-900 mb-3 sm:mb-4 mt-6 sm:mt-8 uppercase">
-              Artikel Kesehatan
-            </h3>
-            <ul className="space-y-2">
-              {footerLinks.artikel.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-tiny sm:text-caption text-brand-primary hover:text-brand-primary-dark transition-all duration-300 inline-block hover:translate-x-1 uppercase"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4 - Hubungi Kami */}
-          <div>
-            <h3 className="font-bold text-body-sm sm:text-body-md text-gray-900 mb-3 sm:mb-4 uppercase">
-              Hubungi Kami
-            </h3>
-            <ul className="space-y-2">
-              {footerLinks.kontak.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    target={link.href.startsWith('http') ? '_blank' : undefined}
-                    rel={
-                      link.href.startsWith('http')
-                        ? 'noopener noreferrer'
-                        : undefined
-                    }
-                    className="text-tiny sm:text-caption text-brand-primary hover:text-brand-primary-dark transition-all duration-300 inline-block hover:translate-x-1 uppercase"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+              {/* Link Terkait */}
+              <div>
+                <h3 className="font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">
+                  Link Terkait
+                </h3>
+                <ul className="space-y-2 text-sm text-brand-primary">
+                  <li>
+                    <Link href="https://kemenkes.go.id" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      Kementerian Kesehatan
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://sehatnegeriku.kemkes.go.id" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      Sehat Negeriku
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* BOTTOM BAR – TETAP SAMA PERSIS SEPERTI AWAL */}
       <div className="border-t border-gray-300">
-        <div className="container-custom py-4 sm:py-6">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
-            <p className="text-tiny sm:text-caption text-gray-900 text-center sm:text-left">
-              © 2025 Kementerian Kesehatan Republik Indonesia. All rights
-              reserved.
+        <div className="max-w-7xl mx-auto px-6 py-5">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+            <p className="text-gray-900 text-center sm:text-left">
+              © 2025 Kementerian Kesehatan Republik Indonesia. All rights reserved.
             </p>
-            <div className="flex gap-3 sm:gap-4">
-              <Link
-                href="/privacy"
-                className="text-tiny sm:text-caption text-brand-primary hover:text-brand-primary-dark transition-colors"
-              >
+            <div className="flex gap-6">
+              <Link href="/privacy" className="text-brand-primary hover:text-brand-primary-dark">
                 Privacy Policy
               </Link>
-              <Link
-                href="/terms"
-                className="text-tiny sm:text-caption text-brand-primary hover:text-brand-primary-dark transition-colors"
-              >
+              <Link href="/terms" className="text-brand-primary hover:text-brand-primary-dark">
                 Terms of Service
               </Link>
             </div>

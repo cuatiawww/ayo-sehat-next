@@ -14,7 +14,7 @@ export default function CalendarCard({ delay = 0.3 }: CalendarCardProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
     >
-      <h3 className="text-body-lg sm:text-heading-sm text-gray-900 mb-2 font-semibold">
+      <h3 className="text-body-lg sm:text-heading-sm font-bold text-brand-primary mb-1">
         Kalender Kesehatan
       </h3>
       <p className="text-body-sm sm:text-body-md text-gray-600 mb-3 sm:mb-4 leading-relaxed">

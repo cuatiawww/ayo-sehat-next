@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Hari Pangan Sedunia 2025",
       "description": "Setiap 16 Oktober, dunia merayakan Hari Pangan Sedunia untuk mengingatkan pentingnya pangan bagi kehidupan manusia. Tahun 2025 mengusung tema...",
-      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=80",
+      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1200&q=80",
       "date": "2025-09-18",
       "displayDate": "18 Sep 2025",
       "slug": "hari-pangan-sedunia-2025",
@@ -14,7 +14,7 @@
       "id": 2,
       "title": "Hari Kesaktian Pancasila 2025",
       "description": "Momentum untuk memperkuat nilai-nilai Pancasila dalam kehidupan berbangsa dan bernegara. Melalui semangat gotong royong, kita tingkatkan kepedulian dan...",
-      "image": "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=600&q=80",
+      "image": "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1200&q=80",
       "date": "2025-10-01",
       "displayDate": "1 Okt 2025",
       "slug": "hari-kesaktian-pancasila-2025",
@@ -23,20 +23,10 @@
   ],
   "upcomingEvents": [
     {
-      "id": 2,
-      "title": "Hari Kesaktian Pancasila 2025",
-      "description": "Momentum untuk memperkuat nilai-nilai Pancasila dalam kehidupan berbangsa dan bernegara. Melalui semangat gotong royong, kita tingkatkan kepedulian dan...",
-      "image": "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=600&q=80",
-      "date": "2025-10-01",
-      "displayDate": "1 Okt 2025",
-      "slug": "hari-kesaktian-pancasila-2025",
-      "status": "upcoming"
-    },
-    {
       "id": 3,
       "title": "Hari Kesehatan Mental Sedunia 2025",
       "description": "Peringatan ini mengajak seluruh masyarakat untuk peduli terhadap kesehatan mental. Tema tahun ini menekankan pentingnya dukungan sosial, akses layanan...",
-      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
       "date": "2025-10-10",
       "displayDate": "10 Okt 2025",
       "slug": "hari-kesehatan-mental-2025",
@@ -46,7 +36,7 @@
       "id": 4,
       "title": "Hari Penglihatan Sedunia 2025",
       "description": "Peringatan global untuk meningkatkan kesadaran tentang pentingnya menjaga kesehatan mata. Mari cegah kebutaan yang bisa dihindari dengan pemeriksaan mata...",
-      "image": "https://images.unsplash.com/photo-1583083527882-4bee9aba2eea?w=600&q=80",
+      "image": "https://images.unsplash.com/photo-1583083527882-4bee9aba2eea?w=1200&q=80",
       "date": "2025-10-10",
       "displayDate": "10 Okt 2025",
       "slug": "hari-penglihatan-sedunia-2025",
@@ -56,21 +46,151 @@
       "id": 5,
       "title": "Hari Cuci Tangan Sedunia 2025",
       "description": "Gerakan sederhana namun berdampak besar! Mencuci tangan dengan sabun dalam langkah efektif mencegah penyakit menular. Ayo jadikan kebiasaan...",
-      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80",
+      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=1200&q=80",
       "date": "2025-10-15",
       "displayDate": "15 Okt 2025",
       "slug": "hari-cuci-tangan-sedunia-2025",
       "status": "upcoming"
-    },
-    {
-      "id": 6,
-      "title": "Hari Pangan Sedunia 2025",
-      "description": "Peringatan ini mengingatkan pentingnya akses pangan bagi semua. Dengan pola makan sehat dan berkelanjutan, kita dapat mendukung...",
-      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
-      "date": "2025-10-16",
-      "displayDate": "16 Okt 2025",
-      "slug": "hari-pangan-sedunia-2025-b",
-      "status": "upcoming"
     }
-  ]
+  ],
+  "eventDetails": {
+    "hari-pangan-sedunia-2025": {
+      "id": 1,
+      "title": "Hari Pangan Sedunia 2025",
+      "slug": "hari-pangan-sedunia-2025",
+      "category": "Agenda Kegiatan",
+      "author": {
+        "name": "Priana Yatiliya, Bsc (Hons)",
+        "title": "Tim Kesehatan Kemenkes"
+      },
+      "date": "2025-09-18",
+      "displayDate": "10 Sep 2025",
+      "views": "708",
+      "readTime": "5",
+      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1200&q=80",
+      "tags": ["Hari Pangan Sedunia 2025", "Bayi dan Balita", "Anak Usia 6-18", "Kesehatan"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Tema Hari Pangan",
+          "Pangan Bergizi Seimbang",
+          "Peran Masyarakat dalam",
+          "Dukungan perlama dan pelaku pangan kecil"
+        ]
+      },
+      "fullContent": {
+        "intro": "Setiap 16 Oktober, dunia merayakan Hari Pangan Sedunia untuk mengingatkan pentingnya pangan bagi kehidupan manusia. Tahun 2025 mengusung tema \"Hand in Hand for Better Foods and a Better Future\" — Bersama-sama Menuju Pangan yang Baik dan Masa Depan yang Lebih Baik.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Tema ini mengajak kita semua — dari petani hingga konsumen — untuk bersama membangun sistem pangan yang sehat, berkelanjutan, dan adil. Makanan yang baik bukan hanya berarti, tetapi juga dihasilkan dengan cara yang ramah lingkungan dan mendukung kesejahteraan masyarakat."
+          },
+          {
+            "type": "heading",
+            "content": "Setiap orang bisa berperan:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Pilih produk lokal dan ramah lingkungan",
+              "Hindari pemborosan pangan",
+              "Kurangi pemborosan pangan",
+              "Kurangi perlama dan pelaku pangan kecil"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": "Dengan langkah sederhana kita turut menciptakan dunia di mana setiap orang memiliki akses terhadap makanan bergizi dan berkelanjutan — demi bumi dan masa depan yang lebih baik."
+          }
+        ],
+        "topikKesehatanTerkait": ["Lingkungan Sehat dan Pembangunan Anak", "Hidup Asuh dan Perkembangan Anak", "Pencegahan Infeksi pada Remaja"],
+        "penyakitTerkait": ["Batuk Rejan", "Pneumonia", "Influenza"],
+        "kemitraan": {
+          "title": "Kemitraan",
+          "description": "Satu tindakan kecil hari ini dapat memberikan dampak besar yang nantinya keturunan satu dukungan kesehatan untuk mereka kesejahteraan kita bersama di segera dari yang lainnya bila",
+          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "buttonText": "Bergabung",
+          "buttonLink": "/page/kemitraan"
+        }
+      }
+    },
+    "hari-kesehatan-mental-2025": {
+      "id": 3,
+      "title": "Hari Kesehatan Mental Sedunia 2025",
+      "slug": "hari-kesehatan-mental-2025",
+      "category": "Agenda Kegiatan",
+      "author": {
+        "name": "Dr. Ahmad Suryadi, SpKJ",
+        "title": "Spesialis Kesehatan Jiwa"
+      },
+      "date": "2025-10-10",
+      "displayDate": "10 Okt 2025",
+      "views": "1245",
+      "readTime": "6",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
+      "tags": ["Kesehatan Mental", "Mental Health", "Dukungan Sosial", "Layanan Kesehatan"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Tema Kesehatan Mental",
+          "Pentingnya Dukungan Sosial",
+          "Akses Layanan Kesehatan",
+          "Peran Masyarakat"
+        ]
+      },
+      "fullContent": {
+        "intro": "Peringatan ini mengajak seluruh masyarakat untuk peduli terhadap kesehatan mental. Tema tahun ini menekankan pentingnya dukungan sosial, akses layanan kesehatan mental yang memadai, dan menghilangkan stigma terhadap gangguan mental.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Kesehatan mental sama pentingnya dengan kesehatan fisik. Namun, masih banyak orang yang mengabaikan kondisi mental mereka atau merasa malu untuk mencari bantuan karena stigma sosial."
+          },
+          {
+            "type": "heading",
+            "content": "Mengapa Kesehatan Mental Penting?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Kesehatan mental yang baik mempengaruhi cara kita berpikir, merasa, dan bertindak. Ini juga menentukan bagaimana kita mengatasi stres, berhubungan dengan orang lain, dan membuat keputusan. Gangguan kesehatan mental dapat mempengaruhi produktivitas, hubungan sosial, dan kualitas hidup secara keseluruhan."
+          },
+          {
+            "type": "heading",
+            "content": "Tanda-tanda Gangguan Kesehatan Mental"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Perubahan mood yang drastis atau berkepanjangan",
+              "Kesulitan tidur atau tidur berlebihan",
+              "Menarik diri dari aktivitas sosial",
+              "Perubahan pola makan yang signifikan",
+              "Kesulitan konsentrasi atau membuat keputusan",
+              "Perasaan cemas atau khawatir berlebihan"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Apa yang Bisa Kita Lakukan?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Jaga kesehatan mental Anda dengan tidur cukup, olahraga teratur, makan makanan bergizi, dan luangkan waktu untuk hobi yang Anda nikmati. Jangan ragu untuk berbicara dengan orang yang Anda percaya atau mencari bantuan profesional jika diperlukan."
+          },
+          {
+            "type": "paragraph",
+            "content": "Mari bersama-sama menciptakan lingkungan yang mendukung kesehatan mental, di mana setiap orang merasa aman untuk berbicara tentang perasaan mereka tanpa takut dihakimi."
+          }
+        ],
+        "topikKesehatanTerkait": ["Gangguan Jiwa", "Depresi", "Kecemasan"],
+        "penyakitTerkait": ["Skizofrenia", "Gangguan Bipolar", "PTSD"],
+        "kemitraan": {
+          "title": "Kemitraan",
+          "description": "Bergabunglah dengan kami dalam upaya meningkatkan kesadaran dan akses layanan kesehatan mental di Indonesia",
+          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "buttonText": "Bergabung",
+          "buttonLink": "/page/kemitraan"
+        }
+      }
+    }
+  }
 }

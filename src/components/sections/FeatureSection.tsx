@@ -164,11 +164,11 @@ function FeatureCard({ feature }: { feature: (typeof features)[0] }) {
           {/* Shine Effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
 
-          {/* Corner Badge */}
+          {/* Corner Badge
           <div className="absolute top-3 right-3 bg-brand-primary text-white px-3 py-1 rounded-full text-tiny font-semibold opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-500 flex items-center gap-1">
             Lihat Detail
             <ArrowRight className="w-3 h-3" />
-          </div>
+          </div> */}
         </div>
 
         {/* Content */}
