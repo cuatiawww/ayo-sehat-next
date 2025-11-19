@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Calendar as X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 
@@ -70,9 +70,51 @@ const healthObservances: HealthObservance[] = [
 
 export default function CustomCalendar() {
   const [currentDate, setCurrentDate] = useState(new Date())
-  const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date())
+  const [selectedDate, setSelectedDate] = useState<Date | undefined>()
   const [selectedObservance, setSelectedObservance] =
     useState<HealthObservance | null>(null)
+
+  // Find closest health observance on mount
+  const findClosestObservance = () => {
+    const today = new Date()
+    const currentYear = today.getFullYear()
+
+    // Create array of observances with full dates
+    const observancesWithDates = healthObservances.map(obs => {
+      const [month, day] = obs.date.split('-').map(Number)
+      const obsDate = new Date(currentYear, month - 1, day)
+
+      // If date has passed this year, consider next year
+      if (obsDate < today) {
+        obsDate.setFullYear(currentYear + 1)
+      }
+
+      return {
+        ...obs,
+        fullDate: obsDate,
+        daysDiff: Math.floor((obsDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
+      }
+    })
+
+    // Sort by days difference and get the closest one
+    observancesWithDates.sort((a, b) => a.daysDiff - b.daysDiff)
+
+    return observancesWithDates[0]
+  }
+
+  // Auto-select closest observance on mount
+  useEffect(() => {
+    const closest = findClosestObservance()
+    if (closest) {
+      setSelectedDate(closest.fullDate)
+      setCurrentDate(closest.fullDate)
+      setSelectedObservance({
+        date: closest.date,
+        title: closest.title,
+        description: closest.description
+      })
+    }
+  }, [])
 
   const monthNames = [
     'Januari',
@@ -173,54 +215,37 @@ export default function CustomCalendar() {
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
-      {/* Header */}
-      {/* <div className="bg-gradient-to-r from-brand-primary/10 to-brand-primary/5 px-4 py-3 border-b border-gray-100">
-        <div className="flex items-center gap-3">
-          <div className="bg-brand-primary/10 p-2 rounded-lg">
-            <CalendarIcon className="w-5 h-5 text-brand-primary" />
-          </div>
-          <div>
-            <h3 className="text-body-md sm:text-body-lg font-semibold text-gray-900">
-              Kalender Kesehatan 2025
-            </h3>
-            <p className="text-tiny sm:text-caption text-gray-600">
-              Hari peringatan kesehatan nasional dan internasional
-            </p>
-          </div>
-        </div>
-      </div> */}
-
       {/* Calendar Body */}
-      <div className="p-4">
+      <div className="p-3">
         {/* Month/Year Navigation */}
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-3">
           <button
             onClick={previousMonth}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-1.5 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label="Bulan sebelumnya"
           >
-            <ChevronLeft className="w-5 h-5 text-gray-600" />
+            <ChevronLeft className="w-4 h-4 text-gray-600" />
           </button>
 
-          <h4 className="text-body-md sm:text-body-lg font-semibold text-gray-900">
+          <h4 className="text-body-md font-semibold text-gray-900">
             {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
           </h4>
 
           <button
             onClick={nextMonth}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-1.5 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label="Bulan berikutnya"
           >
-            <ChevronRight className="w-5 h-5 text-gray-600" />
+            <ChevronRight className="w-4 h-4 text-gray-600" />
           </button>
         </div>
 
         {/* Day Names */}
-        <div className="grid grid-cols-7 gap-1 mb-2">
+        <div className="grid grid-cols-7 gap-1 mb-1.5">
           {dayNames.map((day, index) => (
             <div
               key={index}
-              className="text-center text-tiny sm:text-caption font-medium text-gray-600 py-2"
+              className="text-center text-tiny font-medium text-gray-600 py-1.5"
             >
               {day}
             </div>
@@ -243,7 +268,7 @@ export default function CustomCalendar() {
               <button
                 key={day}
                 onClick={() => handleDateClick(day)}
-                className={`relative aspect-square flex items-center justify-center rounded-lg text-body-sm transition-all duration-200 ${
+                className={`relative aspect-square flex items-center justify-center rounded-lg text-caption transition-all duration-200 ${
                   isSelectedDate
                     ? 'bg-gray-900 text-white font-bold shadow-md'
                     : isTodayDate
@@ -254,41 +279,38 @@ export default function CustomCalendar() {
                 {day}
                 {/* Dot indicator for health observance */}
                 {hasObservance && !isSelectedDate && (
-                  <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-brand-primary" />
+                  <div className="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-brand-primary" />
                 )}
               </button>
             )
           })}
         </div>
 
-        {/* Selected Date Info */}
-        {selectedDate && (
-          <div className="mt-4 pt-4 border-t border-gray-100">
-            <div className="flex items-center justify-between mb-2">
-              <p className="text-body-sm text-gray-600">
-                Tanggal dipilih:{' '}
-                <span className="font-medium text-gray-900">
-                  {selectedDate.getDate()}{' '}
-                  {monthNames[selectedDate.getMonth()]}{' '}
-                  {selectedDate.getFullYear()}
-                </span>
-              </p>
-              {selectedObservance && (
-                <Badge className="bg-brand-accent text-gray-900 hover:bg-brand-accent-dark">
+        {/* Selected Date Info - Fixed Height */}
+        <div className="mt-3 pt-3 border-t border-gray-100 min-h-[140px]">
+          {selectedDate && selectedObservance ? (
+            <>
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-caption text-gray-600">
+                  <span className="font-medium text-gray-900">
+                    {selectedDate.getDate()}{' '}
+                    {monthNames[selectedDate.getMonth()]}{' '}
+                    {selectedDate.getFullYear()}
+                  </span>
+                </p>
+                <Badge className="bg-brand-accent text-gray-900 hover:bg-brand-accent-dark text-tiny">
                   Hari Kesehatan
                 </Badge>
-              )}
-            </div>
+              </div>
 
-            {/* Observance Details */}
-            {selectedObservance ? (
-              <div className="mt-3 bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 border-l-4 border-brand-primary rounded-lg p-3 sm:p-4">
-                <div className="flex items-start justify-between gap-3">
+              {/* Observance Details */}
+              <div className="bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 border-l-3 border-brand-primary rounded-lg p-2.5">
+                <div className="flex items-start justify-between gap-2">
                   <div className="flex-1">
-                    <h4 className="text-body-md sm:text-body-lg font-semibold text-brand-primary mb-2">
+                    <h4 className="text-body-sm font-semibold text-brand-primary mb-1">
                       {selectedObservance.title}
                     </h4>
-                    <p className="text-body-xs sm:text-body-sm text-gray-700 leading-relaxed">
+                    <p className="text-caption text-gray-700 leading-snug">
                       {selectedObservance.description}
                     </p>
                   </div>
@@ -297,31 +319,33 @@ export default function CustomCalendar() {
                       setSelectedObservance(null)
                       setSelectedDate(undefined)
                     }}
-                    className="text-gray-400 hover:text-brand-primary transition-colors"
+                    className="text-gray-400 hover:text-brand-primary transition-colors flex-shrink-0"
                     aria-label="Tutup detail"
                   >
-                    <X className="w-4 h-4" />
+                    <X className="w-3.5 h-3.5" />
                   </button>
                 </div>
               </div>
-            ) : (
-              <p className="text-body-sm text-gray-500 italic mt-2">
-                Tidak ada peringatan kesehatan pada tanggal ini
+            </>
+          ) : (
+            <div className="flex items-center justify-center h-full text-center py-4">
+              <p className="text-caption text-gray-500 italic">
+                Berikut tanggal kesehatan terkait
               </p>
-            )}
-          </div>
-        )}
+            </div>
+          )}
+        </div>
 
         {/* Legend */}
-        <div className="mt-4 pt-4 border-t border-gray-100">
-          <div className="flex items-center gap-4 text-caption text-gray-600">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-gray-900" />
+        <div className="mt-3 pt-3 border-t border-gray-100">
+          <div className="flex items-center gap-3 text-tiny text-gray-600">
+            <div className="flex items-center gap-1.5">
+              <div className="w-2.5 h-2.5 rounded bg-brand-primary" />
               <span>Hari ini</span>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded bg-brand-primary" />
-              <span>Hari kesehatan</span>
+            <div className="flex items-center gap-1.5">
+              <div className="w-2.5 h-2.5 rounded bg-gray-900" />
+              <span>Dipilih</span>
             </div>
           </div>
         </div>

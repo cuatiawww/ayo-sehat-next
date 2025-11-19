@@ -7,42 +7,42 @@ const partners = [
   {
     id: 1,
     name: 'Takeda',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Takeda_Pharmaceutical_Company_logo.svg/320px-Takeda_Pharmaceutical_Company_logo.svg.png',
+    logo: '../../../public/assets/Kemitraan/Client1.png',
   },
   {
     id: 2,
     name: 'Novartis',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Novartis-Logo.svg/320px-Novartis-Logo.svg.png',
+    logo: '../../../public/assets/Kemitraan/Client2.png',
   },
   {
     id: 3,
     name: 'Pfizer',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Pfizer_logo.svg/320px-Pfizer_logo.svg.png',
+    logo: './../../public/assets/Kemitraan/Client3.png',
   },
   {
     id: 4,
     name: 'Kalbe Farma',
-    logo: 'https://upload.wikimedia.org/wikipedia/id/thumb/3/3c/Kalbe_farma_logo.svg/320px-Kalbe_farma_logo.svg.png',
+    logo: './../../public/assets/Kemitraan/Client4.png',
   },
   {
     id: 5,
     name: 'Adaro',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Adaro_Energy_logo.svg/320px-Adaro_Energy_logo.svg.png',
+    logo: './../../public/assets/Kemitraan/Client5.png',
   },
   {
     id: 6,
     name: 'Sanofi',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sanofi.svg/320px-Sanofi.svg.png',
+    logo: './../../public/assets/Kemitraan/Client6.png',
   },
   {
     id: 7,
     name: 'Unilever',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Unilever_logo.svg/320px-Unilever_logo.svg.png',
+    logo: './../../public/assets/Kemitraan/Client7.png',
   },
   {
     id: 8,
     name: 'KAO',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Kao_Corporation_logo.svg/320px-Kao_Corporation_logo.svg.png',
+    logo: './../../public/assets/Kemitraan/Client8.png',
   },
 ]
 

@@ -16,7 +16,7 @@ export default function HeroSection() {
         transition={{ duration: 1, ease: 'easeOut' }}
       >
         <Image
-          src="/assets/hero.png"
+          src="/assets/Beranda/hero_home.webp"
           alt="Ilustrasi keluarga sehat bersama Kementerian Kesehatan RI - Ayo Sehat"
           title="Hero Banner Ayo Sehat - Portal Resmi Kemenkes RI"
           fill

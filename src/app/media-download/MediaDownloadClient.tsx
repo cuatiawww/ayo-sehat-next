@@ -93,15 +93,15 @@ export default function MediaDownloadClient() {
             >
               {/* Search Bar */}
               <div className="p-6 sm:p-8">
-                <div className="relative max-w-3xl mx-auto">
+                <div className="relative max-w-full">
                   <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-primary" />
                   <input
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Masukkan Kata Kunci"
-                    className="w-full h-14 pl-14 pr-6 text-body-md rounded-xl border-2 border-gray-200 
-                             focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-primary/10 
+                    className="w-full h-14 pl-14 pr-6 text-body-md rounded-xl border-2 border-gray-200
+                             focus:outline-none focus:border-brand-primary focus:ring-4 focus:ring-brand-primary/10
                              transition-all placeholder:text-gray-400 bg-white"
                   />
                 </div>
@@ -109,17 +109,39 @@ export default function MediaDownloadClient() {
 
               {/* Filter Checkboxes */}
               <div className="px-6 sm:px-8 pb-8 pt-4 bg-gray-50/50 border-t border-gray-200">
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-4">
-                  {filterCategories.map((category) => (
-                    <MediaFilterCheckbox
-                      key={category.id}
-                      title={category.title}
-                      options={category.options}
-                      selectedFilters={selectedFilters}
-                      onFilterChange={setSelectedFilters}
-                    />
-                  ))}
-                </div>
+                {filterCategories.map((category) => (
+                  <div key={category.id} className="mb-6 last:mb-0">
+                    <h3 className="text-body-md font-semibold text-gray-900 mb-3">
+                      {category.title}
+                    </h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-6 gap-y-3">
+                      {category.options.map((option) => (
+                        <label
+                          key={option.id}
+                          className="flex items-center gap-2 cursor-pointer group"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selectedFilters.includes(option.id)}
+                            onChange={(e) => {
+                              if (e.target.checked) {
+                                setSelectedFilters([...selectedFilters, option.id])
+                              } else {
+                                setSelectedFilters(
+                                  selectedFilters.filter((f) => f !== option.id)
+                                )
+                              }
+                            }}
+                            className="w-4 h-4 rounded border-gray-300 text-brand-primary focus:ring-brand-primary focus:ring-2"
+                          />
+                          <span className="text-body-sm text-gray-700 group-hover:text-brand-primary transition-colors">
+                            {option.label}
+                          </span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             </motion.div>
 

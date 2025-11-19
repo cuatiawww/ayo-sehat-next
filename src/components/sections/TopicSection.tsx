@@ -72,7 +72,9 @@ export default function TopicSection() {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
   const handleLetterClick = (letter: string) => {
-    setSelectedLetter((prev) => (prev === letter ? null : letter))
+    if (healthTopicsByLetter[letter]?.length > 0) {
+      setSelectedLetter((prev) => (prev === letter ? null : letter))
+    }
   }
 
   // Fungsi untuk mendapatkan URL topik
@@ -97,18 +99,18 @@ export default function TopicSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] xl:grid-cols-[980px_auto] gap-6 lg:gap-12 xl:gap-12">
           {/* Left Column - Topik A-Z */}
           <div className="card-brand w-full lg:max-w-[980px]">
-            <div className="px-6 sm:px-8 lg:px-12 xl:px-16 py-8 lg:py-12 xl:py-16 space-y-12 lg:space-y-16">
-              <h2 className="text-heading-lg sm:text-display-sm lg:text-display-md text-brand-primary mb-3 sm:mb-5 lg:mb-12">
+            <div className="px-6 sm:px-8 lg:px-10 py-6 lg:py-8">
+              <h2 className="text-heading-lg sm:text-display-sm lg:text-display-md text-brand-primary mb-2 sm:mb-3">
                 Topik A-Z
               </h2>
-              <p className="text-body-sm sm:text-body-md lg:text-body-lg text-gray-600 mb-5 sm:mb-6 lg:mb-12 max-w-full xl:max-w-[691px]">
+              <p className="text-body-sm sm:text-body-md text-gray-600 mb-6 lg:mb-8">
                 Temukan penyakit dan kondisi; hidup sehat; keselamatan di tempat
                 kerja; kesehatan lingkungan; cedera, kekerasan, dan keselamatan;
                 kesehatan global; kesehatan pelancong, dan banyak lagi.
               </p>
 
               {/* Alphabet Grid */}
-              <div className="grid grid-cols-7 gap-3 sm:gap-4 lg:gap-6 mb-5 sm:mb-6 lg:mb-8">
+              <div className="grid grid-cols-7 sm:grid-cols-9 md:grid-cols-13 gap-2 lg:gap-2.5 mb-6">
                 {alphabet.map((letter) => {
                   const hasContent = healthTopicsByLetter[letter]?.length > 0
                   const isSelected = selectedLetter === letter
@@ -116,9 +118,9 @@ export default function TopicSection() {
                   return (
                     <button
                       key={letter}
-                      onClick={() => hasContent && handleLetterClick(letter)}
+                      onClick={() => handleLetterClick(letter)}
                       disabled={!hasContent}
-                      className={`aspect-square w-full max-w-[65px] rounded-lg flex items-center justify-center text-[22px] sm:text-[26px] lg:text-[28px] font-semibold leading-none transition-all duration-300 hover:scale-110 hover:shadow-lg disabled:opacity-30 disabled:cursor-not-allowed ${
+                      className={`aspect-square w-full rounded-lg flex items-center justify-center text-[20px] sm:text-[22px] lg:text-[24px] font-semibold leading-none transition-all duration-200 hover:scale-105 disabled:opacity-30 disabled:cursor-not-allowed ${
                         isSelected
                           ? 'bg-brand-primary text-white shadow-md'
                           : hasContent
@@ -133,26 +135,20 @@ export default function TopicSection() {
                 })}
               </div>
 
-              {/* Topics Dropdown */}
-              <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out mb-5 sm:mb-6 lg:mb-8  ${
-                  selectedLetter
-                    ? 'max-h-[800px] opacity-100'
-                    : 'max-h-0 opacity-0'
-                }`}
-              >
-                {selectedLetter && (
-                  <div className="bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 border-2 border-brand-primary rounded-xl p-4 sm:p-5 lg:p-6">
-                    <div className="flex items-center justify-between mb-3 sm:mb-4">
+              {/* Topics Content - Below Alphabet */}
+              {selectedLetter && (
+                <div className="mb-6 animate-in fade-in slide-in-from-top-3 duration-300">
+                  <div className="bg-gradient-to-br from-brand-primary/5 to-brand-primary/10 border-2 border-brand-primary rounded-xl p-4 lg:p-5">
+                    <div className="flex items-center justify-between mb-4">
                       <h3 className="text-body-lg sm:text-heading-sm text-brand-primary flex items-center gap-2">
-                        <span className="bg-brand-primary text-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-body-md sm:text-body-lg font-semibold">
+                        <span className="bg-brand-primary text-white w-8 h-8 rounded-full flex items-center justify-center text-body-md font-semibold">
                           {selectedLetter}
                         </span>
                         Topik Kesehatan
                       </h3>
                       <button
                         onClick={() => setSelectedLetter(null)}
-                        className="text-gray-400 hover:text-brand-primary transition-colors duration-300"
+                        className="text-gray-400 hover:text-brand-primary transition-colors"
                         aria-label="Tutup topik"
                       >
                         <ChevronDown className="w-5 h-5 rotate-180" />
@@ -160,53 +156,66 @@ export default function TopicSection() {
                     </div>
 
                     {healthTopicsByLetter[selectedLetter]?.length > 0 ? (
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
-                        {healthTopicsByLetter[selectedLetter].map(
-                          (topic, index) => (
-                            <Link
-                              key={index}
-                              href={getTopicUrl(topic)}
-                              className="group text-left bg-white hover:bg-brand-primary border border-gray-200 hover:border-brand-primary rounded-lg px-3 sm:px-4 py-2 sm:py-3 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
-                            >
-                              <div className="flex items-center gap-2">
-                                <ChevronRight className="w-4 h-4 text-brand-primary group-hover:text-white transition-colors duration-300 flex-shrink-0" />
-                                <span className="text-body-sm sm:text-body-md text-gray-700 group-hover:text-white transition-colors duration-300">
-                                  {topic}
-                                </span>
-                              </div>
-                            </Link>
-                          )
+                      <>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mb-3">
+                          {healthTopicsByLetter[selectedLetter]
+                            .slice(0, 4)
+                            .map((topic, index) => (
+                              <Link
+                                key={index}
+                                href={getTopicUrl(topic)}
+                                className="group text-left bg-white hover:bg-brand-primary border border-gray-200 hover:border-brand-primary rounded-lg px-3 py-2.5 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
+                              >
+                                <div className="flex items-center gap-2">
+                                  <ChevronRight className="w-4 h-4 text-brand-primary group-hover:text-white transition-colors flex-shrink-0" />
+                                  <span className="text-body-sm text-gray-700 group-hover:text-white transition-colors">
+                                    {topic}
+                                  </span>
+                                </div>
+                              </Link>
+                            ))}
+                        </div>
+
+                        {/* Show "Lihat Semua" if more than 4 topics */}
+                        {healthTopicsByLetter[selectedLetter].length > 4 && (
+                          <Link
+                            href="/topik-kesehatan"
+                            className="inline-flex items-center gap-2 text-brand-primary hover:text-brand-primary-dark font-medium text-body-sm transition-colors"
+                          >
+                            Lihat Semua ({healthTopicsByLetter[selectedLetter].length} topik)
+                            <ChevronRight className="w-4 h-4" />
+                          </Link>
                         )}
-                      </div>
+                      </>
                     ) : (
-                      <p className="text-center text-gray-500 text-body-sm sm:text-body-md py-4">
+                      <p className="text-center text-gray-500 text-body-sm py-4">
                         Belum ada topik untuk huruf {selectedLetter}
                       </p>
                     )}
                   </div>
-                )}
-              </div>
+                </div>
+              )}
 
               {/* Divider */}
-              <div className="h-px bg-gray-300 mb-5 sm:mb-6 lg:mb-12 " />
+              <div className="h-px bg-gray-300 my-6 lg:my-8" />
 
               {/* CTA Section  */}
-              <div className="relative bg-gradient-to-r from-brand-primary to-brand-primary-dark rounded-xl overflow-hidden  p-8 sm:p-10 lg:p-12 text-center group">
+              <div className="relative bg-gradient-to-r from-brand-primary to-brand-primary-dark rounded-xl overflow-hidden p-6 lg:p-8 text-center group">
                 {/* Decorative gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="text-heading-md sm:text-heading-lg lg:text-display-sm text-white font-semibold mb-4 sm:mb-5">
+                  <h3 className="text-heading-md lg:text-heading-lg text-white font-semibold mb-3">
                     Tidak Menemukan Topik yang Anda Cari?
                   </h3>
-                  <p className="text-body-sm sm:text-body-md lg:text-body-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto">
+                  <p className="text-body-sm sm:text-body-md text-white/90 mb-5 max-w-2xl mx-auto">
                     Hubungi kami atau gunakan fitur pencarian untuk menemukan
                     informasi kesehatan yang Anda butuhkan
                   </p>
                   <Button
                     size="lg"
-                    className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 lg:px-10 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     <Link href="/hubungi-kami">Hubungi Kami</Link>
                   </Button>
@@ -219,14 +228,14 @@ export default function TopicSection() {
             </div>
           </div>
 
-          {/* Right Column - Calendar & Campaign */}
-          <div className="flex flex-col gap-5 sm:gap-6 lg:gap-8 w-full lg:max-w-[452px]">
+          {/* Right Column - Calendar, Campaign & Partnership */}
+          <div className="flex flex-col gap-5 w-full lg:max-w-[452px]">
             {/* Calendar Section */}
-            <div className="relative">
-              <h3 className="text-body-lg sm:text-heading-sm text-brand-primary mb-3 sm:mb-4 font-semibold">
+            <div>
+              <h3 className="text-body-lg sm:text-heading-sm text-brand-primary font-bold mb-1">
                 Kalender Kesehatan
               </h3>
-              <p className="text-body-sm sm:text-body-md text-gray-600 mb-3 sm:mb-4">
+              <p className="text-tiny sm:text-caption text-gray-600 mb-3">
                 Informasi terkait dengan hari besar dan agenda kesehatan satu
                 tahun penuh
               </p>
@@ -234,9 +243,7 @@ export default function TopicSection() {
             </div>
 
             {/* Campaign Section */}
-            <div className="relative">
-              <CampaignCard campaigns={campaigns} />
-            </div>
+            <CampaignCard campaigns={campaigns} />
           </div>
         </div>
       </div>
