@@ -134,6 +134,7 @@ export default function RightSidebar({
           onViewMore={onRelatedArticlesClick}
           viewMoreLink={viewMoreLinks.articles || '/artikel'}
           delay={0.3}
+          useSlider={false}
         />
       )}
 

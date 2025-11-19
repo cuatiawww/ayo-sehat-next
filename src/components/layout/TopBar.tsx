@@ -37,7 +37,7 @@ export default function TopBar() {
 
             {/* KONTAK - ukuran teks disesuaikan untuk mobile */}
             <Link
-              href="page/hubungik-kami"
+              href="hubungi-kami"
               className="text-xs sm:text-sm font-semibold text-gray-700 hover:text-brand-primary transition-colors"
               title="Hubungi Kami"
             >
