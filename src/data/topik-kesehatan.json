@@ -56,15 +56,15 @@
       "Polio",
       "PTM (Penyakit Tidak Menular)"
     ],
-    "Q": [],
+    "Q": ["Q Fever"],
     "R": ["Rabies", "Rheumatoid Arthritis"],
     "S": ["Sepsis", "Sifilis", "Skizofrenia", "Stroke", "Stunting"],
     "T": ["Thalassemia", "Tetanus", "TBC (Tuberkulosis)", "Tifus"],
-    "U": [],
+    "U": ["Ulser Peptikum"],
     "V": ["Vaksin"],
     "W": ["Wasting"],
-    "X": [],
-    "Y": [],
+    "X": ["Xeroderma Pigmentosum"],
+    "Y": ["Yellow Fever"],
     "Z": ["Zika"]
   },
   "newTopics": {

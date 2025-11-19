@@ -313,7 +313,7 @@ export default function KegiatanDetail({ slug }: KegiatanDetailProps) {
               {/* RIGHT SIDEBAR */}
               <div className="lg:sticky lg:top-6 lg:self-start space-y-6">
                 {/* Ringkasan Info */}
-                {eventDetail.ringkasanInfo && (
+                {/* {eventDetail.ringkasanInfo && (
                   <div className="bg-brand-primary/5 rounded-xl p-6 border border-brand-primary/20">
                     <h3 className="text-body-lg font-bold text-brand-primary mb-4">
                       {eventDetail.ringkasanInfo.title}
@@ -326,7 +326,7 @@ export default function KegiatanDetail({ slug }: KegiatanDetailProps) {
                       ))}
                     </ul>
                   </div>
-                )}
+                )} */}
 
                 {/* Kemitraan Card */}
                 {eventDetail.fullContent?.kemitraan && (

@@ -4,7 +4,7 @@ export type Campaign = {
   description: string
   image: string
   slug: string
-  category: 'prioritas' | 'kesehatan' | 'umum' 
+  category: 'prioritas' | 'kesehatan'
   date?: string
   displayDate?: string
   status?: string

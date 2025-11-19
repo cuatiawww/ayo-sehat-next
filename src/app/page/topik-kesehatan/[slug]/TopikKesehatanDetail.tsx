@@ -313,7 +313,7 @@ export default function TopikKesehatanDetail({ slug }: TopikDetailProps) {
               {/* RIGHT SIDEBAR */}
               <div className="lg:sticky lg:top-6 lg:self-start">
                 {/* Ringkasan Info */}
-                {topicDetail.ringkasanInfo && (
+                {/* {topicDetail.ringkasanInfo && (
                   <div className="bg-brand-primary/5 rounded-xl p-6 mb-6 border border-brand-primary/20">
                     <h3 className="text-body-lg font-bold text-brand-primary mb-4">
                       {topicDetail.ringkasanInfo.title}
@@ -331,7 +331,7 @@ export default function TopikKesehatanDetail({ slug }: TopikDetailProps) {
                       ))}
                     </ul>
                   </div>
-                )}
+                )} */}
 
                 <RightSidebar
                   showCalendar={true}

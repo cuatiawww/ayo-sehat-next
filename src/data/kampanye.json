@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Mudik Sehat",
-      "description": "Mudik Sehat dengan mengurangi tembak-muduk untuk tetap aman, nyaman, terhindar dari penyakit, bawa obat, tetap makan...",
+      "description": "Mudik Sehat dengan mengurangi tembak-mudik untuk tetap aman, nyaman, terhindar dari penyakit, bawa obat, tetap makan...",
       "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80",
       "slug": "mudik-sehat",
       "category": "prioritas"
@@ -114,5 +114,456 @@
       "slug": "hari-gizi-nasional-2024",
       "category": "kesehatan"
     }
-  ]
+  ],
+  "campaignDetails": {
+    "gerakan-anak-bergizi": {
+      "id": 1,
+      "title": "Gerakan Nasional Aksi Bergizi",
+      "slug": "gerakan-anak-bergizi",
+      "category": "Kampanye Prioritas",
+      "author": {
+        "name": "Tim Gizi Kemenkes",
+        "title": "Direktorat Gizi Masyarakat"
+      },
+      "publishDate": "2024-03-15",
+      "displayDate": "15 Mar 2024",
+      "views": "15420",
+      "readTime": "8",
+      "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80",
+      "tags": ["Gizi", "Anak", "Stunting", "Kesehatan Anak", "Nutrisi"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Tentang Gerakan Aksi Bergizi",
+          "Peta Kampanye",
+          "Media Gerakan Aksi Bergizi",
+          "Siapa yang terlibat dalam gerakan ini?"
+        ]
+      },
+      "fullContent": {
+        "intro": "Gerakan Nasional Aksi Bergizi merupakan kegiatan yang dilaksanakan untuk meningkatkan kesadaran siswa siswi dalam membiasakan konsumsi TTD (Tablet Tambah Darah), makan makanan dengan menu gizi seimbang dan aktivitas fisik.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Apa Itu Gerakan Aksi Bergizi?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Anemia merupakan salah satu masalah kesehatan masyarakat di Indonesia yang dapat diderita oleh semua kelompok umur dari balita, remaja, ibu hamil sampai usia lanjut. Riskesdas 2018 menunjukkan bahwa proporsi remaja putri usia 5-14 tahun sebesar 26.8% dan pada usia 15-24 tahun sebesar 32%. Hal ini berarti sekitar 3 dari 10 anak di Indonesia menderita anemia."
+          },
+          {
+            "type": "paragraph",
+            "content": "Menanggapi hal tersebut, pemerintah telah melakukan berbagai upaya melalui pendidikan gizi seimbang, fortifikasi pangan, dan suplementasi Tablet Tambah Darah (TTD) mulai dilakukan pada tahun 2016 dengan minum TTD 1 tablet per minggu sepanjang tahun bagi remaja putri. Walaupun TTD telah dilakukan, prevalensi anemia masih tinggi. Banyak faktor yang mempengaruhi salah satunya faktor implementasi program TTD di sekolah belum seragam."
+          },
+          {
+            "type": "heading",
+            "content": "Kegiatan #AksiBergizi dilaksanakan dengan tiga intervensi utama, yaitu:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Sosialisasi dan Minum TTD bersama di sekolah/madrasah setiap minggu",
+              "Edukasi gizi seimbang dengan tujuan meningkatkan asupan makan yang bergizi seimbang dan komprehensif. Implementasi program tertentu ditekankan dengan TRIAS UKS, yaitu pendidikan kesehatan, pelayanan kesehatan, dan pembinaan lingkungan sehat",
+              "Komunikasi untuk perubahan perilaku gizi (contoh: video edukasi dan teks)"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Bagaimana Gerakan Aksi Bergizi dilaksanakan?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Gerakan ini melibatkan berbagai pihak untuk melaksanakan edukasi dan sosialisasi kepada masyarakat Indonesia. Setiap sekolah dan madrasah diharapkan dapat berpartisipasi aktif dalam mendukung program ini melalui kegiatan rutin mingguan."
+          },
+          {
+            "type": "heading",
+            "content": "Siapa saja yang terlibat dalam kegiatan ini?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Kementerian Kesehatan RI",
+              "Dinas Kesehatan Provinsi/Kabupaten/Kota",
+              "Puskesmas",
+              "Sekolah dan Madrasah (SMP/SMA/SMK/Sederajat)",
+              "Organisasi profesi (IDI, IDAI, PERSAGI, dll)",
+              "Mitra pembangunan (UNICEF, WHO, dll)"
+            ]
+          }
+        ],
+        "topikKesehatanTerkait": ["Gizi Seimbang", "Anemia pada Remaja", "Kesehatan Reproduksi", "Pola Hidup Sehat"],
+        "penyakitTerkait": ["Anemia", "Stunting", "Malnutrisi"],
+        "kemitraan": {
+          "title": "Kemitraan",
+          "description": "Satu tindakan kecil hari ini dapat memberikan dampak besar bagi masa depan anak Indonesia. Mari bergabung dalam gerakan nasional untuk menciptakan generasi Indonesia yang sehat dan bergizi.",
+          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "buttonText": "Bergabung",
+          "buttonLink": "/page/kemitraan"
+        }
+      }
+    },
+    "cek-kesehatan-gratis-sekolah": {
+      "id": 8,
+      "title": "Cek Kesehatan Gratis (CKG) Sekolah",
+      "slug": "cek-kesehatan-gratis-sekolah",
+      "category": "Kampanye Kesehatan",
+      "author": {
+        "name": "Tim UKS Kemenkes",
+        "title": "Direktorat Kesehatan Sekolah"
+      },
+      "publishDate": "2024-08-01",
+      "displayDate": "1 Agu 2024",
+      "views": "10180",
+      "readTime": "5",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
+      "tags": ["Sekolah", "Kesehatan Anak", "Deteksi Dini", "Screening"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Apa itu Cek Kesehatan Gratis (CKG) Sekolah?",
+          "Siapa yang mendapatkan CKG sekolah?",
+          "Kapan CKG sekolah dilaksanakan?",
+          "Di mana CKG Sekolah dilaksanakan?",
+          "Bagaimana CKG Sekolah dilaksanakan?"
+        ]
+      },
+      "fullContent": {
+        "intro": "CKG sekolah adalah pemeriksaan kesehatan yang ditujukan pada anak usia sekolah untuk identifikasi faktor risiko kesehatan, deteksi dini kondisi dan penyakit tidak menular sejak dini.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Siapa yang mendapatkan CKG sekolah?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Seluruh peserta didik SD, SMP/MTs, SMA/MA/SMK atau sederajat (termasuk SLB, SMK dan Sekolah Rakyat)",
+              "Anak usia 7-17 tahun di luar sekolah pendidikan"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Kapan CKG sekolah dilaksanakan?"
+          },
+          {
+            "type": "paragraph",
+            "content": "CKG sekolah dilaksanakan pada tahun ajaran baru mulai bulan Juli tahun 2025"
+          },
+          {
+            "type": "heading",
+            "content": "Di mana CKG Sekolah dilaksanakan?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Lokasi CKG untuk peserta didik dilaksanakan di sekolah, sedangkan untuk usia 7-17 tahun diluar sekolah dilakukan di Puskesmas, posyandu remaja, dan fasilitas kesehatan lain"
+          },
+          {
+            "type": "heading",
+            "content": "Apa saja jenis pemeriksaan CKG sekolah?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Pemeriksaan dilakukan sesuai kelompok umur dan jenjang pendidikan, antara lain:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Pemeriksaan fisik (tinggi badan, berat badan, lingkar perut)",
+              "Pemeriksaan mata dan telinga",
+              "Pemeriksaan gigi dan mulut",
+              "Pemeriksaan kesehatan jiwa",
+              "Pemeriksaan anemia dan tekanan darah"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Bagaimana CKG Sekolah dilaksanakan?"
+          },
+          {
+            "type": "paragraph",
+            "content": "Banyak pihak yang terlibat dalam implementasi CKG sekolah, dengan melibatkan peran dari keluarga, sekolah, puskesmas termasuk remaja itu sendiri untuk ikut serta mengidentifikasi kondisi kesehatan mereka dan menindaklanjuti hasil pemeriksaan yang ditemukan."
+          }
+        ],
+        "topikKesehatanTerkait": ["Lingkungan Sehat dan Aman", "Pola Asuh dan Perkembangan Anak", "Pencegahan Infeksi pada Remaja"],
+        "penyakitTerkait": ["Anemia", "Obesitas", "Gangguan Penglihatan"],
+        "kemitraan": {
+          "title": "Kemitraan",
+          "description": "Satu tindakan kecil hari ini dapat memberikan dampak besar bagi kesehatan anak sekolah. Yuk ikut serta dalam program CKG Sekolah untuk deteksi dini masalah kesehatan!",
+          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "buttonText": "Bergabung",
+          "buttonLink": "/page/kemitraan"
+        }
+      }
+    },
+    "bulan-imunisasi-anak-sekolah": {
+      "id": 9,
+      "title": "Bulan Imunisasi Anak Sekolah (BIAS)",
+      "slug": "bulan-imunisasi-anak-sekolah",
+      "category": "Kampanye Kesehatan",
+      "author": {
+        "name": "Dr. Siti Nurhaliza, Sp.A",
+        "title": "Direktorat Imunisasi"
+      },
+      "publishDate": "2024-09-01",
+      "displayDate": "1 Sep 2024",
+      "views": "8540",
+      "readTime": "6",
+      "image": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1200&q=80",
+      "tags": ["BIAS", "Imunisasi", "Anak Sekolah", "Vaksin", "Kesehatan Anak"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Apa itu BIAS?",
+          "Siapa yang mendapat BIAS?",
+          "Jenis vaksin dalam BIAS",
+          "Jadwal pelaksanaan BIAS"
+        ]
+      },
+      "fullContent": {
+        "intro": "Bulan Imunisasi Anak Sekolah (BIAS) merupakan program imunisasi yang dilaksanakan di sekolah untuk melindungi anak usia sekolah dari penyakit yang dapat dicegah dengan imunisasi.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Apa itu BIAS?"
+          },
+          {
+            "type": "paragraph",
+            "content": "BIAS adalah bentuk operasional dari pelaksanaan imunisasi lanjutan pada anak usia sekolah dasar yang dilaksanakan pada bulan tertentu setiap tahunnya. Program ini merupakan upaya pemerintah untuk memastikan perlindungan kesehatan anak sejak dini."
+          },
+          {
+            "type": "heading",
+            "content": "Siapa yang mendapat BIAS?"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Siswa kelas 1 SD/MI mendapat imunisasi Campak dan DT",
+              "Siswa kelas 2 SD/MI mendapat imunisasi Td",
+              "Siswa kelas 5 SD/MI mendapat imunisasi Td"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Jenis Vaksin dalam BIAS"
+          },
+          {
+            "type": "paragraph",
+            "content": "BIAS memberikan tiga jenis vaksin utama:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Campak-Rubella (MR): Mencegah campak dan rubella",
+              "DT (Difteri-Tetanus): Mencegah difteri dan tetanus untuk anak <7 tahun",
+              "Td (Tetanus-difteri): Mencegah tetanus dan difteri untuk anak ≥7 tahun"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Manfaat BIAS"
+          },
+          {
+            "type": "paragraph",
+            "content": "Melalui program BIAS, anak-anak sekolah akan mendapatkan perlindungan optimal terhadap penyakit berbahaya. Program ini juga membantu menciptakan kekebalan kelompok (herd immunity) yang melindungi seluruh masyarakat."
+          }
+        ],
+        "topikKesehatanTerkait": ["Imunisasi Dasar", "Kesehatan Anak Sekolah", "Pencegahan Penyakit"],
+        "penyakitTerkait": ["Campak", "Rubella", "Difteri", "Tetanus"],
+        "kemitraan": {
+          "title": "Kemitraan",
+          "description": "Mari bersama-sama melindungi anak Indonesia dari penyakit berbahaya. Dukung program BIAS di sekolah Anda!",
+          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "buttonText": "Bergabung",
+          "buttonLink": "/page/kemitraan"
+        }
+      }
+    },
+    "mudik-sehat": {
+      "id": 2,
+      "title": "Mudik Sehat 2024",
+      "slug": "mudik-sehat",
+      "category": "Kampanye Prioritas",
+      "author": {
+        "name": "dr. Ahmad Syahri, M.Kes",
+        "title": "Direktorat Promosi Kesehatan"
+      },
+      "publishDate": "2024-04-01",
+      "displayDate": "1 Apr 2024",
+      "views": "12350",
+      "readTime": "7",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
+      "tags": ["Mudik", "Lebaran", "Perjalanan", "Kesehatan", "Tips Mudik"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Tips mudik sehat",
+          "Persiapan sebelum mudik",
+          "Obat-obatan yang perlu dibawa",
+          "Protokol kesehatan di perjalanan"
+        ]
+      },
+      "fullContent": {
+        "intro": "Mudik Sehat adalah kampanye untuk memastikan masyarakat tetap aman, nyaman, dan sehat saat melakukan perjalanan mudik. Program ini memberikan edukasi dan tips praktis untuk perjalanan yang lebih baik.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Persiapan Sebelum Mudik"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Cek kondisi kesehatan di fasilitas kesehatan terdekat",
+              "Pastikan imunisasi lengkap, terutama untuk anak-anak",
+              "Siapkan obat-obatan pribadi yang rutin dikonsumsi",
+              "Istirahat cukup sebelum perjalanan",
+              "Periksa kendaraan jika mudik dengan kendaraan pribadi"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Obat-obatan yang Perlu Dibawa"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Obat penurun panas dan pereda nyeri",
+              "Obat anti mual dan diare",
+              "Obat alergi",
+              "Obat pribadi (jika ada penyakit kronis)",
+              "Plester, antiseptik, dan perban",
+              "Hand sanitizer dan masker cadangan"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Tips Selama Perjalanan"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Makan makanan bergizi sebelum berangkat",
+              "Minum air putih yang cukup",
+              "Istirahat secara berkala jika perjalanan jauh",
+              "Hindari makan sembarangan di perjalanan",
+              "Jaga kebersihan tangan",
+              "Gunakan masker di tempat ramai"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Jika Merasa Tidak Enak Badan"
+          },
+          {
+            "type": "paragraph",
+            "content": "Segera istirahat dan minum obat yang sesuai. Jika kondisi tidak membaik atau semakin parah, segera cari fasilitas kesehatan terdekat. Jangan memaksakan diri untuk melanjutkan perjalanan."
+          }
+        ],
+        "topikKesehatanTerkait": ["Kesehatan Perjalanan", "Pertolongan Pertama", "Gaya Hidup Sehat"],
+        "penyakitTerkait": ["Mabuk Perjalanan", "Dehidrasi", "Kelelahan", "Diare"],
+        "kemitraan": {
+          "title": "Kemitraan",
+          "description": "Mari mudik dengan sehat dan selamat. Ikuti tips dari Kemenkes untuk perjalanan yang aman dan nyaman!",
+          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "buttonText": "Pelajari Lebih Lanjut",
+          "buttonLink": "/page/kemitraan"
+        }
+      }
+    },
+    "hari-gizi-nasional-2024": {
+      "id": 14,
+      "title": "Hari Gizi Nasional 2024",
+      "slug": "hari-gizi-nasional-2024",
+      "category": "Kampanye Kesehatan",
+      "author": {
+        "name": "Prof. Dr. Ir. Dodik Briawan, MCN",
+        "title": "Pakar Gizi Masyarakat"
+      },
+      "publishDate": "2024-01-25",
+      "displayDate": "25 Jan 2024",
+      "views": "16780",
+      "readTime": "8",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80",
+      "tags": ["Gizi", "Nutrisi", "Makanan Sehat", "Gizi Seimbang", "HGN"],
+      "ringkasanInfo": {
+        "title": "Ringkasan Info",
+        "items": [
+          "Sejarah Hari Gizi Nasional",
+          "Tema HGN 2024",
+          "Pentingnya gizi seimbang",
+          "Cara menerapkan gizi seimbang"
+        ]
+      },
+      "fullContent": {
+        "intro": "Hari Gizi Nasional (HGN) diperingati setiap tanggal 25 Januari untuk meningkatkan kesadaran masyarakat tentang pentingnya gizi seimbang. Tahun 2024, HGN mengusung tema yang fokus pada pencegahan stunting dan peningkatan kualitas gizi keluarga Indonesia.",
+        "sections": [
+          {
+            "type": "heading",
+            "content": "Sejarah Hari Gizi Nasional"
+          },
+          {
+            "type": "paragraph",
+            "content": "Hari Gizi Nasional pertama kali diperingati pada 25 Januari 1960 sebagai bentuk kepedulian pemerintah terhadap masalah gizi di Indonesia. Tanggal ini dipilih untuk memperingati dimulainya pengkaderan tenaga gizi Indonesia."
+          },
+          {
+            "type": "heading",
+            "content": "Pentingnya Gizi Seimbang"
+          },
+          {
+            "type": "paragraph",
+            "content": "Gizi seimbang adalah susunan makanan sehari-hari yang mengandung zat gizi dalam jenis dan jumlah yang sesuai dengan kebutuhan tubuh. Prinsip gizi seimbang memperhatikan:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Keanekaragaman pangan",
+              "Pentingnya pola hidup bersih",
+              "Aktivitas fisik yang cukup",
+              "Memantau berat badan ideal"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Isi Piringku - Panduan Praktis"
+          },
+          {
+            "type": "paragraph",
+            "content": "Kemenkes mengembangkan konsep 'Isi Piringku' sebagai panduan praktis gizi seimbang:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "50% piring berisi sayur dan buah (lebih banyak sayur)",
+              "50% piring berisi karbohidrat dan protein (lebih banyak karbohidrat)",
+              "Minum air putih 8 gelas per hari",
+              "Batasi gula, garam, dan lemak"
+            ]
+          },
+          {
+            "type": "heading",
+            "content": "Cara Mencegah Malnutrisi"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Konsumsi makanan beragam setiap hari",
+              "Berikan ASI eksklusif 6 bulan",
+              "Pantau tumbuh kembang anak secara rutin",
+              "Biasakan makan bersama keluarga",
+              "Hindari jajan sembarangan",
+              "Perbanyak konsumsi sayur dan buah lokal"
+            ]
+          }
+        ],
+        "topikKesehatanTerkait": ["Gizi Seimbang", "Stunting", "Obesitas", "Anemia", "Kesehatan Ibu dan Anak"],
+        "penyakitTerkait": ["Stunting", "Gizi Buruk", "Obesitas", "Anemia"],
+        "kemitraan": {
+          "title": "Kemitraan",
+          "description": "Mari bersama cegah stunting dan tingkatkan kualitas gizi keluarga Indonesia. Terapkan pola makan gizi seimbang mulai dari sekarang!",
+          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "buttonText": "Bergabung",
+          "buttonLink": "/page/kemitraan"
+        }
+      }
+    }
+  }
 }

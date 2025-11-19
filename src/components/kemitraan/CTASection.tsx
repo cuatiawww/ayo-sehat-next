@@ -21,7 +21,7 @@ export default function CTASection() {
             Kerjasama dan kolaborasi menuju Indonesia yang Lebih Sehat
           </p>
           <Link
-            href="#daftar-mitra"
+            href="/page/daftar-mitra"
             className="inline-block bg-brand-accent text-gray-900 font-bold px-10 py-4 rounded-lg text-body-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
           >
             Daftar Menjadi Mitra

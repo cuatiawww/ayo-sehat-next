@@ -82,7 +82,7 @@ export default function TentangClient() {
                 </h2>
 
                 {/* Paragraphs */}
-                <div className="space-y-6 text-body-md sm:text-body-lg text-gray-700 leading-relaxed">
+                <div className="space-y-6 text-body-md sm:text-body-lg text-gray-700 leading-relaxed text-justify">
                   <p>
                     Ayo Sehat merupakan wadah penyediaan platform terbaik dalam
                     upaya informasi, edukasi kesehatan, serta gaya hidup sehat

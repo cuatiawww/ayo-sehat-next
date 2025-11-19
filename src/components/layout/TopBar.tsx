@@ -37,7 +37,7 @@ export default function TopBar() {
 
             {/* KONTAK - ukuran teks disesuaikan untuk mobile */}
             <Link
-              href="/kontak"
+              href="page/hubungik-kami"
               className="text-xs sm:text-sm font-semibold text-gray-700 hover:text-brand-primary transition-colors"
               title="Hubungi Kami"
             >
@@ -46,7 +46,7 @@ export default function TopBar() {
 
             {/* LOGIN - ukuran ikon dan teks disesuaikan untuk mobile */}
             <Link
-              href="/login"
+              href="/page/login"
               className="flex items-center gap-2 hover:opacity-70 transition-opacity"
               title="Masuk ke Akun Anda"
             >

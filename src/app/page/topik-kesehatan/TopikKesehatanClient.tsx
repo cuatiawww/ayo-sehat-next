@@ -14,6 +14,25 @@ const { healthTopicsData, newTopics } = data
 
 type Letter = keyof typeof healthTopicsData
 
+// Topik yang sudah ada kontennya (hanya anemia)
+const availableTopics = ['anemia']
+
+// Fungsi untuk mendapatkan URL topik
+export const getTopicUrl = (topic: string) => {
+  const slug = topic
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+
+  // Cek apakah topik ada di daftar availableTopics
+  if (availableTopics.includes(slug)) {
+    return `/page/topik-kesehatan/${slug}`
+  }
+
+  // Jika tidak ada, redirect ke anemia
+  return '/page/topik-kesehatan/anemia'
+}
+
 export default function TopikKesehatanClient() {
   const [selectedLetter, setSelectedLetter] = useState<Letter | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
@@ -44,15 +63,14 @@ export default function TopikKesehatanClient() {
   const filteredAlphabet = selectedLetter ? [selectedLetter] : alphabet
 
   const getFilteredTopics = (letter: string) => {
-  const l = letter as Letter
-  const topics = healthTopicsData[l] || []
-  if (!debouncedQuery) return topics
+    const l = letter as Letter
+    const topics = healthTopicsData[l] || []
+    if (!debouncedQuery) return topics
 
-  return topics.filter((topic) =>
-    topic.toLowerCase().includes(debouncedQuery.toLowerCase())
-  )
-}
-
+    return topics.filter((topic) =>
+      topic.toLowerCase().includes(debouncedQuery.toLowerCase())
+    )
+  }
 
   const totalTopics = filteredAlphabet.reduce(
     (acc, letter) => acc + getFilteredTopics(letter).length,
@@ -163,13 +181,14 @@ export default function TopikKesehatanClient() {
               </p>
             </div>
 
-            {/* Grid */}
+            {/* Grid - Pass getTopicUrl ke TopicGrid */}
             <TopicGrid
               filteredAlphabet={filteredAlphabet}
               healthTopicsData={healthTopicsData}
               newTopics={newTopics}
               getFilteredTopics={getFilteredTopics}
               selectedLetter={selectedLetter}
+              // getTopicUrl={getTopicUrl}
             />
 
             {/* Empty State */}
@@ -211,11 +230,11 @@ export default function TopikKesehatanClient() {
                 informasi kesehatan yang Anda butuhkan
               </p>
               <Button
-  size="lg"
-  className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
->
-  <Link href="/page/hubungi-kami">Hubungi Kami</Link>
-</Button>
+                size="lg"
+                className="bg-brand-accent hover:bg-brand-accent-hover text-gray-800 font-medium rounded-full px-8 sm:px-10 lg:px-12 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                <Link href="/page/hubungi-kami">Hubungi Kami</Link>
+              </Button>
             </motion.div>
           </div>
         </section>

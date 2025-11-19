@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react'
 
 const features = [
@@ -147,7 +148,10 @@ export default function FeatureSection() {
 // Feature Card Component
 function FeatureCard({ feature }: { feature: (typeof features)[0] }) {
   return (
-    <div className="card-brand group cursor-pointer hover:shadow-card-hover hover:-translate-y-3 hover:border-brand-primary/30 transition-all duration-500 flex flex-col h-full">
+    <Link
+      href="/artikel"
+      className="card-brand group cursor-pointer hover:shadow-card-hover hover:-translate-y-3 hover:border-brand-primary/30 transition-all duration-500 flex flex-col h-full"
+    >
       <div className="w-full flex flex-col p-5 sm:p-6 lg:p-7">
         {/* Image Section */}
         <div className="relative h-[200px] sm:h-[180px] lg:h-[199px] rounded-xl overflow-hidden mb-4 sm:mb-5 lg:mb-7 flex-shrink-0">
@@ -195,6 +199,6 @@ function FeatureCard({ feature }: { feature: (typeof features)[0] }) {
 
       {/* Bottom Border */}
       <div className="h-1 bg-gradient-to-r from-brand-primary to-brand-primary-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-    </div>
+    </Link>
   )
 }
