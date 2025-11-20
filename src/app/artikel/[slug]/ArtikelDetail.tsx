@@ -262,7 +262,7 @@ export default function ArtikelDetail({ slug }: ArtikelDetailProps) {
                   {/* Main Content Sections - FULLY DYNAMIC */}
                   <div className="space-y-6 text-body-md lg:text-body-lg text-gray-700 leading-relaxed">
                     {/* Excerpt as first paragraph */}
-                    <p>{article.excerpt}</p>
+                    <p className="text-justify">{article.excerpt}</p>
 
                     {/* Render all sections dynamically */}
                     {article.fullContent?.sections?.map((section, index) => {
@@ -277,7 +277,7 @@ export default function ArtikelDetail({ slug }: ArtikelDetailProps) {
                         )
                       }
                       if (section.type === 'paragraph') {
-                        return <p key={index}>{section.content}</p>
+                        return <p key={index} className="text-justify">{section.content}</p>
                       }
                       return null
                     })}
