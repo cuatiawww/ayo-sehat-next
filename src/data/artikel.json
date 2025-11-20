@@ -457,6 +457,216 @@
       "category": "Cegah",
       "lifecycleStage": "Remaja (10-18 tahun)",
       "slug": "vaksinasi-hpv-remaja"
+    },
+    {
+      "id": 21,
+      "title": "Kesehatan Jantung: Panduan Lengkap Menjaga Organ Vital Anda",
+      "excerpt": "Jaga kesehatan jantung Anda dengan pola makan sehat, olahraga teratur, dan pemeriksaan rutin untuk mencegah penyakit kardiovaskular.",
+      "image": "/assets/content1.png",
+      "date": "22 Agu 2025",
+      "views": "3210",
+      "readTime": "6",
+      "category": "Cegah",
+      "lifecycleStage": "Dewasa (19-59 tahun)",
+      "slug": "kesehatan-jantung",
+      "author": {
+        "name": "Dr. Ahmad Kardio, SpJP",
+        "title": "Spesialis Jantung dan Pembuluh Darah"
+      },
+      "tags": [
+        "Kesehatan Jantung",
+        "Penyakit Kardiovaskular",
+        "Pencegahan",
+        "Gaya Hidup Sehat"
+      ],
+      "fullContent": {
+        "quote": "Jantung adalah mesin kehidupan kita. Merawatnya dengan baik adalah investasi terbaik untuk masa depan yang sehat dan berkualitas.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Jantung adalah organ vital yang memompa darah ke seluruh tubuh, memberikan oksigen dan nutrisi yang dibutuhkan untuk fungsi optimal setiap sel. Menjaga kesehatan jantung berarti menjaga kualitas hidup Anda secara keseluruhan."
+          },
+          {
+            "type": "heading",
+            "content": "Faktor Risiko Penyakit Jantung"
+          },
+          {
+            "type": "paragraph",
+            "content": "Beberapa faktor risiko penyakit jantung dapat dikontrol seperti tekanan darah tinggi, kolesterol tinggi, merokok, dan kurang aktivitas fisik. Sementara faktor lain seperti usia, jenis kelamin, dan riwayat keluarga tidak dapat diubah namun perlu diwaspadai."
+          },
+          {
+            "type": "heading",
+            "content": "Pola Makan untuk Jantung Sehat"
+          },
+          {
+            "type": "paragraph",
+            "content": "Konsumsi makanan kaya serat seperti buah-buahan, sayuran, dan biji-bijian utuh. Batasi asupan garam, lemak jenuh, dan lemak trans. Pilih ikan yang kaya omega-3 seperti salmon minimal 2 kali seminggu."
+          },
+          {
+            "type": "heading",
+            "content": "Pentingnya Aktivitas Fisik"
+          },
+          {
+            "type": "paragraph",
+            "content": "Olahraga aerobik teratur seperti jalan cepat, jogging, atau bersepeda minimal 150 menit per minggu dapat memperkuat jantung, menurunkan tekanan darah, dan meningkatkan kolesterol baik (HDL)."
+          }
+        ],
+        "relatedTopics": [
+          "Hipertensi",
+          "Kolesterol Tinggi",
+          "Diabetes"
+        ],
+        "relatedDiseases": [
+          "Serangan Jantung",
+          "Stroke",
+          "Gagal Jantung"
+        ],
+        "references": [
+          "Pedoman Kesehatan Jantung - Kemenkes RI",
+          "Cardiovascular Disease Prevention - WHO",
+          "Heart Health Guidelines - AHA"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "title": "Pola Makan Sehat: Kunci Tubuh Bugar dan Energik",
+      "excerpt": "Terapkan pola makan bergizi seimbang dengan konsumsi sayur, buah, protein, dan karbohidrat kompleks untuk tubuh yang lebih sehat.",
+      "image": "/assets/content2.png",
+      "date": "21 Agu 2025",
+      "views": "2876",
+      "readTime": "5",
+      "category": "Cegah",
+      "lifecycleStage": "Dewasa (19-59 tahun)",
+      "slug": "pola-makan-sehat",
+      "author": {
+        "name": "dr. Siti Nutrisia, M.Gizi",
+        "title": "Ahli Gizi Klinis"
+      },
+      "tags": [
+        "Gizi Seimbang",
+        "Pola Makan",
+        "Nutrisi",
+        "Kesehatan"
+      ],
+      "fullContent": {
+        "quote": "Makanan adalah obat terbaik. Dengan memilih makanan yang tepat, Anda membangun fondasi kesehatan yang kuat untuk tubuh Anda.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Pola makan sehat bukan tentang diet ketat atau menghilangkan makanan favorit, tetapi tentang keseimbangan, variasi, dan moderasi. Nutrisi yang tepat memberikan energi, memperkuat sistem kekebalan tubuh, dan mencegah berbagai penyakit kronis."
+          },
+          {
+            "type": "heading",
+            "content": "Prinsip Isi Piringku"
+          },
+          {
+            "type": "paragraph",
+            "content": "Setiap kali makan, isi setengah piring dengan sayur dan buah, seperempat dengan karbohidrat kompleks seperti nasi merah atau roti gandum, dan seperempat dengan protein seperti ikan, ayam, atau kacang-kacangan."
+          },
+          {
+            "type": "heading",
+            "content": "Pentingnya Hidrasi"
+          },
+          {
+            "type": "paragraph",
+            "content": "Minum air putih minimal 8 gelas per hari. Air membantu transportasi nutrisi, mengatur suhu tubuh, dan membuang racun. Hindari minuman manis yang tinggi kalori dan rendah nutrisi."
+          },
+          {
+            "type": "heading",
+            "content": "Batasi Gula, Garam, dan Lemak"
+          },
+          {
+            "type": "paragraph",
+            "content": "Konsumsi gula maksimal 4 sendok makan per hari, garam 1 sendok teh, dan lemak 5 sendok makan. Baca label nutrisi pada kemasan makanan untuk memantau asupan Anda."
+          }
+        ],
+        "relatedTopics": [
+          "Obesitas",
+          "Diabetes",
+          "Gizi Seimbang"
+        ],
+        "relatedDiseases": [
+          "Diabetes Tipe 2",
+          "Hipertensi",
+          "Obesitas"
+        ],
+        "references": [
+          "Pedoman Gizi Seimbang - Kemenkes RI",
+          "Isi Piringku - Kemenkes RI",
+          "Healthy Eating Guidelines - WHO"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "title": "Olahraga Rutin: Investasi Terbaik untuk Kesehatan Jangka Panjang",
+      "excerpt": "Aktivitas fisik teratur minimal 150 menit per minggu dapat meningkatkan kesehatan fisik dan mental Anda secara signifikan.",
+      "image": "/assets/content3.png",
+      "date": "20 Agu 2025",
+      "views": "3145",
+      "readTime": "5",
+      "category": "Cegah",
+      "lifecycleStage": "Dewasa (19-59 tahun)",
+      "slug": "olahraga-rutin",
+      "author": {
+        "name": "dr. Budi Aktif, SpKO",
+        "title": "Spesialis Kedokteran Olahraga"
+      },
+      "tags": [
+        "Olahraga",
+        "Aktivitas Fisik",
+        "Kebugaran",
+        "Kesehatan Mental"
+      ],
+      "fullContent": {
+        "quote": "Tubuh yang bergerak adalah tubuh yang sehat. Olahraga bukan hanya untuk fisik, tetapi juga untuk kesehatan mental dan kualitas hidup yang lebih baik.",
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Olahraga teratur adalah salah satu hal terbaik yang dapat Anda lakukan untuk kesehatan. Aktivitas fisik membantu mengontrol berat badan, mengurangi risiko penyakit jantung, memperkuat tulang dan otot, serta meningkatkan kesehatan mental."
+          },
+          {
+            "type": "heading",
+            "content": "Rekomendasi Aktivitas Fisik"
+          },
+          {
+            "type": "paragraph",
+            "content": "WHO merekomendasikan minimal 150 menit aktivitas aerobik intensitas sedang atau 75 menit intensitas tinggi per minggu untuk orang dewasa. Tambahkan latihan penguatan otot minimal 2 kali seminggu untuk hasil optimal."
+          },
+          {
+            "type": "heading",
+            "content": "Jenis Olahraga yang Disarankan"
+          },
+          {
+            "type": "paragraph",
+            "content": "Pilih olahraga yang Anda nikmati agar lebih konsisten. Jalan cepat, jogging, bersepeda, berenang, atau senam aerobik adalah pilihan yang baik. Variasikan jenis olahraga untuk menghindari kebosanan."
+          },
+          {
+            "type": "heading",
+            "content": "Manfaat untuk Kesehatan Mental"
+          },
+          {
+            "type": "paragraph",
+            "content": "Olahraga melepaskan endorfin, hormon yang membuat Anda merasa bahagia. Aktivitas fisik teratur dapat mengurangi stres, kecemasan, dan gejala depresi, serta meningkatkan kualitas tidur."
+          }
+        ],
+        "relatedTopics": [
+          "Obesitas",
+          "Kesehatan Mental",
+          "Kebugaran"
+        ],
+        "relatedDiseases": [
+          "Penyakit Jantung",
+          "Diabetes",
+          "Osteoporosis"
+        ],
+        "references": [
+          "Pedoman Aktivitas Fisik - Kemenkes RI",
+          "Physical Activity Guidelines - WHO",
+          "Exercise and Health - CDC"
+        ]
+      }
     }
   ],
   "popularTopics": [

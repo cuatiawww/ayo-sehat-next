@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { redirect } from 'next/navigation'
 import KegiatanDetail from './KegiatanDetail'
 import data from '@/data/kegiatan.json'
 
@@ -51,11 +51,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function KegiatanDetailPage({ params }: PageProps) {
-  const { slug } = await params 
+  const { slug } = await params
   const eventDetail = data.eventDetails?.[slug as keyof typeof data.eventDetails]
 
   if (!eventDetail) {
-    notFound()
+    redirect('/404')
   }
 
   return <KegiatanDetail slug={slug} />

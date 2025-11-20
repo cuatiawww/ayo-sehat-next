@@ -149,7 +149,7 @@ export default function FeatureSection() {
 function FeatureCard({ feature }: { feature: (typeof features)[0] }) {
   return (
     <Link
-      href="/artikel"
+      href={`/artikel/${feature.slug}`}
       className="card-brand group cursor-pointer hover:shadow-card-hover hover:-translate-y-3 hover:border-brand-primary/30 transition-all duration-500 flex flex-col h-full"
     >
       <div className="w-full flex flex-col p-5 sm:p-6 lg:p-7">

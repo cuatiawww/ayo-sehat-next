@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { redirect } from 'next/navigation'
 import PerilakuHidupSehatDetail from './PerilakuHidupSehatDetail'
 import data from '@/data/perilaku-hidup-sehat.json'
 
@@ -56,9 +56,9 @@ export default async function Page(props: PageProps) {
   
   // Check if behavior exists
   const behavior = data.healthyBehaviors.find((item) => item.slug === params.slug)
-  
+
   if (!behavior) {
-    notFound()
+    redirect('/404')
   }
 
   return <PerilakuHidupSehatDetail slug={params.slug} />

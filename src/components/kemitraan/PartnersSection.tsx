@@ -7,42 +7,42 @@ const partners = [
   {
     id: 1,
     name: 'Takeda',
-    logo: '../../../public/assets/Kemitraan/Client1.png',
+    logo: 'assets/Kemitraan/Client1.png',
   },
   {
     id: 2,
     name: 'Novartis',
-    logo: '../../../public/assets/Kemitraan/Client2.png',
+    logo: 'assets/Kemitraan/Client2.png',
   },
   {
     id: 3,
     name: 'Pfizer',
-    logo: './../../public/assets/Kemitraan/Client3.png',
+    logo: 'assets/Kemitraan/Client3.png',
   },
   {
     id: 4,
     name: 'Kalbe Farma',
-    logo: './../../public/assets/Kemitraan/Client4.png',
+    logo: 'assets/Kemitraan/Client4.png',
   },
   {
     id: 5,
     name: 'Adaro',
-    logo: './../../public/assets/Kemitraan/Client5.png',
+    logo: 'assets/Kemitraan/Client5.png',
   },
   {
     id: 6,
     name: 'Sanofi',
-    logo: './../../public/assets/Kemitraan/Client6.png',
+    logo: 'assets/Kemitraan/Client6.png',
   },
   {
     id: 7,
     name: 'Unilever',
-    logo: './../../public/assets/Kemitraan/Client7.png',
+    logo: 'assets/Kemitraan/Client7.png',
   },
   {
     id: 8,
     name: 'KAO',
-    logo: './../../public/assets/Kemitraan/Client8.png',
+    logo: 'assets/Kemitraan/Client8.png',
   },
 ]
 

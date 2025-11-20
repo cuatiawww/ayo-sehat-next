@@ -7,31 +7,31 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const categories = [
   {
-    image: '/assets/image.png',
+    image: '/assets/Beranda/Icon Website Ayosehat_bayi.webp',
     name: 'Bayi dan Balita',
     age: '< 5 Tahun',
     slug: 'bayi-balita',
   },
   {
-    image: '/assets/Image (4).png',
+    image: '/assets/Beranda/Icon Website Ayosehat_anak.webp',
     name: 'Anak-Anak',
     age: '5-9 Tahun',
     slug: 'anak-anak',
   },
   {
-    image: '/assets/Image (1).png',
+    image: '/assets/Beranda/Icon Website Ayosehat_remaja.webp',
     name: 'Remaja',
     age: '10-18 Tahun',
     slug: 'remaja',
   },
   {
-    image: '/assets/Image (2).png',
+    image: '/assets/Beranda/Icon Website Ayosehat_dewasa.webp',
     name: 'Dewasa',
     age: '18-59 Tahun',
     slug: 'dewasa',
   },
   {
-    image: '/assets/Image (3).png',
+    image: '/assets/Beranda/Icon Website Ayosehat_lansia.webp',
     name: 'Lansia',
     age: '60+ Tahun',
     slug: 'lansia',
