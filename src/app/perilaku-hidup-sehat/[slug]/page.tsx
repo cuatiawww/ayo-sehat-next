@@ -7,14 +7,12 @@ interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-// Generate static paths for all behaviors
 export async function generateStaticParams() {
   return data.healthyBehaviors.map((behavior) => ({
     slug: behavior.slug,
   }))
 }
 
-// Generate metadata for each page
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params
   const behavior = data.healthyBehaviors.find((item) => item.slug === params.slug)
@@ -54,7 +52,6 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 export default async function Page(props: PageProps) {
   const params = await props.params
   
-  // Check if behavior exists
   const behavior = data.healthyBehaviors.find((item) => item.slug === params.slug)
 
   if (!behavior) {

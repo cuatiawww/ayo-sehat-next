@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { Search } from 'lucide-react'
 import CustomBreadcrumb from '@/components/CustomBreadcrump'
 import RightSidebar from '@/components/sidebar/RightSidebar'
-import MediaFilterCheckbox from '@/components/media-download/MediaFilterCheckbox'
+// import MediaFilterCheckbox from '@/components/media-download/MediaFilterCheckbox'
 import MediaGrid from '@/components/media-download/MediaGrid'
 import Pagination from '@/components/article/Pagination'
 import data from '@/data/media-download.json'
@@ -94,7 +94,9 @@ export default function MediaDownloadClient() {
             >
               {/* Search Bar */}
               <div className="p-6 sm:p-8">
-                <h2>Pencarian</h2>
+                <h2 className="text-heading-lg sm:text-display-sm lg:text-display-md text-brand-primary mb-4 sm:mb-5">
+            Pencarian
+          </h2>
                 <div className="relative max-w-full">
                   
                   <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-primary" />
