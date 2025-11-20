@@ -6,7 +6,6 @@ interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-// Generate static params for all campaigns
 export async function generateStaticParams() {
   const allCampaigns = [
     ...data.priorityCampaigns,
@@ -18,7 +17,6 @@ export async function generateStaticParams() {
   }))
 }
 
-// Generate metadata
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params
   const allCampaigns = [

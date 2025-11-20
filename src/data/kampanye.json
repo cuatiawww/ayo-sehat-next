@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Gerakan Anak Bergizi",
       "description": "Upaya bangsa memperbaiki nutrisi perumbuhan dan perkembangan anak Indonesia",
-      "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/1. Konsumsi makanan bergizi seimbang.webp",
       "slug": "gerakan-anak-bergizi",
       "category": "prioritas"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "title": "Mudik Sehat",
       "description": "Mudik Sehat dengan mengurangi tembak-mudik untuk tetap aman, nyaman, terhindar dari penyakit, bawa obat, tetap makan...",
-      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/13. Rutin cek kesehatan.webp",
       "slug": "mudik-sehat",
       "category": "prioritas"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "title": "Gerakan #AnakSehat",
       "description": "Gerakan nasional dalam edukasi dan peningkatan kesadaran terkait untuk bersatu untuk membuat masalah kuning...",
-      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&q=80",
+      "image": "/assets/Siklus Hidup/siklus hidup_anak.webp",
       "slug": "gerakan-anak-sehat",
       "category": "prioritas"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "title": "Libatkan Sehat",
       "description": "Kampanye libatkan sehat untuk kecil dan cegat ke ayah dan menjaga kesehatan keluarga...",
-      "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/20. Terlibat dalam kegiatan sosial positif.webp",
       "slug": "libatkan-sehat",
       "category": "prioritas"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "title": "Program Inovasi Edukasi Kesehatan",
       "description": "Program Inovasi Edukasi Kesehatan.",
-      "image": "https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/12. Kelola stres dengan baik.webp",
       "slug": "program-inovasi-edukasi",
       "category": "prioritas"
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "title": "Hari Kesehatan Anak Sekolah 2024",
       "description": "Hari Kesehatan : Anak Sekolah 2024...",
-      "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/6. Rutin berolahraga.webp",
       "slug": "hari-kesehatan-anak-sekolah-2024",
       "category": "prioritas"
     },
@@ -52,7 +52,7 @@
       "id": 7,
       "title": "Ayo Sehat Fest 2024",
       "description": "Lebih dari 80 komunitas akan Ikut dalam acara seru dan keluarga yang Ikut membawa gaya hidup sehat...",
-      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80",
+      "image": "/assets/Beranda/hero_home.webp",
       "slug": "ayo-sehat-fest-2024",
       "category": "prioritas"
     }
@@ -62,7 +62,7 @@
       "id": 8,
       "title": "Cek Kesehatan Gratis (CKG) Sekolah",
       "description": "Ayo Ikut Cek Kesehatan Gratis (CKG) Sekolah! CKG akan bisa dilakukan pengenalan kesehatan sejak...",
-      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/13. Rutin cek kesehatan.webp",
       "slug": "cek-kesehatan-gratis-sekolah",
       "category": "kesehatan"
     },
@@ -70,7 +70,7 @@
       "id": 9,
       "title": "Bulan Imunisasi Anak Sekolah (BIAS)",
       "description": "Melalui program ini upaya pemerintah untuk memastikan kesejahteraan penyakit berbagai ...",
-      "image": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/11. Vaksinasi sesuai jadwal.webp",
       "slug": "bulan-imunisasi-anak-sekolah",
       "category": "kesehatan"
     },
@@ -78,7 +78,7 @@
       "id": 10,
       "title": "Layanan Terawat Indonesia Sehat",
       "description": "Layanan Terawat, Indonesia Sehat! Memiliki Laman, Memulai Bersama",
-      "image": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/17. Jaga kesehatan mentall.webp",
       "slug": "layanan-terawat-indonesia-sehat",
       "category": "kesehatan"
     },
@@ -86,7 +86,7 @@
       "id": 11,
       "title": "Pekan Imunisasi Dunia",
       "description": "Sejak dari 2025, peristiwa merentak dalam perbaikan untuk edukasi pun pentingnya imunisasi ...",
-      "image": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/11. Vaksinasi sesuai jadwal.webp",
       "slug": "pekan-imunisasi-dunia",
       "category": "kesehatan"
     },
@@ -94,7 +94,7 @@
       "id": 12,
       "title": "Pekan Imunisasi Dunia",
       "description": "Sejak dari 2025, Instan untuk Merata dari Langkah penyakit biji lemah paling besar oleh imunisasi kepada Pekan Imunisasi Dunia",
-      "image": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=600&q=80",
+      "image": "/assets/Siklus Hidup/siklus hidup_bayi.webp",
       "slug": "pekan-imunisasi-dunia-2",
       "category": "kesehatan"
     },
@@ -102,7 +102,7 @@
       "id": 13,
       "title": "Hari Kesehatan Nasional",
       "description": "Peringsikan Hari Kesehatan-Nasional ke-60 bersama Kita buatlah bersama Sehat Bersama 12 November 2024.",
-      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80",
+      "image": "/assets/Beranda/hero_home.webp",
       "slug": "hari-kesehatan-nasional",
       "category": "kesehatan"
     },
@@ -110,7 +110,7 @@
       "id": 14,
       "title": "Hari Gizi Nasional 2024",
       "description": "Memperingati Hari Gizi Nasional ke-64 mari bersama-sama mencegah masalah gizi sejak dini termasuk...",
-      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/1. Konsumsi makanan bergizi seimbang.webp",
       "slug": "hari-gizi-nasional-2024",
       "category": "kesehatan"
     }
@@ -129,7 +129,7 @@
       "displayDate": "15 Mar 2024",
       "views": "15420",
       "readTime": "8",
-      "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/1. Konsumsi makanan bergizi seimbang.webp",
       "tags": ["Gizi", "Anak", "Stunting", "Kesehatan Anak", "Nutrisi"],
       "ringkasanInfo": {
         "title": "Ringkasan Info",
@@ -196,7 +196,7 @@
         "kemitraan": {
           "title": "Kemitraan",
           "description": "Satu tindakan kecil hari ini dapat memberikan dampak besar bagi masa depan anak Indonesia. Mari bergabung dalam gerakan nasional untuk menciptakan generasi Indonesia yang sehat dan bergizi.",
-          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "image": "/assets/Kemitraan/mitra_kemenkes.webp",
           "buttonText": "Bergabung",
           "buttonLink": "/page/kemitraan"
         }
@@ -215,7 +215,7 @@
       "displayDate": "1 Agu 2024",
       "views": "10180",
       "readTime": "5",
-      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/13. Rutin cek kesehatan.webp",
       "tags": ["Sekolah", "Kesehatan Anak", "Deteksi Dini", "Screening"],
       "ringkasanInfo": {
         "title": "Ringkasan Info",
@@ -289,7 +289,7 @@
         "kemitraan": {
           "title": "Kemitraan",
           "description": "Satu tindakan kecil hari ini dapat memberikan dampak besar bagi kesehatan anak sekolah. Yuk ikut serta dalam program CKG Sekolah untuk deteksi dini masalah kesehatan!",
-          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "image": "/assets/Kemitraan/mitra_kemenkes.webp",
           "buttonText": "Bergabung",
           "buttonLink": "/page/kemitraan"
         }
@@ -308,7 +308,7 @@
       "displayDate": "1 Sep 2024",
       "views": "8540",
       "readTime": "6",
-      "image": "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1200&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/11. Vaksinasi sesuai jadwal.webp",
       "tags": ["BIAS", "Imunisasi", "Anak Sekolah", "Vaksin", "Kesehatan Anak"],
       "ringkasanInfo": {
         "title": "Ringkasan Info",
@@ -372,7 +372,7 @@
         "kemitraan": {
           "title": "Kemitraan",
           "description": "Mari bersama-sama melindungi anak Indonesia dari penyakit berbahaya. Dukung program BIAS di sekolah Anda!",
-          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "image": "/assets/Kemitraan/mitra_kemenkes.webp",
           "buttonText": "Bergabung",
           "buttonLink": "/page/kemitraan"
         }
@@ -391,7 +391,7 @@
       "displayDate": "1 Apr 2024",
       "views": "12350",
       "readTime": "7",
-      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/13. Rutin cek kesehatan.webp",
       "tags": ["Mudik", "Lebaran", "Perjalanan", "Kesehatan", "Tips Mudik"],
       "ringkasanInfo": {
         "title": "Ringkasan Info",
@@ -463,7 +463,7 @@
         "kemitraan": {
           "title": "Kemitraan",
           "description": "Mari mudik dengan sehat dan selamat. Ikuti tips dari Kemenkes untuk perjalanan yang aman dan nyaman!",
-          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "image": "/assets/Kemitraan/mitra_kemenkes.webp",
           "buttonText": "Pelajari Lebih Lanjut",
           "buttonLink": "/page/kemitraan"
         }
@@ -482,7 +482,7 @@
       "displayDate": "25 Jan 2024",
       "views": "16780",
       "readTime": "8",
-      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80",
+      "image": "/assets/Perilaku Hidup Sehat/1. Konsumsi makanan bergizi seimbang.webp",
       "tags": ["Gizi", "Nutrisi", "Makanan Sehat", "Gizi Seimbang", "HGN"],
       "ringkasanInfo": {
         "title": "Ringkasan Info",
@@ -559,7 +559,7 @@
         "kemitraan": {
           "title": "Kemitraan",
           "description": "Mari bersama cegah stunting dan tingkatkan kualitas gizi keluarga Indonesia. Terapkan pola makan gizi seimbang mulai dari sekarang!",
-          "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80",
+          "image": "/assets/Kemitraan/mitra_kemenkes.webp",
           "buttonText": "Bergabung",
           "buttonLink": "/page/kemitraan"
         }

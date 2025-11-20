@@ -13,7 +13,6 @@ interface KampanyeDetailProps {
   slug: string
 }
 
-// Dummy content yang akan digunakan untuk semua kampanye
 const dummyContent = {
   date: '15 Januari 2025',
   location: 'Seluruh Indonesia',
@@ -78,7 +77,6 @@ const dummyContent = {
 }
 
 export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
-  // Find the campaign
   const allCampaigns = [
     ...data.priorityCampaigns,
     ...data.healthCampaigns
@@ -103,7 +101,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
     )
   }
 
-  // Share handlers
   const handleShare = (platform: string) => {
     const url = encodeURIComponent(window.location.href)
     const text = encodeURIComponent(campaign.title)
@@ -136,9 +133,7 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
       <section className="section-padding-lg">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] xl:grid-cols-[1fr_380px] gap-8 lg:gap-12">
-            {/* LEFT CONTENT */}
             <div>
-              {/* Hero Image */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -152,7 +147,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 />
               </motion.div>
 
-              {/* Category Badge */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -164,7 +158,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 </Badge>
               </motion.div>
 
-              {/* Title */}
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -174,7 +167,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 {campaign.title}
               </motion.h1>
 
-              {/* Meta Info */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -197,7 +189,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 </div>
               </motion.div>
 
-              {/* Share Buttons */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -234,21 +225,18 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 </button>
               </motion.div>
 
-              {/* Campaign Content */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="prose prose-lg max-w-none"
               >
-                {/* Intro */}
                 <div className="bg-gradient-to-r from-brand-primary/10 to-transparent border-l-4 border-brand-primary p-6 mb-8 rounded-r-xl">
                   <p className="text-body-lg text-brand-primary font-medium leading-relaxed">
                     Penyelenggara: {dummyContent.organizer}
                   </p>
                 </div>
 
-                {/* Main Content Sections */}
                 <div className="space-y-6 text-body-md lg:text-body-lg text-gray-700 leading-relaxed">
                   <p className="text-justify">{dummyContent.intro}</p>
 
@@ -271,7 +259,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 </div>
               </motion.div>
 
-              {/* Benefits */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -291,7 +278,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 </ul>
               </motion.div>
 
-              {/* Timeline */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -322,7 +308,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
                 </div>
               </motion.div>
 
-              {/* CTA Button */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -341,7 +326,6 @@ export default function KampanyeDetailClient({ slug }: KampanyeDetailProps) {
               </motion.div>
             </div>
 
-            {/* RIGHT SIDEBAR */}
             <div className="lg:sticky lg:top-6 lg:self-start">
               <RightSidebar
                 showCalendar={true}

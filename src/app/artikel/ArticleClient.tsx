@@ -79,7 +79,7 @@ export default function ArtikelClient() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  // Reset page when filters change
+  // Reset page filters change
   useEffect(() => {
     setCurrentPage(1)
   }, [activeTab, selectedLifecycle, selectedTopic, selectedSort])
