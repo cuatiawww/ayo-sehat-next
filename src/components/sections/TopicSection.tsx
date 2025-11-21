@@ -67,7 +67,7 @@ const campaigns = [
 ]
 
 export default function TopicSection() {
-  const [selectedLetter, setSelectedLetter] = useState<string | null>(null)
+  const [selectedLetter, setSelectedLetter] = useState<string | null>('A')
 
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 

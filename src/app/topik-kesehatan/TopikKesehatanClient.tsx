@@ -34,7 +34,7 @@ export const getTopicUrl = (topic: string) => {
 }
 
 export default function TopikKesehatanClient() {
-  const [selectedLetter, setSelectedLetter] = useState<Letter | null>(null)
+  const [selectedLetter, setSelectedLetter] = useState<Letter | null>('A')
   const [searchQuery, setSearchQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const letterRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
