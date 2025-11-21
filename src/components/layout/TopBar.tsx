@@ -35,7 +35,7 @@ export default function TopBar() {
               ))}
             </div>
 
-            {/* KONTAK - ukuran teks disesuaikan untuk mobile */}
+            {/* KONTAK */}
             <Link
               href="hubungi-kami"
               className="text-xs sm:text-sm font-semibold text-gray-700 hover:text-brand-primary transition-colors"
@@ -44,13 +44,12 @@ export default function TopBar() {
               KONTAK
             </Link>
 
-            {/* LOGIN - ukuran ikon dan teks disesuaikan untuk mobile */}
+            {/* LOGIN*/}
             <Link
               href="/login"
               className="flex items-center gap-2 hover:opacity-70 transition-opacity"
               title="Masuk ke Akun Anda"
             >
-              {/* Ikon lebih kecil di mobile (w-4 h-4) dan normal di sm ke atas (w-5 h-5) */}
               <User className="w-4 h-4 sm:w-5 sm:h-5 text-brand-primary" strokeWidth={2.5} />
               {/* Teks lebih kecil di mobile (text-xs) dan normal di sm ke atas (text-sm) */}
               <span className="text-xs sm:text-sm font-semibold text-gray-700 hidden sm:inline">

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -9,78 +10,56 @@ interface HealthObservance {
   date: string // Format: "MM-DD"
   title: string
   description: string
+  category?: string
 }
-
-const healthObservances: HealthObservance[] = [
-  {
-    date: '01-24',
-    title: 'Hari Gizi Nasional',
-    description:
-      'Memperingati pentingnya gizi seimbang untuk kesehatan optimal dan pencegahan stunting pada anak-anak Indonesia.',
-  },
-  {
-    date: '02-04',
-    title: 'Hari Kanker Sedunia',
-    description:
-      'Meningkatkan kesadaran global tentang pencegahan, deteksi dini, dan pengobatan kanker untuk menyelamatkan jutaan nyawa.',
-  },
-  {
-    date: '03-24',
-    title: 'Hari Tuberkulosis Sedunia',
-    description:
-      'Membangun kesadaran global tentang TB dan upaya untuk mengakhiri epidemi penyakit menular ini.',
-  },
-  {
-    date: '04-07',
-    title: 'Hari Kesehatan Sedunia',
-    description:
-      'Memperingati pendirian WHO dan fokus pada isu kesehatan global yang memerlukan perhatian mendesak.',
-  },
-  {
-    date: '05-12',
-    title: 'Hari Perawat Internasional',
-    description:
-      'Menghormati dedikasi dan kontribusi perawat dalam memberikan pelayanan kesehatan berkualitas.',
-  },
-  {
-    date: '09-12',
-    title: 'Hari Kesehatan Nasional',
-    description:
-      'Memperingati gerakan kesehatan masyarakat Indonesia dan komitmen untuk Indonesia sehat.',
-  },
-  {
-    date: '10-10',
-    title: 'Hari Kesehatan Jiwa Sedunia',
-    description:
-      'Meningkatkan kesadaran tentang kesehatan mental dan menghilangkan stigma terhadap gangguan mental.',
-  },
-  {
-    date: '11-14',
-    title: 'Hari Diabetes Sedunia',
-    description:
-      'Meningkatkan kesadaran tentang diabetes, pentingnya pencegahan, dan pengelolaan gula darah.',
-  },
-  {
-    date: '12-01',
-    title: 'Hari AIDS Sedunia',
-    description:
-      'Meningkatkan kesadaran tentang HIV/AIDS, mengurangi stigma, dan mendorong pencegahan serta pengobatan.',
-  },
-]
 
 export default function CustomCalendar() {
   const [currentDate, setCurrentDate] = useState(new Date())
   const [selectedDate, setSelectedDate] = useState<Date | undefined>()
   const [selectedObservance, setSelectedObservance] =
     useState<HealthObservance | null>(null)
+  const [healthObservances, setHealthObservances] = useState<HealthObservance[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  // Fetch health observances from API
+  useEffect(() => {
+    const fetchHealthObservances = async () => {
+      try {
+        setIsLoading(true)
+        const response = await fetch('/api/health-calendar')
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch health calendar data')
+        }
+
+        const result = await response.json()
+
+        if (result.success && result.data) {
+          setHealthObservances(result.data)
+        } else {
+          throw new Error('Invalid data format')
+        }
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'An error occurred')
+        console.error('Error fetching health calendar:', err)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    fetchHealthObservances()
+  }, [])
 
   // Find closest health observance on mount
   const findClosestObservance = () => {
+    if (healthObservances.length === 0) return null
+
     const today = new Date()
     const currentYear = today.getFullYear()
 
     // Create array of observances with full dates
-    const observancesWithDates = healthObservances.map(obs => {
+    const observancesWithDates = healthObservances.map((obs: HealthObservance) => {
       const [month, day] = obs.date.split('-').map(Number)
       const obsDate = new Date(currentYear, month - 1, day)
 
@@ -97,24 +76,27 @@ export default function CustomCalendar() {
     })
 
     // Sort by days difference and get the closest one
-    observancesWithDates.sort((a, b) => a.daysDiff - b.daysDiff)
+    observancesWithDates.sort((a: any, b: any) => a.daysDiff - b.daysDiff)
 
     return observancesWithDates[0]
   }
 
   // Auto-select closest observance on mount
   useEffect(() => {
-    const closest = findClosestObservance()
-    if (closest) {
-      setSelectedDate(closest.fullDate)
-      setCurrentDate(closest.fullDate)
-      setSelectedObservance({
-        date: closest.date,
-        title: closest.title,
-        description: closest.description
-      })
+    if (healthObservances.length > 0) {
+      const closest = findClosestObservance()
+      if (closest) {
+        setSelectedDate(closest.fullDate)
+        setCurrentDate(closest.fullDate)
+        setSelectedObservance({
+          date: closest.date,
+          title: closest.title,
+          description: closest.description,
+          category: closest.category
+        })
+      }
     }
-  }, [])
+  }, [healthObservances])
 
   const monthNames = [
     'Januari',
@@ -183,7 +165,7 @@ export default function CustomCalendar() {
     const month = String(currentDate.getMonth() + 1).padStart(2, '0')
     const dayStr = String(day).padStart(2, '0')
     const dateKey = `${month}-${dayStr}`
-    return healthObservances.find((obs) => obs.date === dateKey)
+    return healthObservances.find((obs: HealthObservance) => obs.date === dateKey)
   }
 
   const handleDateClick = (day: number) => {
@@ -211,6 +193,37 @@ export default function CustomCalendar() {
   // Days of the month
   for (let i = 1; i <= daysInMonth; i++) {
     calendarDays.push(i)
+  }
+
+  // Loading state
+  if (isLoading) {
+    return (
+      <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+        <div className="p-8 flex items-center justify-center">
+          <div className="text-center">
+            <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-brand-primary mb-3"></div>
+            <p className="text-caption text-gray-600">Memuat kalender kesehatan...</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+        <div className="p-8 text-center">
+          <div className="text-red-500 mb-2">
+            <X className="w-12 h-12 mx-auto" />
+          </div>
+          <p className="text-body-md font-semibold text-gray-900 mb-1">
+            Gagal Memuat Kalender
+          </p>
+          <p className="text-caption text-gray-600">{error}</p>
+        </div>
+      </div>
+    )
   }
 
   return (
